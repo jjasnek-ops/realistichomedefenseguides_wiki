@@ -408,30 +408,36 @@
   },
   "integrations": {
     "analytics": false,
-    "ads": false
+    "ads": {
+      "provider": "adsense",
+      "mode": "auto",
+      "client": "ca-pub-8218745248418914",
+      "label": "Advertisement",
+      "slots": {}
+    }
   },
   "legal": {
     "lastModified": "2026-10-25",
     "about": "An independent guide to REALISTIC HOME DEFENSE, the Roblox tactical shooter by IBA Community. This wiki covers controls, weapon mechanics, getting started and game updates. It is not affiliated with or endorsed by Roblox or IBA Community.",
-    "privacy": "This site has no enabled analytics, advertising scripts or account system. Pagefind search runs in your browser. Your theme preference is stored on your device. The hosting provider may process ordinary access logs under its own policy. External links are governed by the destination service’s privacy policy.",
+    "privacy": "This site uses Google AdSense Auto Ads. Google and its advertising partners may use cookies and similar technologies to serve and measure ads. You can manage personalized advertising in Google’s My Ad Center and review Google’s privacy policy. No separate analytics or account system is enabled. Pagefind search runs in your browser, and your theme preference is stored on your device. The hosting provider may process access logs under its own policy. External links follow the destination service’s privacy policy.",
     "terms": "These independent guides describe gameplay in REALISTIC HOME DEFENSE on Roblox. Game features may change; consult the linked sources and current in-game information. Roblox and game trademarks and artwork belong to their respective owners. Site software is provided under its MIT license.",
     "disclaimer": "Independent, unofficial REALISTIC HOME DEFENSE wiki. Not affiliated with Roblox or IBA Community.",
     "translations": {
       "de": {
         "about": "Unabhängige Anleitungen zu REALISTIC HOME DEFENSE, dem taktischen Roblox-Shooter von IBA Community. Themen sind Steuerung, Waffenmechanik, Einstieg und Updates. Dieses Wiki ist nicht mit Roblox oder IBA Community verbunden und wird von ihnen nicht unterstützt.",
-        "privacy": "Auf dieser Website sind keine Analyse- oder Werbeskripte und kein Kontosystem aktiviert. Die Pagefind-Suche läuft im Browser. Die Themenauswahl wird auf deinem Gerät gespeichert. Der Hosting-Anbieter kann Zugriffsprotokolle gemäß seiner Richtlinie verarbeiten. Für externe Links gelten die Datenschutzregeln des jeweiligen Dienstes.",
+        "privacy": "Diese Website verwendet Google AdSense Auto Ads. Google und seine Werbepartner können Cookies und ähnliche Technologien zur Anzeige und Messung von Werbung verwenden. Personalisierte Werbung lässt sich in Googles „Mein Anzeigen-Center“ verwalten; beachte auch Googles Datenschutzerklärung. Ein separates Analysesystem oder Kontosystem ist nicht aktiviert. Die Pagefind-Suche läuft im Browser, die Themenauswahl wird auf deinem Gerät gespeichert. Der Hosting-Anbieter kann Zugriffsprotokolle gemäß seiner Richtlinie verarbeiten. Für externe Links gelten die Datenschutzregeln des jeweiligen Dienstes.",
         "terms": "Die unabhängigen Anleitungen beschreiben das Spiel REALISTIC HOME DEFENSE auf Roblox. Funktionen können sich ändern; beachte die verlinkten Quellen und aktuelle Angaben im Spiel. Marken und Spielgrafiken gehören ihren jeweiligen Rechteinhabern. Die Website-Software steht unter der MIT-Lizenz.",
         "disclaimer": "Unabhängiges, inoffizielles REALISTIC HOME DEFENSE Wiki. Keine Verbindung zu Roblox oder IBA Community."
       },
       "pt-br": {
         "about": "Guias independentes de REALISTIC HOME DEFENSE, o jogo de tiro tático no Roblox da IBA Community. Esta wiki aborda controles, mecânicas de armas, primeiros passos e atualizações. Não é afiliada nem endossada pelo Roblox ou pela IBA Community.",
-        "privacy": "Este site não possui scripts de análise ou publicidade ativados nem sistema de contas. A busca Pagefind funciona no navegador. A preferência de tema é armazenada no dispositivo. O provedor de hospedagem pode processar registros de acesso conforme sua política. Links externos seguem as políticas de privacidade dos respectivos serviços.",
+        "privacy": "Este site usa o Google AdSense Auto Ads. O Google e seus parceiros de publicidade podem usar cookies e tecnologias semelhantes para exibir e medir anúncios. Você pode gerenciar anúncios personalizados na Minha Central de Anúncios do Google e consultar a política de privacidade do Google. Não há sistema separado de análise nem de contas. A busca Pagefind funciona no navegador, e a preferência de tema fica no dispositivo. O provedor de hospedagem pode processar registros de acesso conforme sua política. Links externos seguem a política de privacidade do serviço de destino.",
         "terms": "Os guias independentes descrevem a jogabilidade de REALISTIC HOME DEFENSE no Roblox. Recursos podem mudar; consulte as fontes vinculadas e as informações atuais do jogo. Marcas e imagens do jogo pertencem aos respectivos titulares. O software do site usa a licença MIT.",
         "disclaimer": "Wiki independente e não oficial de REALISTIC HOME DEFENSE. Sem afiliação ao Roblox ou à IBA Community."
       },
       "ja": {
         "about": "IBA CommunityによるRobloxのタクティカルシューター、REALISTIC HOME DEFENSEの非公式攻略Wikiです。操作方法、武器の仕組み、始め方、更新情報を扱います。RobloxおよびIBA Communityとの提携や公認はありません。",
-        "privacy": "このサイトでは解析・広告スクリプトやアカウント機能を有効にしていません。Pagefind検索はブラウザ内で動作し、テーマ設定は端末に保存されます。ホスティング事業者が独自の方針に基づきアクセスログを処理する場合があります。外部リンク先には各サービスのプライバシーポリシーが適用されます。",
+        "privacy": "このサイトはGoogle AdSenseの自動広告を使用します。Googleと広告パートナーは、広告の配信や測定にCookieなどの技術を使用する場合があります。パーソナライズ広告はGoogleのマイ アド センターで管理でき、Googleのプライバシーポリシーも確認できます。個別の解析システムやアカウント機能は有効にしていません。Pagefind検索はブラウザ内で動作し、テーマ設定は端末に保存されます。ホスティング事業者が独自の方針に基づきアクセスログを処理する場合があります。外部リンク先には各サービスのプライバシーポリシーが適用されます。",
         "terms": "本攻略はRobloxのREALISTIC HOME DEFENSE内のゲームプレイを扱います。ゲームの機能は変更される場合があるため、参照先とゲーム内の最新情報を確認してください。商標やゲーム画像の権利は各権利者に帰属します。サイトのソフトウェアにはMITライセンスが適用されます。",
         "disclaimer": "REALISTIC HOME DEFENSEの非公式攻略Wikiです。RobloxおよびIBA Communityとの提携はありません。"
       }

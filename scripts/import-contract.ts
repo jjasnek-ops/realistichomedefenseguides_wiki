@@ -5,7 +5,8 @@ import { parseArticleSource } from './article-source';
 export const ARTICLE_CONTRACT = 'seoscout-articles-v1' as const;
 export const EVIDENCE_ARTICLE_CONTRACT = 'seoscout-articles-v2' as const;
 export const PUBLICATION_PLAN_CONTRACT = 'seoscout-publication-plan-v1' as const;
-export const SOURCE_VALIDATOR = 'source-policy-v2' as const;
+export const SOURCE_VALIDATOR = 'source-policy-v3' as const;
+const sourceValidatorSchema = z.enum(['source-policy-v2', SOURCE_VALIDATOR]);
 const text = z.string().min(1).refine(value => value === value.trim() && !/[\u0000-\u001f\u007f]/.test(value), 'Use nonempty trimmed text without control characters.');
 const digest = z.string().regex(/^[a-f0-9]{64}$/, 'Expected a SHA-256 hex digest.');
 const category = text.regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
@@ -29,7 +30,7 @@ const deferredEvidenceSchema = z.object({
 }).strict();
 const publicationPlanSchema = z.object({
   schema_version: z.literal(1), contract: z.literal(PUBLICATION_PLAN_CONTRACT), mode: z.literal('evidence_based'),
-  created_at: timestamp, topic: text, validator_version: z.literal(SOURCE_VALIDATOR),
+  created_at: timestamp, topic: text, validator_version: sourceValidatorSchema,
   keywords_sha256: digest, profile_sha256: digest, profile_file_sha256: digest,
   policy_sha256: digest, policy_file_sha256: digest, policy: policySchema,
   candidate_keywords: z.number().int().positive(), selected_keywords: z.number().int().positive(),
@@ -45,12 +46,12 @@ const publicationPlanSchema = z.object({
 const sourceGateSchema = z.object({
   gate: z.literal('pass'), required_keywords: z.number().int().positive(),
   ready_keywords: z.number().int().positive(), blocked_keywords: z.literal(0),
-  validator_version: z.literal(SOURCE_VALIDATOR), profile_sha256: digest,
+  validator_version: sourceValidatorSchema, profile_sha256: digest,
 }).strict();
 const commonManifestFields = {
   topic: text, created_at: timestamp,
   keywords_sha256: digest, profile_sha256: digest, profile_file_sha256: digest,
-  validator_version: z.literal(SOURCE_VALIDATOR), languages: z.array(locale).min(1),
+  validator_version: sourceValidatorSchema, languages: z.array(locale).min(1),
   required_keywords: z.number().int().positive(), keywords: z.array(keywordSchema).min(1),
   articles: z.array(articleSchema).min(1),
 };

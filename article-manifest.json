@@ -1,0 +1,1330 @@
+{
+  "schema_version": 2,
+  "contract": "seoscout-articles-v2",
+  "mode": "evidence_based",
+  "topic": "REALISTIC HOME DEFENSE",
+  "created_at": "2026-10-25T15:16:04.542423+00:00",
+  "keywords_sha256": "a23d181d71f71ed96264a8132280a311ca9458d71433ecdf4428b816bf8227e6",
+  "profile_sha256": "d5a215d2959eb9292f58d65b4a81b2d997e41f4bf0970c3a6e342d42462980ad",
+  "profile_file_sha256": "6ed42692ec1db3d1f594f553317eb9fced80a14475574c3f08b9a7eb54f707b6",
+  "validator_version": "source-policy-v3",
+  "languages": [
+    "en",
+    "de",
+    "pt-br",
+    "ja"
+  ],
+  "required_keywords": 13,
+  "keywords": [
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner guide",
+      "category": "guide",
+      "slug": "realistic-home-defense-beginner-guide",
+      "translation_key": "guide/realistic-home-defense-beginner-guide"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE controls",
+      "category": "guide",
+      "slug": "realistic-home-defense-controls",
+      "translation_key": "guide/realistic-home-defense-controls"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE tips",
+      "category": "guide",
+      "slug": "realistic-home-defense-tips",
+      "translation_key": "guide/realistic-home-defense-tips"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to play",
+      "category": "guide",
+      "slug": "realistic-home-defense-how-to-play",
+      "translation_key": "guide/realistic-home-defense-how-to-play"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE all reloads",
+      "category": "guide",
+      "slug": "realistic-home-defense-all-reloads",
+      "translation_key": "guide/realistic-home-defense-all-reloads"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE update",
+      "category": "guide",
+      "slug": "realistic-home-defense-update",
+      "translation_key": "guide/realistic-home-defense-update"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE weapon guide",
+      "category": "weapons",
+      "slug": "realistic-home-defense-weapon-guide",
+      "translation_key": "weapons/realistic-home-defense-weapon-guide"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner tips",
+      "category": "quests",
+      "slug": "realistic-home-defense-beginner-tips",
+      "translation_key": "quests/realistic-home-defense-beginner-tips"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE community",
+      "category": "community",
+      "slug": "realistic-home-defense-community",
+      "translation_key": "community/realistic-home-defense-community"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE review",
+      "category": "reviews",
+      "slug": "realistic-home-defense-review",
+      "translation_key": "reviews/realistic-home-defense-review"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE realistic",
+      "category": "reviews",
+      "slug": "realistic-home-defense-realistic",
+      "translation_key": "reviews/realistic-home-defense-realistic"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE game link",
+      "category": "troubleshooting",
+      "slug": "realistic-home-defense-game-link",
+      "translation_key": "troubleshooting/realistic-home-defense-game-link"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to join",
+      "category": "troubleshooting",
+      "slug": "realistic-home-defense-how-to-join",
+      "translation_key": "troubleshooting/realistic-home-defense-how-to-join"
+    }
+  ],
+  "source_gate": {
+    "gate": "pass",
+    "required_keywords": 13,
+    "ready_keywords": 13,
+    "blocked_keywords": 0,
+    "validator_version": "source-policy-v3",
+    "profile_sha256": "d5a215d2959eb9292f58d65b4a81b2d997e41f4bf0970c3a6e342d42462980ad",
+    "source_scope": "selected"
+  },
+  "articles": [
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner guide",
+      "locale": "en",
+      "path": "en/guide/realistic-home-defense-beginner-guide.mdx",
+      "translation_key": "guide/realistic-home-defense-beginner-guide",
+      "sha256": "018d8dca10d562287537828eceb991ea6aa8639bea8ca6e567d746b9620a470c",
+      "source_pack_sha256": "3ee9e43ac8be5e83a969da21528af8c31835921e4d91ce4c800990b5099b7467"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner guide",
+      "locale": "de",
+      "path": "de/guide/realistic-home-defense-beginner-guide.mdx",
+      "translation_key": "guide/realistic-home-defense-beginner-guide",
+      "sha256": "b4d255234bf6317f72a3b79570ee1b50924c08245b0263071d4babc769c52899",
+      "source_pack_sha256": "3ee9e43ac8be5e83a969da21528af8c31835921e4d91ce4c800990b5099b7467"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner guide",
+      "locale": "pt-br",
+      "path": "pt-br/guide/realistic-home-defense-beginner-guide.mdx",
+      "translation_key": "guide/realistic-home-defense-beginner-guide",
+      "sha256": "4735f1a4c487973b46914bbcf2de6baa4dfa422c0fcfdd5e81fb4b535fffa370",
+      "source_pack_sha256": "3ee9e43ac8be5e83a969da21528af8c31835921e4d91ce4c800990b5099b7467"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner guide",
+      "locale": "ja",
+      "path": "ja/guide/realistic-home-defense-beginner-guide.mdx",
+      "translation_key": "guide/realistic-home-defense-beginner-guide",
+      "sha256": "66241ee5be7ca0b8cba4b545d3eec09dbd2453a7754aa850306413d9955db103",
+      "source_pack_sha256": "3ee9e43ac8be5e83a969da21528af8c31835921e4d91ce4c800990b5099b7467"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE controls",
+      "locale": "en",
+      "path": "en/guide/realistic-home-defense-controls.mdx",
+      "translation_key": "guide/realistic-home-defense-controls",
+      "sha256": "2f3b458c63915c897cc8faca840fd73ff48891cd869c136e810f56008a39e8cc",
+      "source_pack_sha256": "6815365a9b84fd3da813c29521ddc1fed60f815bab1f45a0a5d744bb1c6c361f"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE controls",
+      "locale": "de",
+      "path": "de/guide/realistic-home-defense-controls.mdx",
+      "translation_key": "guide/realistic-home-defense-controls",
+      "sha256": "210c87951f62b75eb67de8ed9fa447e9376867924072686fd8067f0c150bbfbf",
+      "source_pack_sha256": "6815365a9b84fd3da813c29521ddc1fed60f815bab1f45a0a5d744bb1c6c361f"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE controls",
+      "locale": "pt-br",
+      "path": "pt-br/guide/realistic-home-defense-controls.mdx",
+      "translation_key": "guide/realistic-home-defense-controls",
+      "sha256": "123c10fa66878c35b87d264976f161ce108857abeb07a931f2179de5613da82a",
+      "source_pack_sha256": "6815365a9b84fd3da813c29521ddc1fed60f815bab1f45a0a5d744bb1c6c361f"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE controls",
+      "locale": "ja",
+      "path": "ja/guide/realistic-home-defense-controls.mdx",
+      "translation_key": "guide/realistic-home-defense-controls",
+      "sha256": "25267aa3dc8814c0fdd975c9f15ca8d05c4f904cd5a73ca171316e77374ede75",
+      "source_pack_sha256": "6815365a9b84fd3da813c29521ddc1fed60f815bab1f45a0a5d744bb1c6c361f"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE tips",
+      "locale": "en",
+      "path": "en/guide/realistic-home-defense-tips.mdx",
+      "translation_key": "guide/realistic-home-defense-tips",
+      "sha256": "fa0f6e996397acade9f5bc163c3bf88ee994cc991c452072d305155cf077d28c",
+      "source_pack_sha256": "bfb73f9cf26dc87871d2f265bc93f3991ee965137ea747122129edd4ab83c3d2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE tips",
+      "locale": "de",
+      "path": "de/guide/realistic-home-defense-tips.mdx",
+      "translation_key": "guide/realistic-home-defense-tips",
+      "sha256": "57f9f8ac234fef464d0c7731be1e4911ecacf3ba9397eef7edaf57dce03ef7f5",
+      "source_pack_sha256": "bfb73f9cf26dc87871d2f265bc93f3991ee965137ea747122129edd4ab83c3d2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE tips",
+      "locale": "pt-br",
+      "path": "pt-br/guide/realistic-home-defense-tips.mdx",
+      "translation_key": "guide/realistic-home-defense-tips",
+      "sha256": "d2ba8b585290ecbee9e7a7fbaad14edde9afa74e5c50759d3976a0f75c793841",
+      "source_pack_sha256": "bfb73f9cf26dc87871d2f265bc93f3991ee965137ea747122129edd4ab83c3d2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE tips",
+      "locale": "ja",
+      "path": "ja/guide/realistic-home-defense-tips.mdx",
+      "translation_key": "guide/realistic-home-defense-tips",
+      "sha256": "8fee2413d821ecc609b1152e8421601afaa8797657fd49d0e235e1a94c90a658",
+      "source_pack_sha256": "bfb73f9cf26dc87871d2f265bc93f3991ee965137ea747122129edd4ab83c3d2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to play",
+      "locale": "en",
+      "path": "en/guide/realistic-home-defense-how-to-play.mdx",
+      "translation_key": "guide/realistic-home-defense-how-to-play",
+      "sha256": "9544f851ab63b913c9f0d8fbf28505ef83132d2b58227d92eaef1401a8575156",
+      "source_pack_sha256": "93a04db8eb56f10d85944183eb75360ad98de3daa7045159ee0d440b4904244a"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to play",
+      "locale": "de",
+      "path": "de/guide/realistic-home-defense-how-to-play.mdx",
+      "translation_key": "guide/realistic-home-defense-how-to-play",
+      "sha256": "e799bfdf67db84bdb8e9b22e4efb05d5bbd12d3aeab074fff7052915eb851f1f",
+      "source_pack_sha256": "93a04db8eb56f10d85944183eb75360ad98de3daa7045159ee0d440b4904244a"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to play",
+      "locale": "pt-br",
+      "path": "pt-br/guide/realistic-home-defense-how-to-play.mdx",
+      "translation_key": "guide/realistic-home-defense-how-to-play",
+      "sha256": "2fa0cfe12245f1cb487ea5c91b8a5cb7fde1dff7e7f6210f13e337e029d78b5f",
+      "source_pack_sha256": "93a04db8eb56f10d85944183eb75360ad98de3daa7045159ee0d440b4904244a"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to play",
+      "locale": "ja",
+      "path": "ja/guide/realistic-home-defense-how-to-play.mdx",
+      "translation_key": "guide/realistic-home-defense-how-to-play",
+      "sha256": "2b503ec0e6a374a4c9a22ce142732868ef071751d554b85bfd527902f6b14e46",
+      "source_pack_sha256": "93a04db8eb56f10d85944183eb75360ad98de3daa7045159ee0d440b4904244a"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE all reloads",
+      "locale": "en",
+      "path": "en/guide/realistic-home-defense-all-reloads.mdx",
+      "translation_key": "guide/realistic-home-defense-all-reloads",
+      "sha256": "1d5259fa58031dbd141428898d3bcba896815df5772e8b23182533d927a1ae62",
+      "source_pack_sha256": "3e0f29c26688f9916579f2a9edc4f2e6d7baffc5f115938b76f8f916fb63e5f1"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE all reloads",
+      "locale": "de",
+      "path": "de/guide/realistic-home-defense-all-reloads.mdx",
+      "translation_key": "guide/realistic-home-defense-all-reloads",
+      "sha256": "796214638be2ad7b5d2d0d8e1ba4e35f9b5dc931cbc6757cfe985ad0f41070b7",
+      "source_pack_sha256": "3e0f29c26688f9916579f2a9edc4f2e6d7baffc5f115938b76f8f916fb63e5f1"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE all reloads",
+      "locale": "pt-br",
+      "path": "pt-br/guide/realistic-home-defense-all-reloads.mdx",
+      "translation_key": "guide/realistic-home-defense-all-reloads",
+      "sha256": "7f7dbdcb04e542f16704b5f7a5c304cb6a338b141334e3bce5258841495ce6c5",
+      "source_pack_sha256": "3e0f29c26688f9916579f2a9edc4f2e6d7baffc5f115938b76f8f916fb63e5f1"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE all reloads",
+      "locale": "ja",
+      "path": "ja/guide/realistic-home-defense-all-reloads.mdx",
+      "translation_key": "guide/realistic-home-defense-all-reloads",
+      "sha256": "d70cfcbba6cefaef0672069c44bc1408332451f0d9ea46aab37171adf7fb07ce",
+      "source_pack_sha256": "3e0f29c26688f9916579f2a9edc4f2e6d7baffc5f115938b76f8f916fb63e5f1"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE update",
+      "locale": "en",
+      "path": "en/guide/realistic-home-defense-update.mdx",
+      "translation_key": "guide/realistic-home-defense-update",
+      "sha256": "25a4de76409ecbf19e1822f9852f558e2cf88af9143e408e38b5361f6fe73736",
+      "source_pack_sha256": "379eb91dbf87d7b4f1ff4d6d7a89cea3ea10b72fb8c2667bdfa4ea5421e4f9d6"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE update",
+      "locale": "de",
+      "path": "de/guide/realistic-home-defense-update.mdx",
+      "translation_key": "guide/realistic-home-defense-update",
+      "sha256": "3dd1eae6a06ab20030bb1053c50e0bd88629f1c4b7aa64b7a89d9c32f43eda46",
+      "source_pack_sha256": "379eb91dbf87d7b4f1ff4d6d7a89cea3ea10b72fb8c2667bdfa4ea5421e4f9d6"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE update",
+      "locale": "pt-br",
+      "path": "pt-br/guide/realistic-home-defense-update.mdx",
+      "translation_key": "guide/realistic-home-defense-update",
+      "sha256": "12db5e133ec5ff6f733feb80127e4df9c563ff066c56260216e3ccb825c36080",
+      "source_pack_sha256": "379eb91dbf87d7b4f1ff4d6d7a89cea3ea10b72fb8c2667bdfa4ea5421e4f9d6"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE update",
+      "locale": "ja",
+      "path": "ja/guide/realistic-home-defense-update.mdx",
+      "translation_key": "guide/realistic-home-defense-update",
+      "sha256": "e13b0fabf58a92c1ea92beaef75865adac2de0377e09a631f79f8d240c413679",
+      "source_pack_sha256": "379eb91dbf87d7b4f1ff4d6d7a89cea3ea10b72fb8c2667bdfa4ea5421e4f9d6"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE weapon guide",
+      "locale": "en",
+      "path": "en/weapons/realistic-home-defense-weapon-guide.mdx",
+      "translation_key": "weapons/realistic-home-defense-weapon-guide",
+      "sha256": "0fd68e1ff6400c58f49d8ce1c349beb0950c166f13e8b28570e654ec9f59503b",
+      "source_pack_sha256": "05567f76354d3a4b70bf6e462c5b2d6ba35f7464aada01f6ef4fa3704779d1cf"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE weapon guide",
+      "locale": "de",
+      "path": "de/weapons/realistic-home-defense-weapon-guide.mdx",
+      "translation_key": "weapons/realistic-home-defense-weapon-guide",
+      "sha256": "e2648f55a6ec19f3c6f3fa5d9d8a944f6e0ffc2e5873a5ac8ca5b51fbd174a21",
+      "source_pack_sha256": "05567f76354d3a4b70bf6e462c5b2d6ba35f7464aada01f6ef4fa3704779d1cf"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE weapon guide",
+      "locale": "pt-br",
+      "path": "pt-br/weapons/realistic-home-defense-weapon-guide.mdx",
+      "translation_key": "weapons/realistic-home-defense-weapon-guide",
+      "sha256": "e782f35f5827fab788f6294933ffb6027bbe197bed91a5b6b0f9a2056ef82d80",
+      "source_pack_sha256": "05567f76354d3a4b70bf6e462c5b2d6ba35f7464aada01f6ef4fa3704779d1cf"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE weapon guide",
+      "locale": "ja",
+      "path": "ja/weapons/realistic-home-defense-weapon-guide.mdx",
+      "translation_key": "weapons/realistic-home-defense-weapon-guide",
+      "sha256": "70059c2d4691e1e0bd5937e3bc993299b48e2e2293691aa0d698c5709a2697a5",
+      "source_pack_sha256": "05567f76354d3a4b70bf6e462c5b2d6ba35f7464aada01f6ef4fa3704779d1cf"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner tips",
+      "locale": "en",
+      "path": "en/quests/realistic-home-defense-beginner-tips.mdx",
+      "translation_key": "quests/realistic-home-defense-beginner-tips",
+      "sha256": "44b8569e021c18fbef545ac8cf81592cc664767ee3e6d8c7eecfc1f5896c62a8",
+      "source_pack_sha256": "85958e1ef91224398600c672be422e8fb0aae2f853079d7bbdb631a099572aa2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner tips",
+      "locale": "de",
+      "path": "de/quests/realistic-home-defense-beginner-tips.mdx",
+      "translation_key": "quests/realistic-home-defense-beginner-tips",
+      "sha256": "b806d7294d39f72571d745247279c084fb990ccedbbad1abda479bbe0b733cf1",
+      "source_pack_sha256": "85958e1ef91224398600c672be422e8fb0aae2f853079d7bbdb631a099572aa2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner tips",
+      "locale": "pt-br",
+      "path": "pt-br/quests/realistic-home-defense-beginner-tips.mdx",
+      "translation_key": "quests/realistic-home-defense-beginner-tips",
+      "sha256": "191ae46d5d9b9b7374cb880f39128e203eed8007859677b4751d8cc11730e220",
+      "source_pack_sha256": "85958e1ef91224398600c672be422e8fb0aae2f853079d7bbdb631a099572aa2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE beginner tips",
+      "locale": "ja",
+      "path": "ja/quests/realistic-home-defense-beginner-tips.mdx",
+      "translation_key": "quests/realistic-home-defense-beginner-tips",
+      "sha256": "837693619844755a1ed85280b01137b780561a39aebf54781df94daf8c96581e",
+      "source_pack_sha256": "85958e1ef91224398600c672be422e8fb0aae2f853079d7bbdb631a099572aa2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE community",
+      "locale": "en",
+      "path": "en/community/realistic-home-defense-community.mdx",
+      "translation_key": "community/realistic-home-defense-community",
+      "sha256": "ea1d00ed28020b14a73a00fafb1d5160a3fc9e98607671dac7a0f2604d23814a",
+      "source_pack_sha256": "940ab93edf94d0ce3caddd843dad930152fdd5a3e0593334a588fe185d6b4756"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE community",
+      "locale": "de",
+      "path": "de/community/realistic-home-defense-community.mdx",
+      "translation_key": "community/realistic-home-defense-community",
+      "sha256": "7509f218a1ad017f77dabf41258e20e7791171e371ca14ba85293a424395aedf",
+      "source_pack_sha256": "940ab93edf94d0ce3caddd843dad930152fdd5a3e0593334a588fe185d6b4756"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE community",
+      "locale": "pt-br",
+      "path": "pt-br/community/realistic-home-defense-community.mdx",
+      "translation_key": "community/realistic-home-defense-community",
+      "sha256": "8289835ecf163ede1cd3c65945fa42c5a0da2c350e0533c46aff45edfdc2d83b",
+      "source_pack_sha256": "940ab93edf94d0ce3caddd843dad930152fdd5a3e0593334a588fe185d6b4756"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE community",
+      "locale": "ja",
+      "path": "ja/community/realistic-home-defense-community.mdx",
+      "translation_key": "community/realistic-home-defense-community",
+      "sha256": "ecce75315259a514f77e28cc1f9686d6689b05833b98898c615a3cce82a0039c",
+      "source_pack_sha256": "940ab93edf94d0ce3caddd843dad930152fdd5a3e0593334a588fe185d6b4756"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE review",
+      "locale": "en",
+      "path": "en/reviews/realistic-home-defense-review.mdx",
+      "translation_key": "reviews/realistic-home-defense-review",
+      "sha256": "2d70855f9a793fd4ef7df5062760fc3529ad2f1a564341da50e7d3e117db5438",
+      "source_pack_sha256": "b46baca7991b07b6dc775126af8ab4f3e7b3cff40aca084760756e6a0ef785e2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE review",
+      "locale": "de",
+      "path": "de/reviews/realistic-home-defense-review.mdx",
+      "translation_key": "reviews/realistic-home-defense-review",
+      "sha256": "805852bc036c80cca856dd83bd7835c2b109185b28114f33866fbd4d851832a0",
+      "source_pack_sha256": "b46baca7991b07b6dc775126af8ab4f3e7b3cff40aca084760756e6a0ef785e2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE review",
+      "locale": "pt-br",
+      "path": "pt-br/reviews/realistic-home-defense-review.mdx",
+      "translation_key": "reviews/realistic-home-defense-review",
+      "sha256": "c6ba12800d0a6f6ec87ee586219b2007b16cc82e089681f3b2a169d700648c3f",
+      "source_pack_sha256": "b46baca7991b07b6dc775126af8ab4f3e7b3cff40aca084760756e6a0ef785e2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE review",
+      "locale": "ja",
+      "path": "ja/reviews/realistic-home-defense-review.mdx",
+      "translation_key": "reviews/realistic-home-defense-review",
+      "sha256": "e13bc48393db0421cdb5d79cfa167bcb3ff96c74adf252746f7a0c88548936c6",
+      "source_pack_sha256": "b46baca7991b07b6dc775126af8ab4f3e7b3cff40aca084760756e6a0ef785e2"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE realistic",
+      "locale": "en",
+      "path": "en/reviews/realistic-home-defense-realistic.mdx",
+      "translation_key": "reviews/realistic-home-defense-realistic",
+      "sha256": "0300a315bfdcf2f1a463119b1a9982aed59951724ba09e6a8c6f1c8fcc92989b",
+      "source_pack_sha256": "0d65de15834e70a03f470ba8ac07b3d0defb2c631b58cf7dc5f4848ccc97db70"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE realistic",
+      "locale": "de",
+      "path": "de/reviews/realistic-home-defense-realistic.mdx",
+      "translation_key": "reviews/realistic-home-defense-realistic",
+      "sha256": "f87af43bebbbc53c8099489e0797a7fc78517ba5999c754daee1309130a6161c",
+      "source_pack_sha256": "0d65de15834e70a03f470ba8ac07b3d0defb2c631b58cf7dc5f4848ccc97db70"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE realistic",
+      "locale": "pt-br",
+      "path": "pt-br/reviews/realistic-home-defense-realistic.mdx",
+      "translation_key": "reviews/realistic-home-defense-realistic",
+      "sha256": "667743623f390de7849b2288d44941629ee8849a2f53a9eb0d54ec3664aaa88f",
+      "source_pack_sha256": "0d65de15834e70a03f470ba8ac07b3d0defb2c631b58cf7dc5f4848ccc97db70"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE realistic",
+      "locale": "ja",
+      "path": "ja/reviews/realistic-home-defense-realistic.mdx",
+      "translation_key": "reviews/realistic-home-defense-realistic",
+      "sha256": "7361826353d7e34b6a6237f4367073294182f93baed94038a958c832f7bcc794",
+      "source_pack_sha256": "0d65de15834e70a03f470ba8ac07b3d0defb2c631b58cf7dc5f4848ccc97db70"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE game link",
+      "locale": "en",
+      "path": "en/troubleshooting/realistic-home-defense-game-link.mdx",
+      "translation_key": "troubleshooting/realistic-home-defense-game-link",
+      "sha256": "90a39bfa6ad20037d62405e2c9b6c2e708b4f23542245d174a361518715c61ad",
+      "source_pack_sha256": "81b4fd90347c45284efbc21bb414605b51dee6077bb2b927f4411f8f55402a4b"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE game link",
+      "locale": "de",
+      "path": "de/troubleshooting/realistic-home-defense-game-link.mdx",
+      "translation_key": "troubleshooting/realistic-home-defense-game-link",
+      "sha256": "2483b8d6297ea9a0fa30aaa98a59b78ec93c6955f442d93f864447376cc82de7",
+      "source_pack_sha256": "81b4fd90347c45284efbc21bb414605b51dee6077bb2b927f4411f8f55402a4b"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE game link",
+      "locale": "pt-br",
+      "path": "pt-br/troubleshooting/realistic-home-defense-game-link.mdx",
+      "translation_key": "troubleshooting/realistic-home-defense-game-link",
+      "sha256": "6b5d31f73bcca3c5257848127a588d507b0aa7946f01ea1eb787e9460dc1efe9",
+      "source_pack_sha256": "81b4fd90347c45284efbc21bb414605b51dee6077bb2b927f4411f8f55402a4b"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE game link",
+      "locale": "ja",
+      "path": "ja/troubleshooting/realistic-home-defense-game-link.mdx",
+      "translation_key": "troubleshooting/realistic-home-defense-game-link",
+      "sha256": "dd456f4a9e76affcdab37d5282af5ceb623e99914076ad16cc72edc8f437757f",
+      "source_pack_sha256": "81b4fd90347c45284efbc21bb414605b51dee6077bb2b927f4411f8f55402a4b"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to join",
+      "locale": "en",
+      "path": "en/troubleshooting/realistic-home-defense-how-to-join.mdx",
+      "translation_key": "troubleshooting/realistic-home-defense-how-to-join",
+      "sha256": "a6ba8a07923d61e4ee2f8e4455a85de4dd79703bb19dd908b2a0fa5942d5eaa4",
+      "source_pack_sha256": "c3e3474b70ed5d8ecc647917cf7c6da4d6d4eeca3e1175ec84676b8c3dd6c37a"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to join",
+      "locale": "de",
+      "path": "de/troubleshooting/realistic-home-defense-how-to-join.mdx",
+      "translation_key": "troubleshooting/realistic-home-defense-how-to-join",
+      "sha256": "62ac397bb68754323f7b1fb995e2a333365a2bdb8f96a864ac6ef1b1040f62d4",
+      "source_pack_sha256": "c3e3474b70ed5d8ecc647917cf7c6da4d6d4eeca3e1175ec84676b8c3dd6c37a"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to join",
+      "locale": "pt-br",
+      "path": "pt-br/troubleshooting/realistic-home-defense-how-to-join.mdx",
+      "translation_key": "troubleshooting/realistic-home-defense-how-to-join",
+      "sha256": "7ee9a3fce413dbf660d1e40b03881617cd152fa88f5b9beda1475b24f4827f4c",
+      "source_pack_sha256": "c3e3474b70ed5d8ecc647917cf7c6da4d6d4eeca3e1175ec84676b8c3dd6c37a"
+    },
+    {
+      "keyword": "REALISTIC HOME DEFENSE how to join",
+      "locale": "ja",
+      "path": "ja/troubleshooting/realistic-home-defense-how-to-join.mdx",
+      "translation_key": "troubleshooting/realistic-home-defense-how-to-join",
+      "sha256": "75d94cc4c3a73e8baa671e679ea75276f00f78ff147a0ec9e8d96f9abbdc53e5",
+      "source_pack_sha256": "c3e3474b70ed5d8ecc647917cf7c6da4d6d4eeca3e1175ec84676b8c3dd6c37a"
+    }
+  ],
+  "candidate_keywords": 35,
+  "selected_keywords": 13,
+  "deferred_keywords": 22,
+  "coverage": "partial",
+  "publication_plan_sha256": "5c4084be295003191e6a7936172aa4e37385918f36b0ce628b1de7fa5c16dcf6",
+  "publication_plan_file_sha256": "eb2e529f1e7702f34c5b2256ef47fb1b493c5ab6515942a8de0e72d93b33540a",
+  "policy_sha256": "f289b539bad270cf496da560b93f9ab7b8f045422a67f4f5d061d1b6660074cc",
+  "policy_file_sha256": "d6155f5a2fb2404c47c80a437d1993ce6e666d741fe86dd1a5f1f686f646258c",
+  "publication_plan": {
+    "schema_version": 1,
+    "contract": "seoscout-publication-plan-v1",
+    "mode": "evidence_based",
+    "created_at": "2026-10-25T10:55:23.687674+00:00",
+    "topic": "REALISTIC HOME DEFENSE",
+    "validator_version": "source-policy-v3",
+    "keywords_sha256": "a23d181d71f71ed96264a8132280a311ca9458d71433ecdf4428b816bf8227e6",
+    "profile_sha256": "d5a215d2959eb9292f58d65b4a81b2d997e41f4bf0970c3a6e342d42462980ad",
+    "profile_file_sha256": "6ed42692ec1db3d1f594f553317eb9fced80a14475574c3f08b9a7eb54f707b6",
+    "policy_sha256": "f289b539bad270cf496da560b93f9ab7b8f045422a67f4f5d061d1b6660074cc",
+    "policy_file_sha256": "d6155f5a2fb2404c47c80a437d1993ce6e666d741fe86dd1a5f1f686f646258c",
+    "policy": {
+      "schema_version": 1,
+      "mode": "evidence_based",
+      "min_selected_keywords": 1,
+      "required_categories": [
+        "guide"
+      ],
+      "required_keywords": []
+    },
+    "candidate_keywords": 35,
+    "selected_keywords": 13,
+    "deferred_keywords": 22,
+    "coverage": "partial",
+    "candidates": [
+      {
+        "keyword": "REALISTIC HOME DEFENSE beginner guide",
+        "category": "guide",
+        "slug": "realistic-home-defense-beginner-guide",
+        "translation_key": "guide/realistic-home-defense-beginner-guide"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE tutorial",
+        "category": "guide",
+        "slug": "realistic-home-defense-tutorial",
+        "translation_key": "guide/realistic-home-defense-tutorial"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE controls",
+        "category": "guide",
+        "slug": "realistic-home-defense-controls",
+        "translation_key": "guide/realistic-home-defense-controls"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE tips",
+        "category": "guide",
+        "slug": "realistic-home-defense-tips",
+        "translation_key": "guide/realistic-home-defense-tips"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE how to play",
+        "category": "guide",
+        "slug": "realistic-home-defense-how-to-play",
+        "translation_key": "guide/realistic-home-defense-how-to-play"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE all reloads",
+        "category": "guide",
+        "slug": "realistic-home-defense-all-reloads",
+        "translation_key": "guide/realistic-home-defense-all-reloads"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE night vision",
+        "category": "guide",
+        "slug": "realistic-home-defense-night-vision",
+        "translation_key": "guide/realistic-home-defense-night-vision"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE update",
+        "category": "guide",
+        "slug": "realistic-home-defense-update",
+        "translation_key": "guide/realistic-home-defense-update"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE codes",
+        "category": "codes",
+        "slug": "realistic-home-defense-codes",
+        "translation_key": "codes/realistic-home-defense-codes"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE best weapons",
+        "category": "weapons",
+        "slug": "realistic-home-defense-best-weapons",
+        "translation_key": "weapons/realistic-home-defense-best-weapons"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE guns",
+        "category": "weapons",
+        "slug": "realistic-home-defense-guns",
+        "translation_key": "weapons/realistic-home-defense-guns"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE weapon tier list",
+        "category": "weapons",
+        "slug": "realistic-home-defense-weapon-tier-list",
+        "translation_key": "weapons/realistic-home-defense-weapon-tier-list"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE best gun",
+        "category": "weapons",
+        "slug": "realistic-home-defense-best-gun",
+        "translation_key": "weapons/realistic-home-defense-best-gun"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE weapon guide",
+        "category": "weapons",
+        "slug": "realistic-home-defense-weapon-guide",
+        "translation_key": "weapons/realistic-home-defense-weapon-guide"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE zombies mode",
+        "category": "modes",
+        "slug": "realistic-home-defense-zombies-mode",
+        "translation_key": "modes/realistic-home-defense-zombies-mode"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE PVP",
+        "category": "modes",
+        "slug": "realistic-home-defense-pvp",
+        "translation_key": "modes/realistic-home-defense-pvp"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE multiplayer",
+        "category": "modes",
+        "slug": "realistic-home-defense-multiplayer",
+        "translation_key": "modes/realistic-home-defense-multiplayer"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE home invasion",
+        "category": "modes",
+        "slug": "realistic-home-defense-home-invasion",
+        "translation_key": "modes/realistic-home-defense-home-invasion"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE alpha",
+        "category": "modes",
+        "slug": "realistic-home-defense-alpha",
+        "translation_key": "modes/realistic-home-defense-alpha"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE tutorial mission",
+        "category": "quests",
+        "slug": "realistic-home-defense-tutorial-mission",
+        "translation_key": "quests/realistic-home-defense-tutorial-mission"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE objectives",
+        "category": "quests",
+        "slug": "realistic-home-defense-objectives",
+        "translation_key": "quests/realistic-home-defense-objectives"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE beginner tips",
+        "category": "quests",
+        "slug": "realistic-home-defense-beginner-tips",
+        "translation_key": "quests/realistic-home-defense-beginner-tips"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE survival tips",
+        "category": "quests",
+        "slug": "realistic-home-defense-survival-tips",
+        "translation_key": "quests/realistic-home-defense-survival-tips"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE Reddit",
+        "category": "community",
+        "slug": "realistic-home-defense-reddit",
+        "translation_key": "community/realistic-home-defense-reddit"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE Discord",
+        "category": "community",
+        "slug": "realistic-home-defense-discord",
+        "translation_key": "community/realistic-home-defense-discord"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE community",
+        "category": "community",
+        "slug": "realistic-home-defense-community",
+        "translation_key": "community/realistic-home-defense-community"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE review",
+        "category": "reviews",
+        "slug": "realistic-home-defense-review",
+        "translation_key": "reviews/realistic-home-defense-review"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE gameplay",
+        "category": "reviews",
+        "slug": "realistic-home-defense-gameplay",
+        "translation_key": "reviews/realistic-home-defense-gameplay"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE worth playing",
+        "category": "reviews",
+        "slug": "realistic-home-defense-worth-playing",
+        "translation_key": "reviews/realistic-home-defense-worth-playing"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE realistic",
+        "category": "reviews",
+        "slug": "realistic-home-defense-realistic",
+        "translation_key": "reviews/realistic-home-defense-realistic"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE latest update",
+        "category": "reviews",
+        "slug": "realistic-home-defense-latest-update",
+        "translation_key": "reviews/realistic-home-defense-latest-update"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE not working",
+        "category": "troubleshooting",
+        "slug": "realistic-home-defense-not-working",
+        "translation_key": "troubleshooting/realistic-home-defense-not-working"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE game link",
+        "category": "troubleshooting",
+        "slug": "realistic-home-defense-game-link",
+        "translation_key": "troubleshooting/realistic-home-defense-game-link"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE how to join",
+        "category": "troubleshooting",
+        "slug": "realistic-home-defense-how-to-join",
+        "translation_key": "troubleshooting/realistic-home-defense-how-to-join"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE requirements",
+        "category": "troubleshooting",
+        "slug": "realistic-home-defense-requirements",
+        "translation_key": "troubleshooting/realistic-home-defense-requirements"
+      }
+    ],
+    "selected": [
+      {
+        "keyword": "REALISTIC HOME DEFENSE beginner guide",
+        "category": "guide",
+        "slug": "realistic-home-defense-beginner-guide",
+        "translation_key": "guide/realistic-home-defense-beginner-guide",
+        "source_pack_sha256": "3ee9e43ac8be5e83a969da21528af8c31835921e4d91ce4c800990b5099b7467"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE controls",
+        "category": "guide",
+        "slug": "realistic-home-defense-controls",
+        "translation_key": "guide/realistic-home-defense-controls",
+        "source_pack_sha256": "6815365a9b84fd3da813c29521ddc1fed60f815bab1f45a0a5d744bb1c6c361f"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE tips",
+        "category": "guide",
+        "slug": "realistic-home-defense-tips",
+        "translation_key": "guide/realistic-home-defense-tips",
+        "source_pack_sha256": "bfb73f9cf26dc87871d2f265bc93f3991ee965137ea747122129edd4ab83c3d2"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE how to play",
+        "category": "guide",
+        "slug": "realistic-home-defense-how-to-play",
+        "translation_key": "guide/realistic-home-defense-how-to-play",
+        "source_pack_sha256": "93a04db8eb56f10d85944183eb75360ad98de3daa7045159ee0d440b4904244a"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE all reloads",
+        "category": "guide",
+        "slug": "realistic-home-defense-all-reloads",
+        "translation_key": "guide/realistic-home-defense-all-reloads",
+        "source_pack_sha256": "3e0f29c26688f9916579f2a9edc4f2e6d7baffc5f115938b76f8f916fb63e5f1"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE update",
+        "category": "guide",
+        "slug": "realistic-home-defense-update",
+        "translation_key": "guide/realistic-home-defense-update",
+        "source_pack_sha256": "379eb91dbf87d7b4f1ff4d6d7a89cea3ea10b72fb8c2667bdfa4ea5421e4f9d6"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE weapon guide",
+        "category": "weapons",
+        "slug": "realistic-home-defense-weapon-guide",
+        "translation_key": "weapons/realistic-home-defense-weapon-guide",
+        "source_pack_sha256": "05567f76354d3a4b70bf6e462c5b2d6ba35f7464aada01f6ef4fa3704779d1cf"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE beginner tips",
+        "category": "quests",
+        "slug": "realistic-home-defense-beginner-tips",
+        "translation_key": "quests/realistic-home-defense-beginner-tips",
+        "source_pack_sha256": "85958e1ef91224398600c672be422e8fb0aae2f853079d7bbdb631a099572aa2"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE community",
+        "category": "community",
+        "slug": "realistic-home-defense-community",
+        "translation_key": "community/realistic-home-defense-community",
+        "source_pack_sha256": "940ab93edf94d0ce3caddd843dad930152fdd5a3e0593334a588fe185d6b4756"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE review",
+        "category": "reviews",
+        "slug": "realistic-home-defense-review",
+        "translation_key": "reviews/realistic-home-defense-review",
+        "source_pack_sha256": "b46baca7991b07b6dc775126af8ab4f3e7b3cff40aca084760756e6a0ef785e2"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE realistic",
+        "category": "reviews",
+        "slug": "realistic-home-defense-realistic",
+        "translation_key": "reviews/realistic-home-defense-realistic",
+        "source_pack_sha256": "0d65de15834e70a03f470ba8ac07b3d0defb2c631b58cf7dc5f4848ccc97db70"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE game link",
+        "category": "troubleshooting",
+        "slug": "realistic-home-defense-game-link",
+        "translation_key": "troubleshooting/realistic-home-defense-game-link",
+        "source_pack_sha256": "81b4fd90347c45284efbc21bb414605b51dee6077bb2b927f4411f8f55402a4b"
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE how to join",
+        "category": "troubleshooting",
+        "slug": "realistic-home-defense-how-to-join",
+        "translation_key": "troubleshooting/realistic-home-defense-how-to-join",
+        "source_pack_sha256": "c3e3474b70ed5d8ecc647917cf7c6da4d6d4eeca3e1175ec84676b8c3dd6c37a"
+      }
+    ],
+    "deferred": [
+      {
+        "keyword": "REALISTIC HOME DEFENSE tutorial",
+        "category": "guide",
+        "slug": "realistic-home-defense-tutorial",
+        "translation_key": "guide/realistic-home-defense-tutorial",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE night vision",
+        "category": "guide",
+        "slug": "realistic-home-defense-night-vision",
+        "translation_key": "guide/realistic-home-defense-night-vision",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE codes",
+        "category": "codes",
+        "slug": "realistic-home-defense-codes",
+        "translation_key": "codes/realistic-home-defense-codes",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE best weapons",
+        "category": "weapons",
+        "slug": "realistic-home-defense-best-weapons",
+        "translation_key": "weapons/realistic-home-defense-best-weapons",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE guns",
+        "category": "weapons",
+        "slug": "realistic-home-defense-guns",
+        "translation_key": "weapons/realistic-home-defense-guns",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE weapon tier list",
+        "category": "weapons",
+        "slug": "realistic-home-defense-weapon-tier-list",
+        "translation_key": "weapons/realistic-home-defense-weapon-tier-list",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE best gun",
+        "category": "weapons",
+        "slug": "realistic-home-defense-best-gun",
+        "translation_key": "weapons/realistic-home-defense-best-gun",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE zombies mode",
+        "category": "modes",
+        "slug": "realistic-home-defense-zombies-mode",
+        "translation_key": "modes/realistic-home-defense-zombies-mode",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE PVP",
+        "category": "modes",
+        "slug": "realistic-home-defense-pvp",
+        "translation_key": "modes/realistic-home-defense-pvp",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE multiplayer",
+        "category": "modes",
+        "slug": "realistic-home-defense-multiplayer",
+        "translation_key": "modes/realistic-home-defense-multiplayer",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE home invasion",
+        "category": "modes",
+        "slug": "realistic-home-defense-home-invasion",
+        "translation_key": "modes/realistic-home-defense-home-invasion",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE alpha",
+        "category": "modes",
+        "slug": "realistic-home-defense-alpha",
+        "translation_key": "modes/realistic-home-defense-alpha",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE tutorial mission",
+        "category": "quests",
+        "slug": "realistic-home-defense-tutorial-mission",
+        "translation_key": "quests/realistic-home-defense-tutorial-mission",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE objectives",
+        "category": "quests",
+        "slug": "realistic-home-defense-objectives",
+        "translation_key": "quests/realistic-home-defense-objectives",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE survival tips",
+        "category": "quests",
+        "slug": "realistic-home-defense-survival-tips",
+        "translation_key": "quests/realistic-home-defense-survival-tips",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE Reddit",
+        "category": "community",
+        "slug": "realistic-home-defense-reddit",
+        "translation_key": "community/realistic-home-defense-reddit",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE Discord",
+        "category": "community",
+        "slug": "realistic-home-defense-discord",
+        "translation_key": "community/realistic-home-defense-discord",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE gameplay",
+        "category": "reviews",
+        "slug": "realistic-home-defense-gameplay",
+        "translation_key": "reviews/realistic-home-defense-gameplay",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE worth playing",
+        "category": "reviews",
+        "slug": "realistic-home-defense-worth-playing",
+        "translation_key": "reviews/realistic-home-defense-worth-playing",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE latest update",
+        "category": "reviews",
+        "slug": "realistic-home-defense-latest-update",
+        "translation_key": "reviews/realistic-home-defense-latest-update",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE not working",
+        "category": "troubleshooting",
+        "slug": "realistic-home-defense-not-working",
+        "translation_key": "troubleshooting/realistic-home-defense-not-working",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      },
+      {
+        "keyword": "REALISTIC HOME DEFENSE requirements",
+        "category": "troubleshooting",
+        "slug": "realistic-home-defense-requirements",
+        "translation_key": "troubleshooting/realistic-home-defense-requirements",
+        "reason": "no_qualified_evidence",
+        "source_gate_reason": "missing",
+        "source_pack_sha256": null,
+        "evidence": {
+          "run_id": "208cc71cdc8148eca382b1eeba6f9ad9",
+          "state_path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/state.json",
+          "state_sha256": "abad2d16f424a92a4cb9fdf550672224ed1eea0171073c25a7d84cda10872654",
+          "completed_rounds": 3,
+          "audit_segments": [
+            {
+              "path": "source-repair/runs/208cc71cdc8148eca382b1eeba6f9ad9/decisions.jsonl",
+              "sha256": "d0909b20b04b541d6d6a9a5aabffb2d2fac578aa388ca0de53ed9aa44fc73de1"
+            }
+          ]
+        }
+      }
+    ],
+    "gate": "pass",
+    "failures": []
+  }
+}
