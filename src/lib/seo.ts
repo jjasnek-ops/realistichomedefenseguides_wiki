@@ -14,10 +14,10 @@ export function websiteJsonLd(locale: string) {
   return { '@context': 'https://schema.org', '@type': 'WebSite', name: siteName(locale), url: absoluteUrl(homeUrl(locale)), description: description(locale), inLanguage: locale };
 }
 export function videoGameJsonLd() {
-  return { '@context': 'https://schema.org', '@type': 'VideoGame', name: config.gameName, description: config.description, gamePlatform: config.platform, genre: config.genre, ...(config.officialUrl ? { url: config.officialUrl } : {}) };
+  return { '@context': 'https://schema.org', '@type': 'VideoGame', name: config.gameName, description: config.description, image: absoluteUrl(config.seo.image), gamePlatform: config.platform, genre: config.genre, ...(config.officialUrl ? { url: config.officialUrl } : {}) };
 }
 export function articleJsonLd(entry: WikiArticle) {
-  return { '@context': 'https://schema.org', '@type': 'Article', headline: entry.data.title, description: entry.data.description, ...(entry.data.cover ? { image: absoluteUrl(entry.data.cover) } : {}), datePublished: entry.data.date, dateModified: entry.data.lastModified, inLanguage: entry.locale, author: { '@type': 'Organization', name: config.siteName }, publisher: { '@id': `${siteUrl}/#organization` }, mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(entry.path) } };
+  return { '@context': 'https://schema.org', '@type': 'Article', headline: entry.data.title, description: entry.data.description, image: absoluteUrl(entry.data.cover ?? config.seo.image), datePublished: entry.data.date, dateModified: entry.data.lastModified, inLanguage: entry.locale, publisher: { '@id': `${siteUrl}/#organization` }, mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(entry.path) } };
 }
 export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: absoluteUrl(item.path) })) };

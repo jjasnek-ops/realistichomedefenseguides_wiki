@@ -26,7 +26,9 @@ const paletteCss = (palette: Record<string,string>, primary: string, prefix = ''
 };
 const themeCss = `:root{${paletteCss(config.theme.light, config.theme.lightPrimary)};${paletteCss(config.theme.dark, config.theme.primary, 'hero-')}}html.dark{${paletteCss(config.theme.dark, config.theme.primary)}}`;
 const adClient = activeAdProvider === 'adsense' && config.integrations.ads ? config.integrations.ads.client : '';
-const ogLocale = OG_LOCALE_MAP[locale] ?? (locale.includes('-') ? locale.replace('-', '_') : undefined);
+const ogLocaleFor = (language: string) => OG_LOCALE_MAP[language] ?? (language.includes('-') ? language.replace(/-([a-z]{2})$/i, (_, region: string) => `_${region.toUpperCase()}`) : undefined);
+const ogLocale = ogLocaleFor(locale);
+const ogAlternates = alternates.filter(alternate => alternate.locale !== locale).map(alternate => ogLocaleFor(alternate.locale)).filter(Boolean);
 ---
 <!doctype html>
 <html lang={locale} class={config.theme.defaultMode === 'dark' ? 'dark' : undefined} data-pagefind-ignore={page.noindex || page.type !== 'article' ? 'all' : undefined}>
@@ -44,6 +46,7 @@ const ogLocale = OG_LOCALE_MAP[locale] ?? (locale.includes('-') ? locale.replace
     {alternates.map(alternate => <link rel="alternate" hreflang={alternate.locale} href={absoluteUrl(alternate.path)}/>)}
     {alternates.find(alternate => alternate.locale === config.defaultLanguage) && <link rel="alternate" hreflang="x-default" href={absoluteUrl(alternates.find(alternate => alternate.locale === config.defaultLanguage)!.path)}/>}
     <meta property="og:title" content={pageTitle(title, locale)}/><meta property="og:description" content={description}/><meta property="og:type" content={page.type === 'article' ? 'article' : 'website'}/><meta property="og:url" content={canonical}/><meta property="og:site_name" content={siteName(locale)}/><meta property="og:image" content={absoluteUrl(image)}/><meta property="og:image:alt" content={imageAlt}/>{ogLocale && <meta property="og:locale" content={ogLocale}/>}
+    {ogAlternates.map(alternate => <meta property="og:locale:alternate" content={alternate}/>)}
     <meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={pageTitle(title, locale)}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={absoluteUrl(image)}/><meta name="twitter:image:alt" content={imageAlt}/>
     {page.entry && <><meta property="article:published_time" content={`${page.entry.data.date}T00:00:00Z`}/><meta property="article:modified_time" content={`${page.lastModified}T00:00:00Z`}/></>}
     <style is:inline set:html={themeCss}/>
