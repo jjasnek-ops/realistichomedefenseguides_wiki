@@ -10,6 +10,25 @@ const path = nonempty.refine(value => /^\/(?!\/)/.test(value) || /^https:\/\//.t
 const asset = nonempty.regex(/^\/(?!\/)[^?#]+\.(?:webp|avif|png|jpg|jpeg|svg|ico)$/i, 'Use an image in public/ with a root-relative path.');
 const hex = z.string().regex(/^#[\da-fA-F]{6}$/, 'Use a six-digit hex color.');
 const palette = z.object({ background: hex, card: hex, surface: hex, foreground: hex, muted: hex, border: hex }).strict();
+export const adSlotNames = [
+  'home-banner', 'home-rectangle', 'native-banner', 'mobile-banner',
+  'article-bottom', 'article-sidebar', 'article-sidebar-compact'
+];
+const adsenseSchema = z.object({
+  provider: z.literal('adsense'),
+  client: nonempty.regex(/^ca-pub-\d{16}$/),
+  mode: z.enum(['auto', 'manual']).optional(),
+  slots: z.record(z.string(), z.string().regex(/^\d+$/)).default({}),
+  label: nonempty
+}).strict().superRefine((value, ctx) => {
+  const manual = value.mode === 'manual' || (value.mode === undefined && Object.keys(value.slots).length > 0);
+  if (!manual) return;
+  const missing = adSlotNames.filter(slot => !value.slots[slot]);
+  const extra = Object.keys(value.slots).filter(slot => !adSlotNames.includes(slot));
+  if (missing.length || extra.length) {
+    ctx.addIssue({ code: 'custom', path: ['slots'], message: 'Manual AdSense mode requires all seven slot IDs.' });
+  }
+});
 export const siteSchema = z.object({
   gameName: nonempty, siteName: nonempty, shortName: nonempty,
   domain: nonempty.refine(value => !value.includes('/') && !value.includes(':') && /^[a-z\d.-]+\.[a-z]{2,}$/i.test(value), 'Enter a hostname such as example.com, without protocol or path.'),
@@ -25,7 +44,7 @@ export const siteSchema = z.object({
   seo: z.object({ title: nonempty, image: asset, imageAlt: nonempty }).strict(),
   integrations: z.object({
     analytics: z.union([z.literal(false), z.object({ provider: z.literal('cloudflare'), token: nonempty.regex(/^[a-f0-9]{32}$/i) }).strict()]),
-    ads: z.union([z.literal(false), z.object({ provider: z.literal('adsense'), client: nonempty.regex(/^ca-pub-\d{16}$/), slots: z.record(z.string(), z.string().regex(/^\d+$/)), label: nonempty }).strict()])
+    ads: z.union([z.literal(false), adsenseSchema])
   }).strict(),
   legal: z.object({ lastModified: isoDate, about: nonempty, privacy: nonempty, terms: nonempty, disclaimer: nonempty, translations: z.record(z.string(), z.object({ about: nonempty, privacy: nonempty, terms: nonempty, disclaimer: nonempty }).strict()).default({}) }).strict()
 }).strict().superRefine((value, ctx) => {

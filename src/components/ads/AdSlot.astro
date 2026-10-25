@@ -2,10 +2,12 @@
 import { config } from '~/lib/config';
 import { activeAdProvider, getAdsterraSlot } from '~/lib/ads';
 interface Props { slot: string; }
-const adsense = activeAdProvider === 'adsense' && config.integrations.ads ? config.integrations.ads : false;
-const id = adsense && adsense.slots[Astro.props.slot];
+const adsConfig = config.integrations.ads;
+const adsense = activeAdProvider === 'adsense' && adsConfig ? adsConfig : null;
+const adsenseMode = adsense?.mode ?? (adsense && Object.keys(adsense.slots ?? {}).length ? 'manual' : 'auto');
+const id = adsenseMode === 'manual' ? adsense?.slots?.[Astro.props.slot] : undefined;
 const adsterra = getAdsterraSlot(Astro.props.slot);
-const label = adsense ? adsense.label : 'Advertisement';
+const label = adsense?.label ?? 'Advertisement';
 const isNative = adsterra?.format === 'native';
 const adsterraDocument = adsterra && !isNative ? `<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0;overflow:hidden"><script type="text/javascript">atOptions = { 'key': '${adsterra.key}', 'format': 'iframe', 'height': ${adsterra.height}, 'width': ${adsterra.width}, 'params': {} };</script><script type="text/javascript" src="https://www.highperformanceformat.com/${adsterra.key}/invoke.js"></script></body></html>` : '';
 ---

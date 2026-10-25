@@ -14,6 +14,24 @@ describe('configuration and content contract', () => {
     expect(homeSchema.safeParse(homeConfig).success).toBe(true);
     expect(sourceArticles().every(entry => articleSchema.safeParse(entry.data).success)).toBe(true);
   });
+  it('accepts client-only AdSense Auto Ads and keeps manual mode strict', () => {
+    const clientOnly = {
+      ...config,
+      integrations: {
+        ...config.integrations,
+        ads: { provider: 'adsense', client: 'ca-pub-1234567890123456', mode: 'auto', slots: {}, label: 'Advertisement' }
+      }
+    };
+    expect(siteSchema.safeParse(clientOnly).success).toBe(true);
+    const incompleteManual = {
+      ...clientOnly,
+      integrations: {
+        ...clientOnly.integrations,
+        ads: { provider: 'adsense', client: 'ca-pub-1234567890123456', mode: 'manual', slots: { 'home-banner': '1' }, label: 'Advertisement' }
+      }
+    };
+    expect(siteSchema.safeParse(incompleteManual).success).toBe(false);
+  });
   it('rejects invalid colors, duplicate languages, unsupported integrations and unknown keys', () => {
     expect(siteSchema.safeParse({ ...config, theme: { ...config.theme, primary: 'gold' } }).success).toBe(false);
     expect(siteSchema.safeParse({ ...config, languages: ['en','en'] }).success).toBe(false);
