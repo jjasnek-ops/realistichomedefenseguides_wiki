@@ -138,7 +138,8 @@
       "privateSearch": "Private Suche auf deinem Gerät",
       "results": "Ergebnisse",
       "activeDemo": "Aktiv",
-      "expiredDemo": "Abgelaufen"
+      "expiredDemo": "Abgelaufen",
+      "recentDescription": "Die neuesten Anleitungen, sortiert nach ihrem letzten Aktualisierungsdatum."
     },
     "pt-br": {
       "home": "Visão geral",
@@ -219,7 +220,8 @@
       "privateSearch": "Pesquisa privada no seu dispositivo",
       "results": "resultados",
       "activeDemo": "Ativo",
-      "expiredDemo": "Expirado"
+      "expiredDemo": "Expirado",
+      "recentDescription": "Os guias mais recentes, ordenados pela data da última atualização de cada guia."
     },
     "ja": {
       "home": "概要",
@@ -300,7 +302,11 @@
       "privateSearch": "端末内で完結するプライベート検索",
       "results": "件の結果",
       "activeDemo": "有効",
-      "expiredDemo": "期限切れ"
+      "expiredDemo": "期限切れ",
+      "recentDescription": "各攻略の最終更新日順に、最近更新された攻略を紹介します。"
+    },
+    "en": {
+      "recentDescription": "The latest guides, ordered by the date each guide was updated."
     }
   },
   "navigation": [

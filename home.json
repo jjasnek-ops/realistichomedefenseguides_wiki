@@ -447,12 +447,12 @@
             "rows": [
               [
                 "Schießen",
-                "Left Click",
+                "Linke Maustaste",
                 "RT"
               ],
               [
                 "Zielen",
-                "Right Click",
+                "Rechte Maustaste",
                 "LT"
               ],
               [
@@ -478,7 +478,7 @@
               [
                 "Lehnen",
                 "Q / E",
-                "D-Pad"
+                "Steuerkreuz"
               ],
               [
                 "Waffe wechseln",
@@ -525,7 +525,7 @@
             "href": "/de/weapons/realistic-home-defense-weapon-guide/",
             "items": [
               {
-                "label": "Weapon guide",
+                "label": "Waffenanleitung",
                 "detail": "Lies mehr über Waffenhandhabung und Mechaniken.",
                 "href": "/de/weapons/realistic-home-defense-weapon-guide/"
               }
@@ -591,7 +591,7 @@
             "href": "/de/guide/realistic-home-defense-tips/",
             "items": [
               {
-                "label": "Tactics",
+                "label": "Taktiken",
                 "detail": "Entdecke die Anleitung zum taktischen Gameplay.",
                 "href": "/de/guide/realistic-home-defense-tips/"
               }
@@ -620,7 +620,7 @@
           },
           {
             "id": "updates",
-            "title": "REALISTIC HOME DEFENSE — Updates",
+            "title": "REALISTIC HOME DEFENSE — Aktualisierungen",
             "type": "accordion",
             "order": 80,
             "href": "/de/guide/realistic-home-defense-update/",
@@ -788,12 +788,12 @@
             "rows": [
               [
                 "Atirar",
-                "Left Click",
+                "Clique esquerdo",
                 "RT"
               ],
               [
                 "Mirar",
-                "Right Click",
+                "Clique direito",
                 "LT"
               ],
               [
@@ -819,7 +819,7 @@
               [
                 "Inclinar",
                 "Q / E",
-                "D-Pad"
+                "Direcional"
               ],
               [
                 "Trocar arma",
@@ -866,7 +866,7 @@
             "href": "/pt-br/weapons/realistic-home-defense-weapon-guide/",
             "items": [
               {
-                "label": "Weapon guide",
+                "label": "Guia de armas",
                 "detail": "Leia sobre o manuseio e as mecânicas das armas.",
                 "href": "/pt-br/weapons/realistic-home-defense-weapon-guide/"
               }
@@ -932,7 +932,7 @@
             "href": "/pt-br/guide/realistic-home-defense-tips/",
             "items": [
               {
-                "label": "Tactics",
+                "label": "Táticas",
                 "detail": "Explore o guia de jogabilidade tática.",
                 "href": "/pt-br/guide/realistic-home-defense-tips/"
               }
@@ -1129,12 +1129,12 @@
             "rows": [
               [
                 "射撃",
-                "Left Click",
+                "左クリック",
                 "RT"
               ],
               [
                 "照準",
-                "Right Click",
+                "右クリック",
                 "LT"
               ],
               [
@@ -1160,7 +1160,7 @@
               [
                 "リーン",
                 "Q / E",
-                "D-Pad"
+                "方向パッド"
               ],
               [
                 "武器切り替え",
@@ -1207,7 +1207,7 @@
             "href": "/ja/weapons/realistic-home-defense-weapon-guide/",
             "items": [
               {
-                "label": "Weapon guide",
+                "label": "武器ガイド",
                 "detail": "武器の扱い方と仕組みを確認できます。",
                 "href": "/ja/weapons/realistic-home-defense-weapon-guide/"
               }
@@ -1273,7 +1273,7 @@
             "href": "/ja/guide/realistic-home-defense-tips/",
             "items": [
               {
-                "label": "Tactics",
+                "label": "戦術",
                 "detail": "戦術的なゲームプレイのガイドを読む。",
                 "href": "/ja/guide/realistic-home-defense-tips/"
               }
