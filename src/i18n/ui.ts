@@ -1,6 +1,6 @@
 import { config } from '../lib/config';
 const english: Record<string, string> = {
-  home: 'Overview', search: 'Search the wiki', searchHint: 'Search guides, items, bosses…', navigation: 'Wiki navigation',
+  home: 'Overview', search: 'Search the wiki', searchHint: 'Search guides, controls, weapons…', navigation: 'Wiki navigation',
   explore: 'EXPLORE THE WIKI', resources: 'RESOURCES', allGuides: 'All guides', recent: 'Recent updates',
   featured: 'Featured guides', readGuide: 'Read guide', viewAll: 'View all', articles: 'guides',
   updated: 'Updated', published: 'Published', readTime: 'min read', onThisPage: 'On this page', related: 'Keep exploring',
@@ -18,8 +18,8 @@ const english: Record<string, string> = {
   noindex: 'Reference note · excluded from search engines', translated: 'Available translations', latest: 'LATEST FIELD NOTES',
   featuredLabel: 'EDITOR’S PICKS', noData: 'No published guides yet.',
   software: 'Software licenses', map: 'World map', markers: 'Map markers',
-  brandTagline: 'WIKI & FIELD GUIDE', wiki: 'WIKI', jumpInto: 'JUMP INTO', startHere: 'START HERE',
-  quickStartNote: 'Less guesswork. More discovery.', conceptArt: 'REALISTIC HOME DEFENSE · ROBLOX',
+  brandTagline: 'WIKI & GAME GUIDES', wiki: 'WIKI', jumpInto: 'JUMP INTO', startHere: 'START HERE',
+  quickStartNote: 'Prepare for your next game.', conceptArt: 'REALISTIC HOME DEFENSE · ROBLOX',
   aboutGameEyebrow: 'ABOUT THE GAME', fieldGuide: 'YOUR FIELD GUIDE', privateSearch: 'Private, on-device search',
   results: 'results', activeDemo: 'Active', expiredDemo: 'Expired'
 };

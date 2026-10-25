@@ -1,48 +1,65 @@
 {
   "lastModified": "2026-10-25",
   "hero": {
-    "eyebrow": "Tactical FPS and Realistic Combat",
-    "title": "REALISTIC HOME DEFENSE Wiki",
-    "description": "Master REALISTIC HOME DEFENSE with weapon guides, controls, aiming tips, tactical movement, equipment advice, and the latest game updates.",
+    "eyebrow": "ROBLOX TACTICAL FPS",
+    "title": "REALISTIC HOME DEFENSE\nGuides, controls & tips",
+    "description": "Get started with REALISTIC HOME DEFENSE on Roblox. Explore controls, weapon handling, tactical gameplay and game updates.",
     "image": "/images/hero.webp",
-    "imageAlt": "REALISTIC HOME DEFENSE official Roblox game thumbnail",
+    "imageAlt": "Official REALISTIC HOME DEFENSE Roblox thumbnail showing a first-person view of an indoor corridor",
     "primary": {
-      "label": "Read the beginner guide",
+      "label": "Start with the basics",
       "href": "/guide/realistic-home-defense-beginner-guide/"
     },
     "secondary": {
-      "label": "Play on Roblox",
-      "href": "https://www.roblox.com/games/105527962898452/REALISTIC-HOME-DEFENSE"
+      "label": "Explore weapons",
+      "href": "/weapons/"
     },
-    "shortcuts": [],
+    "shortcuts": [
+      {
+        "label": "Beginner guide",
+        "href": "/guide/realistic-home-defense-beginner-guide/"
+      },
+      {
+        "label": "Controls",
+        "href": "/guide/realistic-home-defense-controls/"
+      },
+      {
+        "label": "Weapon guide",
+        "href": "/weapons/realistic-home-defense-weapon-guide/"
+      },
+      {
+        "label": "How to join",
+        "href": "/troubleshooting/realistic-home-defense-how-to-join/"
+      }
+    ],
     "stats": []
   },
-  "quickStartTitle": "Start here",
+  "quickStartTitle": "Prepare for your next game",
   "quickStart": [
     {
-      "title": "REALISTIC HOME DEFENSE Beginner Guide - Master the Basics Fast",
-      "description": "Complete REALISTIC HOME DEFENSE beginner guide with controls, tactics, and survival tips for new players on PC, console, and mobile.",
+      "title": "Beginner guide",
+      "description": "Learn where to start.",
       "href": "/guide/realistic-home-defense-beginner-guide/",
       "icon": "compass",
       "label": "01"
     },
     {
-      "title": "REALISTIC HOME DEFENSE Controls Guide - All Platforms & Keybinds",
-      "description": "Complete controls guide for REALISTIC HOME DEFENSE on PC, console, and mobile. Master every keybind and button layout.",
+      "title": "Controls",
+      "description": "Find your control reference.",
       "href": "/guide/realistic-home-defense-controls/",
       "icon": "keyboard",
       "label": "02"
     },
     {
-      "title": "REALISTIC HOME DEFENSE Weapon Guide: Controls and Mechanics",
-      "description": "Master weapon mechanics, fire modes, and tactical controls in REALISTIC HOME DEFENSE. Learn aiming, reloading, switching weapons, and fire-mode selection across P...",
+      "title": "Weapon guide",
+      "description": "Explore weapon mechanics.",
       "href": "/weapons/realistic-home-defense-weapon-guide/",
       "icon": "swords",
       "label": "03"
     },
     {
-      "title": "REALISTIC HOME DEFENSE How to Join - Complete Guide for New Players",
-      "description": "Learn how to join REALISTIC HOME DEFENSE on Roblox, access the game, unlock money multipliers, and master the tactical shooter gameplay.",
+      "title": "How to join",
+      "description": "Find the game and get started.",
       "href": "/troubleshooting/realistic-home-defense-how-to-join/",
       "icon": "log-in",
       "label": "04"
@@ -50,10 +67,10 @@
   ],
   "updates": {
     "enabled": true,
-    "title": "Latest guides",
+    "title": "Recent guide updates",
     "limit": 5
   },
-  "featuredTitle": "Featured guides",
+  "featuredTitle": "Essential guides",
   "featuredGuides": [
     "guide/realistic-home-defense-beginner-guide",
     "guide/realistic-home-defense-controls",
@@ -63,115 +80,118 @@
     "title": "Explore the guides",
     "modules": [
       {
-        "id": "module-01",
-        "title": "REALISTIC HOME DEFENSE Controls Guide - All Platforms & Keybinds",
+        "id": "controls",
+        "title": "Controls reference",
         "type": "table",
-        "order": 1,
-        "enabled": true,
-        "items": [],
+        "order": 10,
         "href": "/guide/realistic-home-defense-controls/",
         "columns": [
-          "Guide",
-          "Coverage"
+          "Reference",
+          "Guide"
         ],
         "rows": [
           [
-            "REALISTIC HOME DEFENSE Controls Guide - All Platforms & Keybinds",
-            "Complete controls guide for REALISTIC HOME DEFENSE on PC, console, and mobile. Master every keybind and button layout."
+            "Controls and inputs",
+            "Controls"
           ]
         ]
       },
       {
-        "id": "module-02",
-        "title": "REALISTIC HOME DEFENSE Beginner Guide - Master the Basics Fast",
+        "id": "beginner",
+        "title": "Beginner guide",
         "type": "step-by-step",
-        "order": 2,
-        "enabled": true,
+        "order": 20,
+        "href": "/guide/realistic-home-defense-beginner-guide/",
         "items": [
           {
-            "label": "REALISTIC HOME DEFENSE Beginner Guide - Master the Basics Fast",
-            "detail": "Complete REALISTIC HOME DEFENSE beginner guide with controls, tactics, and survival tips for new players on PC, console, and mobile.",
-            "href": "/guide/realistic-home-defense-beginner-guide/"
+            "label": "1",
+            "detail": "Open the game using the verified Roblox link."
+          },
+          {
+            "label": "2",
+            "detail": "Read the controls reference."
+          },
+          {
+            "label": "3",
+            "detail": "Continue with the beginner guide."
           }
-        ],
-        "href": "/guide/realistic-home-defense-beginner-guide/"
+        ]
       },
       {
-        "id": "module-03",
-        "title": "REALISTIC HOME DEFENSE Weapon Guide: Controls and Mechanics",
+        "id": "weapons",
+        "title": "Weapons and equipment",
         "type": "card-list",
-        "order": 3,
-        "enabled": true,
+        "order": 30,
+        "href": "/weapons/realistic-home-defense-weapon-guide/",
         "items": [
           {
-            "label": "REALISTIC HOME DEFENSE Weapon Guide: Controls and Mechanics",
-            "detail": "Master weapon mechanics, fire modes, and tactical controls in REALISTIC HOME DEFENSE. Learn aiming, reloading, switching weapons, and fire-mode selection across P...",
+            "label": "Weapon guide",
+            "detail": "Read about weapon handling and mechanics.",
             "href": "/weapons/realistic-home-defense-weapon-guide/"
           }
-        ],
-        "href": "/weapons/realistic-home-defense-weapon-guide/"
+        ]
       },
       {
-        "id": "module-04",
-        "title": "REALISTIC HOME DEFENSE Money Farming Guide",
+        "id": "money",
+        "title": "Money farming",
+        "description": "Not published without sufficient verified evidence.",
         "type": "step-by-step",
-        "order": 4,
+        "order": 40,
         "enabled": false,
         "items": []
       },
       {
-        "id": "module-05",
-        "title": "REALISTIC HOME DEFENSE Best Weapons Tier List",
+        "id": "rankings",
+        "title": "Weapon rankings",
+        "description": "Not published without sufficient verified evidence.",
         "type": "tier-grid",
-        "order": 5,
+        "order": 50,
         "enabled": false,
         "items": []
       },
       {
-        "id": "module-06",
-        "title": "REALISTIC HOME DEFENSE Tips: Master Tactical Combat on Roblox",
+        "id": "tips",
+        "title": "Tips and tactics",
         "type": "card-list",
-        "order": 6,
-        "enabled": true,
+        "order": 60,
+        "href": "/guide/realistic-home-defense-tips/",
         "items": [
           {
-            "label": "REALISTIC HOME DEFENSE Tips: Master Tactical Combat on Roblox",
-            "detail": "Essential REALISTIC HOME DEFENSE tips covering controls, tactical movement, weapon handling, and survival strategies for PC, console, and mobile.",
+            "label": "Tips and tactics",
+            "detail": "Explore the tactical gameplay guide.",
             "href": "/guide/realistic-home-defense-tips/"
           }
-        ],
-        "href": "/guide/realistic-home-defense-tips/"
+        ]
       },
       {
-        "id": "module-07",
-        "title": "REALISTIC HOME DEFENSE Codes",
+        "id": "codes",
+        "title": "Redeem codes",
+        "description": "Not published without sufficient verified evidence.",
         "type": "code-cards",
-        "order": 7,
+        "order": 70,
         "enabled": false,
-        "items": []
+        "codes": []
       },
       {
-        "id": "module-08",
-        "title": "REALISTIC HOME DEFENSE Update - New Tactical Shooter Features on Roblox",
+        "id": "updates",
+        "title": "Game updates",
         "type": "accordion",
-        "order": 8,
-        "enabled": true,
+        "order": 80,
+        "href": "/guide/realistic-home-defense-update/",
         "items": [
           {
-            "label": "REALISTIC HOME DEFENSE Update - New Tactical Shooter Features on Roblox",
-            "detail": "Explore the latest REALISTIC HOME DEFENSE update with enhanced controls, money multipliers, and tactical gameplay features.",
-            "href": "/guide/realistic-home-defense-update/"
+            "label": "Where can I read about updates?",
+            "detail": "Read the update guide and follow its sources for context."
           }
-        ],
-        "href": "/guide/realistic-home-defense-update/"
+        ]
       }
     ]
   },
   "aboutGame": {
-    "title": "Tactical combat on Roblox",
-    "description": "Master REALISTIC HOME DEFENSE with weapon guides, controls, aiming tips, tactical movement, equipment advice, and the latest game updates.",
+    "title": "A tactical shooter on Roblox",
+    "description": "REALISTIC HOME DEFENSE is a Roblox tactical shooter by IBA Community. This independent wiki brings together guides to controls, weapon mechanics, getting started and game updates.",
     "image": "/images/hero.webp",
-    "imageAlt": "REALISTIC HOME DEFENSE official Roblox game thumbnail",
+    "imageAlt": "Official REALISTIC HOME DEFENSE Roblox thumbnail showing a first-person view of an indoor corridor",
     "facts": [
       {
         "label": "Platform",
@@ -180,62 +200,96 @@
       {
         "label": "Developer",
         "value": "IBA Community"
+      },
+      {
+        "label": "Genre",
+        "value": "Tactical FPS"
       }
     ]
   },
-  "faq": [],
+  "faq": [
+    {
+      "question": "Which game does this wiki cover?",
+      "answer": "The REALISTIC HOME DEFENSE Roblox experience by IBA Community, linked from the footer."
+    },
+    {
+      "question": "Where should I start?",
+      "answer": "Start with the beginner guide, then use the controls and weapon references."
+    },
+    {
+      "question": "Where are the official community links?",
+      "answer": "Use the Roblox experience page and its developer links. A separate official Discord, Reddit or trailer link has not been verified."
+    }
+  ],
   "finalCta": {
-    "title": "Choose your next guide.",
-    "description": "Master REALISTIC HOME DEFENSE with weapon guides, controls, aiming tips, tactical movement, equipment advice, and the latest game updates.",
-    "label": "Browse the guides",
+    "title": "Ready to get started?",
+    "description": "Choose a guide for your next session.",
+    "label": "Browse guides",
     "href": "/guide/"
   },
   "translations": {
     "de": {
       "lastModified": "2026-10-25",
       "hero": {
-        "eyebrow": "Taktischer FPS mit realistischer Kampfmechanik",
-        "title": "REALISTIC HOME DEFENSE Wiki",
-        "description": "Anleitungen zu REALISTIC HOME DEFENSE auf Roblox: Waffenmechanik, Steuerung, Zielen, taktische Bewegung, Ausrüstung, Updates und Tipps für Einsteiger.",
+        "eyebrow": "TAKTISCHER ROBLOX-SHOOTER",
+        "title": "REALISTIC HOME DEFENSE\nAnleitungen, Steuerung & Tipps",
+        "description": "Starte mit REALISTIC HOME DEFENSE auf Roblox. Entdecke Steuerung, Waffenhandhabung, taktisches Gameplay und Spielupdates.",
         "image": "/images/hero.webp",
-        "imageAlt": "REALISTIC HOME DEFENSE official Roblox game thumbnail",
+        "imageAlt": "Offizielles Roblox-Vorschaubild von REALISTIC HOME DEFENSE mit einem Innenkorridor aus der Ego-Perspektive",
         "primary": {
-          "label": "Einsteigerguide lesen",
+          "label": "Mit den Grundlagen beginnen",
           "href": "/de/guide/realistic-home-defense-beginner-guide/"
         },
         "secondary": {
-          "label": "Auf Roblox spielen",
-          "href": "https://www.roblox.com/games/105527962898452/REALISTIC-HOME-DEFENSE"
+          "label": "Waffen entdecken",
+          "href": "/de/weapons/"
         },
-        "shortcuts": [],
+        "shortcuts": [
+          {
+            "label": "Einsteigeranleitung",
+            "href": "/de/guide/realistic-home-defense-beginner-guide/"
+          },
+          {
+            "label": "Steuerung",
+            "href": "/de/guide/realistic-home-defense-controls/"
+          },
+          {
+            "label": "Waffenanleitung",
+            "href": "/de/weapons/realistic-home-defense-weapon-guide/"
+          },
+          {
+            "label": "Spiel beitreten",
+            "href": "/de/troubleshooting/realistic-home-defense-how-to-join/"
+          }
+        ],
         "stats": []
       },
-      "quickStartTitle": "Hier starten",
+      "quickStartTitle": "Bereite dich auf das nächste Spiel vor",
       "quickStart": [
         {
-          "title": "REALISTIC HOME DEFENSE Anfänger-Guide - Meistere die Grundlagen schnell",
-          "description": "Vollständiger REALISTIC HOME DEFENSE Anfänger-Guide mit Steuerung, Taktiken und Überlebenstipps für neue Spieler auf PC, Konsole und Mobilgeräten.",
+          "title": "Einsteigeranleitung",
+          "description": "Finde deinen Einstieg.",
           "href": "/de/guide/realistic-home-defense-beginner-guide/",
           "icon": "compass",
           "label": "01"
         },
         {
-          "title": "REALISTIC HOME DEFENSE Steuerung Anleitung - Alle Plattformen & Tastenbelegungen",
-          "description": "Vollständige Steuerungsanleitung für REALISTIC HOME DEFENSE auf PC, Konsole und Mobilgerät. Meistere jede Tastenbelegung und Button-Layout.",
+          "title": "Steuerung",
+          "description": "Schlage die Steuerung nach.",
           "href": "/de/guide/realistic-home-defense-controls/",
           "icon": "keyboard",
           "label": "02"
         },
         {
-          "title": "REALISTIC HOME DEFENSE Waffenführer: Steuerung und Mechanik",
-          "description": "Meistern Sie Waffenmechanik, Feuermodi und taktische Steuerung in REALISTIC HOME DEFENSE. Lernen Sie Zielen, Nachladen, Waffenwechsel und Feuermodus-Auswahl...",
+          "title": "Waffenanleitung",
+          "description": "Entdecke die Waffenmechanik.",
           "href": "/de/weapons/realistic-home-defense-weapon-guide/",
           "icon": "swords",
           "label": "03"
         },
         {
-          "title": "REALISTIC HOME DEFENSE Beitreten - Vollständiger Leitfaden für neue Spieler",
-          "description": "Erfahren Sie, wie Sie REALISTIC HOME DEFENSE auf Roblox beitreten, auf das Spiel zugreifen, Geld-Multiplikatoren freischalten und das taktische Shooter-Gameplay m...",
+          "title": "Spiel beitreten",
+          "description": "Finde das Spiel und starte.",
           "href": "/de/troubleshooting/realistic-home-defense-how-to-join/",
           "icon": "log-in",
           "label": "04"
@@ -243,192 +297,229 @@
       ],
       "updates": {
         "enabled": true,
-        "title": "Neueste Guides",
+        "title": "Zuletzt aktualisierte Anleitungen",
         "limit": 5
       },
-      "featuredTitle": "Ausgewählte Guides",
+      "featuredTitle": "Wichtige Anleitungen",
       "featuredGuides": [
         "guide/realistic-home-defense-beginner-guide",
         "guide/realistic-home-defense-controls",
         "weapons/realistic-home-defense-weapon-guide"
       ],
       "explore": {
-        "title": "Guides entdecken",
+        "title": "Anleitungen entdecken",
         "modules": [
           {
-            "id": "module-01",
-            "title": "REALISTIC HOME DEFENSE Steuerung Anleitung - Alle Plattformen & Tastenbelegungen",
+            "id": "controls",
+            "title": "Steuerungsreferenz",
             "type": "table",
-            "order": 1,
-            "enabled": true,
-            "items": [],
+            "order": 10,
             "href": "/de/guide/realistic-home-defense-controls/",
             "columns": [
-              "Guide",
-              "Coverage"
+              "Referenz",
+              "Anleitung"
             ],
             "rows": [
               [
-                "REALISTIC HOME DEFENSE Steuerung Anleitung - Alle Plattformen & Tastenbelegungen",
-                "Vollständige Steuerungsanleitung für REALISTIC HOME DEFENSE auf PC, Konsole und Mobilgerät. Meistere jede Tastenbelegung und Button-Layout."
+                "Steuerung und Eingaben",
+                "Steuerung"
               ]
             ]
           },
           {
-            "id": "module-02",
-            "title": "REALISTIC HOME DEFENSE Anfänger-Guide - Meistere die Grundlagen schnell",
+            "id": "beginner",
+            "title": "Einsteigeranleitung",
             "type": "step-by-step",
-            "order": 2,
-            "enabled": true,
+            "order": 20,
+            "href": "/de/guide/realistic-home-defense-beginner-guide/",
             "items": [
               {
-                "label": "REALISTIC HOME DEFENSE Anfänger-Guide - Meistere die Grundlagen schnell",
-                "detail": "Vollständiger REALISTIC HOME DEFENSE Anfänger-Guide mit Steuerung, Taktiken und Überlebenstipps für neue Spieler auf PC, Konsole und Mobilgeräten.",
-                "href": "/de/guide/realistic-home-defense-beginner-guide/"
+                "label": "1",
+                "detail": "Öffne das Spiel über den verifizierten Roblox-Link."
+              },
+              {
+                "label": "2",
+                "detail": "Lies die Steuerungsreferenz."
+              },
+              {
+                "label": "3",
+                "detail": "Fahre mit der Einsteigeranleitung fort."
               }
-            ],
-            "href": "/de/guide/realistic-home-defense-beginner-guide/"
+            ]
           },
           {
-            "id": "module-03",
-            "title": "REALISTIC HOME DEFENSE Waffenführer: Steuerung und Mechanik",
+            "id": "weapons",
+            "title": "Waffen und Ausrüstung",
             "type": "card-list",
-            "order": 3,
-            "enabled": true,
+            "order": 30,
+            "href": "/de/weapons/realistic-home-defense-weapon-guide/",
             "items": [
               {
-                "label": "REALISTIC HOME DEFENSE Waffenführer: Steuerung und Mechanik",
-                "detail": "Meistern Sie Waffenmechanik, Feuermodi und taktische Steuerung in REALISTIC HOME DEFENSE. Lernen Sie Zielen, Nachladen, Waffenwechsel und Feuermodus-Auswahl...",
+                "label": "Waffenanleitung",
+                "detail": "Lies mehr über Waffenhandhabung und Mechaniken.",
                 "href": "/de/weapons/realistic-home-defense-weapon-guide/"
               }
-            ],
-            "href": "/de/weapons/realistic-home-defense-weapon-guide/"
+            ]
           },
           {
-            "id": "module-04",
-            "title": "REALISTIC HOME DEFENSE Money Farming Guide",
+            "id": "money",
+            "title": "Geld verdienen",
+            "description": "Ohne ausreichende verifizierte Belege nicht veröffentlicht.",
             "type": "step-by-step",
-            "order": 4,
+            "order": 40,
             "enabled": false,
             "items": []
           },
           {
-            "id": "module-05",
-            "title": "REALISTIC HOME DEFENSE Best Weapons Tier List",
+            "id": "rankings",
+            "title": "Waffenranglisten",
+            "description": "Ohne ausreichende verifizierte Belege nicht veröffentlicht.",
             "type": "tier-grid",
-            "order": 5,
+            "order": 50,
             "enabled": false,
             "items": []
           },
           {
-            "id": "module-06",
-            "title": "REALISTIC HOME DEFENSE Tipps: Meistere taktische Kämpfe auf Roblox",
+            "id": "tips",
+            "title": "Tipps und Taktik",
             "type": "card-list",
-            "order": 6,
-            "enabled": true,
+            "order": 60,
+            "href": "/de/guide/realistic-home-defense-tips/",
             "items": [
               {
-                "label": "REALISTIC HOME DEFENSE Tipps: Meistere taktische Kämpfe auf Roblox",
-                "detail": "Wichtige REALISTIC HOME DEFENSE Tipps zu Steuerung, taktischer Bewegung, Waffenhandhabung und Überlebensstrategien für PC, Konsole und Mobile.",
+                "label": "Tipps und Taktik",
+                "detail": "Entdecke die Anleitung zum taktischen Gameplay.",
                 "href": "/de/guide/realistic-home-defense-tips/"
               }
-            ],
-            "href": "/de/guide/realistic-home-defense-tips/"
+            ]
           },
           {
-            "id": "module-07",
-            "title": "REALISTIC HOME DEFENSE Codes",
+            "id": "codes",
+            "title": "Einlösecodes",
+            "description": "Ohne ausreichende verifizierte Belege nicht veröffentlicht.",
             "type": "code-cards",
-            "order": 7,
+            "order": 70,
             "enabled": false,
-            "items": []
+            "codes": []
           },
           {
-            "id": "module-08",
-            "title": "REALISTIC HOME DEFENSE Update - Neue taktische Shooter-Features auf Roblox",
+            "id": "updates",
+            "title": "Spielupdates",
             "type": "accordion",
-            "order": 8,
-            "enabled": true,
+            "order": 80,
+            "href": "/de/guide/realistic-home-defense-update/",
             "items": [
               {
-                "label": "REALISTIC HOME DEFENSE Update - Neue taktische Shooter-Features auf Roblox",
-                "detail": "Entdecken Sie das neueste REALISTIC HOME DEFENSE Update mit verbesserten Steuerungen, Geldmultiplikatoren und taktischen Gameplay-Features.",
-                "href": "/de/guide/realistic-home-defense-update/"
+                "label": "Wo finde ich Informationen zu Updates?",
+                "detail": "Lies die Update-Anleitung und folge den dort genannten Quellen."
               }
-            ],
-            "href": "/de/guide/realistic-home-defense-update/"
+            ]
           }
         ]
       },
       "aboutGame": {
-        "title": "Taktische Kämpfe auf Roblox",
-        "description": "Anleitungen zu REALISTIC HOME DEFENSE auf Roblox: Waffenmechanik, Steuerung, Zielen, taktische Bewegung, Ausrüstung, Updates und Tipps für Einsteiger.",
+        "title": "Ein taktischer Shooter auf Roblox",
+        "description": "REALISTIC HOME DEFENSE ist ein taktischer Roblox-Shooter von IBA Community. Dieses unabhängige Wiki bietet Anleitungen zu Steuerung, Waffenmechanik, Einstieg und Spielupdates.",
         "image": "/images/hero.webp",
-        "imageAlt": "REALISTIC HOME DEFENSE official Roblox game thumbnail",
+        "imageAlt": "Offizielles Roblox-Vorschaubild von REALISTIC HOME DEFENSE mit einem Innenkorridor aus der Ego-Perspektive",
         "facts": [
           {
-            "label": "Platform",
+            "label": "Plattform",
             "value": "Roblox"
           },
           {
-            "label": "Developer",
+            "label": "Entwickler",
             "value": "IBA Community"
+          },
+          {
+            "label": "Genre",
+            "value": "Taktischer FPS"
           }
         ]
       },
-      "faq": [],
+      "faq": [
+        {
+          "question": "Welches Spiel behandelt dieses Wiki?",
+          "answer": "Die Roblox-Erfahrung REALISTIC HOME DEFENSE von IBA Community. Der Link steht in der Fußzeile."
+        },
+        {
+          "question": "Wo soll ich anfangen?",
+          "answer": "Beginne mit der Einsteigeranleitung und nutze danach die Steuerungs- und Waffenreferenzen."
+        },
+        {
+          "question": "Wo finde ich offizielle Community-Links?",
+          "answer": "Nutze die Roblox-Spielseite und ihre Entwicklerlinks. Ein eigener offizieller Discord-, Reddit- oder Trailer-Link wurde nicht verifiziert."
+        }
+      ],
       "finalCta": {
-        "title": "Wähle deinen nächsten Guide.",
-        "description": "Anleitungen zu REALISTIC HOME DEFENSE auf Roblox: Waffenmechanik, Steuerung, Zielen, taktische Bewegung, Ausrüstung, Updates und Tipps für Einsteiger.",
-        "label": "Guides ansehen",
+        "title": "Bereit für den Einstieg?",
+        "description": "Wähle eine Anleitung für dein nächstes Spiel.",
+        "label": "Anleitungen ansehen",
         "href": "/de/guide/"
       }
     },
     "pt-br": {
       "lastModified": "2026-10-25",
       "hero": {
-        "eyebrow": "FPS tático e combate realista",
-        "title": "REALISTIC HOME DEFENSE Wiki",
-        "description": "Guias de REALISTIC HOME DEFENSE no Roblox: mecânicas de armas, controles, mira, movimentação tática, equipamentos, atualizações e dicas para iniciantes.",
+        "eyebrow": "FPS TÁTICO NO ROBLOX",
+        "title": "REALISTIC HOME DEFENSE\nGuias, controles e dicas",
+        "description": "Comece em REALISTIC HOME DEFENSE no Roblox. Explore controles, manuseio de armas, jogabilidade tática e atualizações do jogo.",
         "image": "/images/hero.webp",
-        "imageAlt": "REALISTIC HOME DEFENSE official Roblox game thumbnail",
+        "imageAlt": "Miniatura oficial de REALISTIC HOME DEFENSE no Roblox mostrando um corredor em primeira pessoa",
         "primary": {
-          "label": "Ler o guia para iniciantes",
+          "label": "Comece pelo básico",
           "href": "/pt-br/guide/realistic-home-defense-beginner-guide/"
         },
         "secondary": {
-          "label": "Jogar no Roblox",
-          "href": "https://www.roblox.com/games/105527962898452/REALISTIC-HOME-DEFENSE"
+          "label": "Explore as armas",
+          "href": "/pt-br/weapons/"
         },
-        "shortcuts": [],
+        "shortcuts": [
+          {
+            "label": "Guia para iniciantes",
+            "href": "/pt-br/guide/realistic-home-defense-beginner-guide/"
+          },
+          {
+            "label": "Controles",
+            "href": "/pt-br/guide/realistic-home-defense-controls/"
+          },
+          {
+            "label": "Guia de armas",
+            "href": "/pt-br/weapons/realistic-home-defense-weapon-guide/"
+          },
+          {
+            "label": "Como entrar",
+            "href": "/pt-br/troubleshooting/realistic-home-defense-how-to-join/"
+          }
+        ],
         "stats": []
       },
-      "quickStartTitle": "Comece aqui",
+      "quickStartTitle": "Prepare-se para a próxima partida",
       "quickStart": [
         {
-          "title": "REALISTIC HOME DEFENSE Guia para Iniciantes - Domine o Básico Rapidamente",
-          "description": "Guia completo para iniciantes de REALISTIC HOME DEFENSE com controles, táticas e dicas de sobrevivência para novos jogadores em PC, console e mobile.",
+          "title": "Guia para iniciantes",
+          "description": "Saiba por onde começar.",
           "href": "/pt-br/guide/realistic-home-defense-beginner-guide/",
           "icon": "compass",
           "label": "01"
         },
         {
-          "title": "Guia de Controles REALISTIC HOME DEFENSE - Todas as Plataformas e Teclas",
-          "description": "Guia completo de controles para REALISTIC HOME DEFENSE em PC, console e mobile. Domine cada tecla e layout de botões.",
+          "title": "Controles",
+          "description": "Consulte os controles.",
           "href": "/pt-br/guide/realistic-home-defense-controls/",
           "icon": "keyboard",
           "label": "02"
         },
         {
-          "title": "Guia de Armas REALISTIC HOME DEFENSE: Controles e Mecânicas",
-          "description": "Domine as mecânicas de armas, modos de tiro e controles táticos em REALISTIC HOME DEFENSE. Aprenda a mirar, recarregar, trocar armas e selecionar modos de tiro em...",
+          "title": "Guia de armas",
+          "description": "Explore as mecânicas de armas.",
           "href": "/pt-br/weapons/realistic-home-defense-weapon-guide/",
           "icon": "swords",
           "label": "03"
         },
         {
-          "title": "REALISTIC HOME DEFENSE Como Entrar - Guia Completo para Novos Jogadores",
-          "description": "Aprenda como entrar no REALISTIC HOME DEFENSE no Roblox, acessar o jogo, desbloquear multiplicadores de dinheiro e dominar a jogabilidade do atirador tático.",
+          "title": "Como entrar",
+          "description": "Encontre o jogo e comece.",
           "href": "/pt-br/troubleshooting/realistic-home-defense-how-to-join/",
           "icon": "log-in",
           "label": "04"
@@ -436,10 +527,10 @@
       ],
       "updates": {
         "enabled": true,
-        "title": "Guias recentes",
+        "title": "Guias atualizados recentemente",
         "limit": 5
       },
-      "featuredTitle": "Guias em destaque",
+      "featuredTitle": "Guias essenciais",
       "featuredGuides": [
         "guide/realistic-home-defense-beginner-guide",
         "guide/realistic-home-defense-controls",
@@ -449,179 +540,216 @@
         "title": "Explore os guias",
         "modules": [
           {
-            "id": "module-01",
-            "title": "Guia de Controles REALISTIC HOME DEFENSE - Todas as Plataformas e Teclas",
+            "id": "controls",
+            "title": "Referência de controles",
             "type": "table",
-            "order": 1,
-            "enabled": true,
-            "items": [],
+            "order": 10,
             "href": "/pt-br/guide/realistic-home-defense-controls/",
             "columns": [
-              "Guide",
-              "Coverage"
+              "Referência",
+              "Guia"
             ],
             "rows": [
               [
-                "Guia de Controles REALISTIC HOME DEFENSE - Todas as Plataformas e Teclas",
-                "Guia completo de controles para REALISTIC HOME DEFENSE em PC, console e mobile. Domine cada tecla e layout de botões."
+                "Controles e comandos",
+                "Controles"
               ]
             ]
           },
           {
-            "id": "module-02",
-            "title": "REALISTIC HOME DEFENSE Guia para Iniciantes - Domine o Básico Rapidamente",
+            "id": "beginner",
+            "title": "Guia para iniciantes",
             "type": "step-by-step",
-            "order": 2,
-            "enabled": true,
+            "order": 20,
+            "href": "/pt-br/guide/realistic-home-defense-beginner-guide/",
             "items": [
               {
-                "label": "REALISTIC HOME DEFENSE Guia para Iniciantes - Domine o Básico Rapidamente",
-                "detail": "Guia completo para iniciantes de REALISTIC HOME DEFENSE com controles, táticas e dicas de sobrevivência para novos jogadores em PC, console e mobile.",
-                "href": "/pt-br/guide/realistic-home-defense-beginner-guide/"
+                "label": "1",
+                "detail": "Abra o jogo pelo link verificado do Roblox."
+              },
+              {
+                "label": "2",
+                "detail": "Leia a referência de controles."
+              },
+              {
+                "label": "3",
+                "detail": "Continue com o guia para iniciantes."
               }
-            ],
-            "href": "/pt-br/guide/realistic-home-defense-beginner-guide/"
+            ]
           },
           {
-            "id": "module-03",
-            "title": "Guia de Armas REALISTIC HOME DEFENSE: Controles e Mecânicas",
+            "id": "weapons",
+            "title": "Armas e equipamentos",
             "type": "card-list",
-            "order": 3,
-            "enabled": true,
+            "order": 30,
+            "href": "/pt-br/weapons/realistic-home-defense-weapon-guide/",
             "items": [
               {
-                "label": "Guia de Armas REALISTIC HOME DEFENSE: Controles e Mecânicas",
-                "detail": "Domine as mecânicas de armas, modos de tiro e controles táticos em REALISTIC HOME DEFENSE. Aprenda a mirar, recarregar, trocar armas e selecionar modos de tiro em...",
+                "label": "Guia de armas",
+                "detail": "Leia sobre o manuseio e as mecânicas das armas.",
                 "href": "/pt-br/weapons/realistic-home-defense-weapon-guide/"
               }
-            ],
-            "href": "/pt-br/weapons/realistic-home-defense-weapon-guide/"
+            ]
           },
           {
-            "id": "module-04",
-            "title": "REALISTIC HOME DEFENSE Money Farming Guide",
+            "id": "money",
+            "title": "Como ganhar dinheiro",
+            "description": "Não publicado sem evidências verificadas suficientes.",
             "type": "step-by-step",
-            "order": 4,
+            "order": 40,
             "enabled": false,
             "items": []
           },
           {
-            "id": "module-05",
-            "title": "REALISTIC HOME DEFENSE Best Weapons Tier List",
+            "id": "rankings",
+            "title": "Classificação de armas",
+            "description": "Não publicado sem evidências verificadas suficientes.",
             "type": "tier-grid",
-            "order": 5,
+            "order": 50,
             "enabled": false,
             "items": []
           },
           {
-            "id": "module-06",
-            "title": "Dicas de REALISTIC HOME DEFENSE: Domine o Combate Tático no Roblox",
+            "id": "tips",
+            "title": "Dicas e táticas",
             "type": "card-list",
-            "order": 6,
-            "enabled": true,
+            "order": 60,
+            "href": "/pt-br/guide/realistic-home-defense-tips/",
             "items": [
               {
-                "label": "Dicas de REALISTIC HOME DEFENSE: Domine o Combate Tático no Roblox",
-                "detail": "Dicas essenciais de REALISTIC HOME DEFENSE cobrindo controles, movimento tático, manuseio de armas e estratégias de sobrevivência para PC, console e mobile.",
+                "label": "Dicas e táticas",
+                "detail": "Explore o guia de jogabilidade tática.",
                 "href": "/pt-br/guide/realistic-home-defense-tips/"
               }
-            ],
-            "href": "/pt-br/guide/realistic-home-defense-tips/"
+            ]
           },
           {
-            "id": "module-07",
-            "title": "REALISTIC HOME DEFENSE Codes",
+            "id": "codes",
+            "title": "Códigos de resgate",
+            "description": "Não publicado sem evidências verificadas suficientes.",
             "type": "code-cards",
-            "order": 7,
+            "order": 70,
             "enabled": false,
-            "items": []
+            "codes": []
           },
           {
-            "id": "module-08",
-            "title": "Atualização do REALISTIC HOME DEFENSE - Novos Recursos de Tiro Tático no Roblox",
+            "id": "updates",
+            "title": "Atualizações do jogo",
             "type": "accordion",
-            "order": 8,
-            "enabled": true,
+            "order": 80,
+            "href": "/pt-br/guide/realistic-home-defense-update/",
             "items": [
               {
-                "label": "Atualização do REALISTIC HOME DEFENSE - Novos Recursos de Tiro Tático no Roblox",
-                "detail": "Explore a mais recente atualização do REALISTIC HOME DEFENSE com controles aprimorados, multiplicadores de dinheiro e recursos de jogabilidade tática.",
-                "href": "/pt-br/guide/realistic-home-defense-update/"
+                "label": "Onde posso ler sobre atualizações?",
+                "detail": "Leia o guia de atualização e consulte as fontes vinculadas para obter contexto."
               }
-            ],
-            "href": "/pt-br/guide/realistic-home-defense-update/"
+            ]
           }
         ]
       },
       "aboutGame": {
-        "title": "Combate tático no Roblox",
-        "description": "Guias de REALISTIC HOME DEFENSE no Roblox: mecânicas de armas, controles, mira, movimentação tática, equipamentos, atualizações e dicas para iniciantes.",
+        "title": "Um jogo de tiro tático no Roblox",
+        "description": "REALISTIC HOME DEFENSE é um jogo de tiro tático no Roblox da IBA Community. Esta wiki independente reúne guias de controles, mecânicas de armas, primeiros passos e atualizações.",
         "image": "/images/hero.webp",
-        "imageAlt": "REALISTIC HOME DEFENSE official Roblox game thumbnail",
+        "imageAlt": "Miniatura oficial de REALISTIC HOME DEFENSE no Roblox mostrando um corredor em primeira pessoa",
         "facts": [
           {
-            "label": "Platform",
+            "label": "Plataforma",
             "value": "Roblox"
           },
           {
-            "label": "Developer",
+            "label": "Desenvolvedor",
             "value": "IBA Community"
+          },
+          {
+            "label": "Gênero",
+            "value": "FPS tático"
           }
         ]
       },
-      "faq": [],
+      "faq": [
+        {
+          "question": "Qual jogo esta wiki aborda?",
+          "answer": "A experiência REALISTIC HOME DEFENSE no Roblox, da IBA Community, vinculada no rodapé."
+        },
+        {
+          "question": "Por onde devo começar?",
+          "answer": "Comece pelo guia para iniciantes e depois consulte as referências de controles e armas."
+        },
+        {
+          "question": "Onde estão os links oficiais da comunidade?",
+          "answer": "Use a página da experiência no Roblox e os links do desenvolvedor. Nenhum link separado de Discord, Reddit ou trailer oficial foi verificado."
+        }
+      ],
       "finalCta": {
-        "title": "Escolha seu próximo guia.",
-        "description": "Guias de REALISTIC HOME DEFENSE no Roblox: mecânicas de armas, controles, mira, movimentação tática, equipamentos, atualizações e dicas para iniciantes.",
-        "label": "Ver os guias",
+        "title": "Pronto para começar?",
+        "description": "Escolha um guia para a próxima sessão.",
+        "label": "Ver guias",
         "href": "/pt-br/guide/"
       }
     },
     "ja": {
       "lastModified": "2026-10-25",
       "hero": {
-        "eyebrow": "戦術的FPSとリアルな戦闘",
-        "title": "REALISTIC HOME DEFENSE Wiki",
-        "description": "RobloxのREALISTIC HOME DEFENSE攻略。武器の仕組み、操作方法、エイム、戦術的な移動、装備、アップデート、初心者向けのヒントを紹介。",
+        "eyebrow": "ROBLOXのタクティカルFPS",
+        "title": "REALISTIC HOME DEFENSE\n攻略・操作方法・ヒント",
+        "description": "RobloxのREALISTIC HOME DEFENSEを始めよう。操作方法、武器の扱い方、戦術的なゲームプレイ、更新情報を確認できます。",
         "image": "/images/hero.webp",
-        "imageAlt": "REALISTIC HOME DEFENSE official Roblox game thumbnail",
+        "imageAlt": "室内の廊下を一人称視点で映したREALISTIC HOME DEFENSEのRoblox公式サムネイル",
         "primary": {
-          "label": "初心者ガイドを読む",
+          "label": "基本から始める",
           "href": "/ja/guide/realistic-home-defense-beginner-guide/"
         },
         "secondary": {
-          "label": "Robloxでプレイ",
-          "href": "https://www.roblox.com/games/105527962898452/REALISTIC-HOME-DEFENSE"
+          "label": "武器を調べる",
+          "href": "/ja/weapons/"
         },
-        "shortcuts": [],
+        "shortcuts": [
+          {
+            "label": "初心者向け攻略",
+            "href": "/ja/guide/realistic-home-defense-beginner-guide/"
+          },
+          {
+            "label": "操作方法",
+            "href": "/ja/guide/realistic-home-defense-controls/"
+          },
+          {
+            "label": "武器ガイド",
+            "href": "/ja/weapons/realistic-home-defense-weapon-guide/"
+          },
+          {
+            "label": "参加方法",
+            "href": "/ja/troubleshooting/realistic-home-defense-how-to-join/"
+          }
+        ],
         "stats": []
       },
-      "quickStartTitle": "ここから始めよう",
+      "quickStartTitle": "次のプレイに備えよう",
       "quickStart": [
         {
-          "title": "REALISTIC HOME DEFENSE 初心者ガイド - 基礎を素早くマスター",
-          "description": "PC、コンソール、モバイルの新規プレイヤー向けのREALISTIC HOME DEFENSE完全初心者ガイド。操作方法、戦術、サバイバルのヒントを網羅。",
+          "title": "初心者向け攻略",
+          "description": "最初の一歩を確認。",
           "href": "/ja/guide/realistic-home-defense-beginner-guide/",
           "icon": "compass",
           "label": "01"
         },
         {
-          "title": "REALISTIC HOME DEFENSE 操作ガイド - 全プラットフォーム＆キーバインド",
-          "description": "PC、コンソール、モバイル版REALISTIC HOME DEFENSEの完全操作ガイド。すべてのキーバインドとボタン配置をマスターしよう。",
+          "title": "操作方法",
+          "description": "操作方法を調べる。",
           "href": "/ja/guide/realistic-home-defense-controls/",
           "icon": "keyboard",
           "label": "02"
         },
         {
-          "title": "REALISTIC HOME DEFENSE 武器ガイド：操作とメカニクス",
-          "description": "REALISTIC HOME DEFENSEの武器メカニクス、射撃モード、戦術的操作をマスターしよう。照準、リロード、武器切り替え、射撃モード選択を学ぶ...",
+          "title": "武器ガイド",
+          "description": "武器の仕組みを知る。",
           "href": "/ja/weapons/realistic-home-defense-weapon-guide/",
           "icon": "swords",
           "label": "03"
         },
         {
-          "title": "REALISTIC HOME DEFENSE 参加方法 - 新規プレイヤー向け完全ガイド",
-          "description": "RobloxでREALISTIC HOME DEFENSEに参加する方法、ゲームへのアクセス方法、マネーマルチプライヤーのアンロック、タクティカルシューターのゲームプレイを習得する方法を学びましょう。",
+          "title": "参加方法",
+          "description": "ゲームを見つけて始める。",
           "href": "/ja/troubleshooting/realistic-home-defense-how-to-join/",
           "icon": "log-in",
           "label": "04"
@@ -629,144 +757,164 @@
       ],
       "updates": {
         "enabled": true,
-        "title": "新しいガイド",
+        "title": "最近更新された攻略",
         "limit": 5
       },
-      "featuredTitle": "注目のガイド",
+      "featuredTitle": "基本の攻略",
       "featuredGuides": [
         "guide/realistic-home-defense-beginner-guide",
         "guide/realistic-home-defense-controls",
         "weapons/realistic-home-defense-weapon-guide"
       ],
       "explore": {
-        "title": "ガイドを探す",
+        "title": "攻略を探す",
         "modules": [
           {
-            "id": "module-01",
-            "title": "REALISTIC HOME DEFENSE 操作ガイド - 全プラットフォーム＆キーバインド",
+            "id": "controls",
+            "title": "操作方法の一覧",
             "type": "table",
-            "order": 1,
-            "enabled": true,
-            "items": [],
+            "order": 10,
             "href": "/ja/guide/realistic-home-defense-controls/",
             "columns": [
-              "Guide",
-              "Coverage"
+              "項目",
+              "ガイド"
             ],
             "rows": [
               [
-                "REALISTIC HOME DEFENSE 操作ガイド - 全プラットフォーム＆キーバインド",
-                "PC、コンソール、モバイル版REALISTIC HOME DEFENSEの完全操作ガイド。すべてのキーバインドとボタン配置をマスターしよう。"
+                "操作と入力方法",
+                "操作方法"
               ]
             ]
           },
           {
-            "id": "module-02",
-            "title": "REALISTIC HOME DEFENSE 初心者ガイド - 基礎を素早くマスター",
+            "id": "beginner",
+            "title": "初心者向け攻略",
             "type": "step-by-step",
-            "order": 2,
-            "enabled": true,
+            "order": 20,
+            "href": "/ja/guide/realistic-home-defense-beginner-guide/",
             "items": [
               {
-                "label": "REALISTIC HOME DEFENSE 初心者ガイド - 基礎を素早くマスター",
-                "detail": "PC、コンソール、モバイルの新規プレイヤー向けのREALISTIC HOME DEFENSE完全初心者ガイド。操作方法、戦術、サバイバルのヒントを網羅。",
-                "href": "/ja/guide/realistic-home-defense-beginner-guide/"
+                "label": "1",
+                "detail": "確認済みのRobloxリンクからゲームを開く。"
+              },
+              {
+                "label": "2",
+                "detail": "操作方法のガイドを読む。"
+              },
+              {
+                "label": "3",
+                "detail": "初心者向け攻略に進む。"
               }
-            ],
-            "href": "/ja/guide/realistic-home-defense-beginner-guide/"
+            ]
           },
           {
-            "id": "module-03",
-            "title": "REALISTIC HOME DEFENSE 武器ガイド：操作とメカニクス",
+            "id": "weapons",
+            "title": "武器と装備",
             "type": "card-list",
-            "order": 3,
-            "enabled": true,
+            "order": 30,
+            "href": "/ja/weapons/realistic-home-defense-weapon-guide/",
             "items": [
               {
-                "label": "REALISTIC HOME DEFENSE 武器ガイド：操作とメカニクス",
-                "detail": "REALISTIC HOME DEFENSEの武器メカニクス、射撃モード、戦術的操作をマスターしよう。照準、リロード、武器切り替え、射撃モード選択を学ぶ...",
+                "label": "武器ガイド",
+                "detail": "武器の扱い方と仕組みを確認できます。",
                 "href": "/ja/weapons/realistic-home-defense-weapon-guide/"
               }
-            ],
-            "href": "/ja/weapons/realistic-home-defense-weapon-guide/"
+            ]
           },
           {
-            "id": "module-04",
-            "title": "REALISTIC HOME DEFENSE Money Farming Guide",
+            "id": "money",
+            "title": "お金の稼ぎ方",
+            "description": "十分な確認済み情報がないため公開していません。",
             "type": "step-by-step",
-            "order": 4,
+            "order": 40,
             "enabled": false,
             "items": []
           },
           {
-            "id": "module-05",
-            "title": "REALISTIC HOME DEFENSE Best Weapons Tier List",
+            "id": "rankings",
+            "title": "武器ランキング",
+            "description": "十分な確認済み情報がないため公開していません。",
             "type": "tier-grid",
-            "order": 5,
+            "order": 50,
             "enabled": false,
             "items": []
           },
           {
-            "id": "module-06",
-            "title": "REALISTIC HOME DEFENSE攻略：Robloxで戦術的戦闘をマスターする",
+            "id": "tips",
+            "title": "ヒントと戦術",
             "type": "card-list",
-            "order": 6,
-            "enabled": true,
+            "order": 60,
+            "href": "/ja/guide/realistic-home-defense-tips/",
             "items": [
               {
-                "label": "REALISTIC HOME DEFENSE攻略：Robloxで戦術的戦闘をマスターする",
-                "detail": "PC、コンソール、モバイル向けの操作方法、戦術的移動、武器の扱い方、生存戦略を網羅したREALISTIC HOME DEFENSEの必須攻略ガイド。",
+                "label": "ヒントと戦術",
+                "detail": "戦術的なゲームプレイのガイドを読む。",
                 "href": "/ja/guide/realistic-home-defense-tips/"
               }
-            ],
-            "href": "/ja/guide/realistic-home-defense-tips/"
+            ]
           },
           {
-            "id": "module-07",
-            "title": "REALISTIC HOME DEFENSE Codes",
+            "id": "codes",
+            "title": "引き換えコード",
+            "description": "十分な確認済み情報がないため公開していません。",
             "type": "code-cards",
-            "order": 7,
+            "order": 70,
             "enabled": false,
-            "items": []
+            "codes": []
           },
           {
-            "id": "module-08",
-            "title": "REALISTIC HOME DEFENSE アップデート - Robloxの新しいタクティカルシューター機能",
+            "id": "updates",
+            "title": "ゲームの更新情報",
             "type": "accordion",
-            "order": 8,
-            "enabled": true,
+            "order": 80,
+            "href": "/ja/guide/realistic-home-defense-update/",
             "items": [
               {
-                "label": "REALISTIC HOME DEFENSE アップデート - Robloxの新しいタクティカルシューター機能",
-                "detail": "強化されたコントロール、マネーマルチプライヤー、タクティカルゲームプレイ機能を備えた最新のREALISTIC HOME DEFENSEアップデートをご紹介します。",
-                "href": "/ja/guide/realistic-home-defense-update/"
+                "label": "アップデート情報はどこで読めますか？",
+                "detail": "更新情報のガイドと、そこに記載された参照先を確認してください。"
               }
-            ],
-            "href": "/ja/guide/realistic-home-defense-update/"
+            ]
           }
         ]
       },
       "aboutGame": {
-        "title": "Robloxの戦術的な戦闘",
-        "description": "RobloxのREALISTIC HOME DEFENSE攻略。武器の仕組み、操作方法、エイム、戦術的な移動、装備、アップデート、初心者向けのヒントを紹介。",
+        "title": "Robloxのタクティカルシューター",
+        "description": "REALISTIC HOME DEFENSEはIBA CommunityによるRobloxのタクティカルシューターです。この非公式Wikiでは操作方法、武器の仕組み、始め方、ゲームの更新情報を紹介します。",
         "image": "/images/hero.webp",
-        "imageAlt": "REALISTIC HOME DEFENSE official Roblox game thumbnail",
+        "imageAlt": "室内の廊下を一人称視点で映したREALISTIC HOME DEFENSEのRoblox公式サムネイル",
         "facts": [
           {
-            "label": "Platform",
+            "label": "プラットフォーム",
             "value": "Roblox"
           },
           {
-            "label": "Developer",
+            "label": "開発者",
             "value": "IBA Community"
+          },
+          {
+            "label": "ジャンル",
+            "value": "タクティカルFPS"
           }
         ]
       },
-      "faq": [],
+      "faq": [
+        {
+          "question": "このWikiはどのゲームを扱っていますか？",
+          "answer": "IBA CommunityによるRobloxのREALISTIC HOME DEFENSEです。フッターにゲームへのリンクがあります。"
+        },
+        {
+          "question": "どこから始めればよいですか？",
+          "answer": "初心者向け攻略から始めて、操作方法や武器のガイドを確認してください。"
+        },
+        {
+          "question": "公式コミュニティのリンクはどこですか？",
+          "answer": "Robloxのゲームページと開発者のリンクを利用してください。個別の公式Discord、Reddit、トレーラーのリンクは確認されていません。"
+        }
+      ],
       "finalCta": {
-        "title": "次のガイドを選ぼう。",
-        "description": "RobloxのREALISTIC HOME DEFENSE攻略。武器の仕組み、操作方法、エイム、戦術的な移動、装備、アップデート、初心者向けのヒントを紹介。",
-        "label": "ガイドを見る",
+        "title": "始める準備はできましたか？",
+        "description": "次のプレイに向けて攻略を選ぼう。",
+        "label": "攻略を見る",
         "href": "/ja/guide/"
       }
     }
