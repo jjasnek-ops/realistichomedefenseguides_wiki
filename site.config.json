@@ -1,21 +1,21 @@
 {
-  "gameName": "Example Game",
-  "siteName": "Example Game Wiki",
-  "shortName": "EG Wiki",
-  "domain": "example.com",
-  "description": "Your companion to a fictional world. Clear progression routes, boss strategies, equipment and exploration guides. All content is demo data.",
-  "officialUrl": "",
-  "platform": "PC · Console",
-  "genre": "Adventure RPG · fictional demo",
-  "logo": "/images/logo.svg",
-  "favicon": "/favicon.svg",
-  "demo": true,
+  "gameName": "REALISTIC HOME DEFENSE",
+  "siteName": "REALISTIC HOME DEFENSE Wiki",
+  "shortName": "RHD Wiki",
+  "domain": "realistichomedefenseguides.wiki",
+  "description": "Explore REALISTIC HOME DEFENSE guides for weapon mechanics, controls, aiming tips, tactical movement, equipment, game updates, and beginner strategies on Roblox.",
+  "officialUrl": "https://www.roblox.com/games/105527962898452/REALISTIC-HOME-DEFENSE",
+  "platform": "Roblox",
+  "genre": "Tactical FPS",
+  "logo": "/favicon/source-1024.png",
+  "favicon": "/favicon/favicon.ico",
+  "demo": false,
   "theme": {
     "defaultMode": "dark",
-    "primary": "#D1B477",
-    "lightPrimary": "#765522",
+    "primary": "#70875B",
+    "lightPrimary": "#52663F",
     "dark": {
-      "background": "#111413",
+      "background": "#171B1A",
       "card": "#191D1A",
       "surface": "#212621",
       "foreground": "#EEEFE8",
@@ -33,196 +33,281 @@
   },
   "languages": [
     "en",
-    "zh"
+    "de",
+    "pt-br",
+    "ja"
   ],
   "defaultLanguage": "en",
   "localeLabels": {
     "en": "English",
-    "zh": "简体中文"
+    "de": "Deutsch",
+    "pt-br": "Português do Brasil",
+    "ja": "日本語"
   },
   "translations": {
-    "zh": {
-      "siteName": "Example Game 图鉴",
-      "description": "虚构冒险世界的游戏攻略演示站。探索入门路线、装备图鉴与首领策略。所有内容均为演示数据。"
+    "de": {
+      "siteName": "REALISTIC HOME DEFENSE Wiki",
+      "description": "Anleitungen zu REALISTIC HOME DEFENSE auf Roblox: Steuerung, Waffenmechanik, taktische Bewegung, Tipps für Einsteiger und Spielupdates."
+    },
+    "pt-br": {
+      "siteName": "REALISTIC HOME DEFENSE Wiki",
+      "description": "Guias de REALISTIC HOME DEFENSE no Roblox: controles, mecânicas de armas, movimentação tática, dicas para iniciantes e atualizações."
+    },
+    "ja": {
+      "siteName": "REALISTIC HOME DEFENSE Wiki",
+      "description": "RobloxのREALISTIC HOME DEFENSEを解説。操作方法、武器の仕組み、戦術的な移動、初心者向けのヒント、アップデート情報を確認できます。"
     }
   },
   "ui": {
-    "zh": {
-      "home": "总览",
-      "search": "搜索攻略",
-      "searchHint": "搜索攻略、装备、首领…",
-      "navigation": "图鉴导航",
-      "explore": "探索图鉴",
-      "resources": "实用信息",
-      "allGuides": "全部攻略",
-      "recent": "最近更新",
-      "featured": "精选攻略",
-      "readGuide": "阅读攻略",
-      "viewAll": "查看全部",
-      "articles": "篇攻略",
-      "updated": "更新于",
-      "published": "发布于",
-      "readTime": "分钟阅读",
-      "onThisPage": "本页目录",
-      "related": "继续探索",
-      "demo": "演示图鉴",
-      "demoNotice": "Example Game 为虚构游戏。所有攻略、兑换码与属性均为演示数据。",
-      "about": "关于图鉴",
-      "privacy": "隐私说明",
-      "terms": "使用条款",
-      "unofficial": "独立制作的非官方游戏图鉴。",
-      "theme": "切换明暗主题",
-      "menu": "打开导航",
-      "close": "关闭",
-      "skip": "跳至正文",
-      "languages": "语言",
-      "unavailable": "本页暂时没有其他语言的译文。",
-      "faq": "常见问题",
-      "active": "有效兑换码演示",
-      "expired": "失效兑换码演示",
-      "verified": "最后核验",
-      "code": "兑换码",
-      "reward": "奖励",
-      "copy": "复制兑换码",
-      "copied": "已复制！",
-      "copyFailed": "请选择兑换码并手动复制。",
-      "boss": "首领情报",
-      "hp": "生命值",
-      "weakness": "弱点",
-      "resistant": "抗性",
-      "location": "所在区域",
-      "level": "建议等级",
-      "rewards": "奖励",
-      "ranking": "排名依据",
-      "filter": "筛选攻略",
-      "all": "全部",
-      "noResults": "没有匹配的攻略，请尝试其他关键词。",
-      "expandImage": "放大图片",
-      "notFound": "你走出了地图边界。",
-      "notFoundDesc": "此页面不存在。返回图鉴或搜索攻略，继续你的旅程。",
-      "backHome": "返回图鉴",
-      "searchUnavailable": "搜索暂时不可用，请稍后再试。",
-      "noindex": "参考说明 · 不参与搜索引擎索引",
-      "latest": "最新探索笔记",
-      "featuredLabel": "编辑推荐",
-      "noData": "暂时没有已发布攻略。",
-      "software": "软件许可",
-      "map": "世界地图",
-      "markers": "地图标记",
-      "item": "物品详情",
-      "acquisition": "获取方式",
-      "equipment": "装备",
-      "skills": "技能",
-      "scenario": "适用场景",
-      "jumpInto": "快速前往",
-      "conceptArt": "虚构世界 · 原创概念插画",
-      "expiredDemo": "已失效",
-      "startHere": "从这里开始",
-      "wiki": "图鉴",
-      "aboutGameEyebrow": "走进这个世界",
-      "privateSearch": "设备本地搜索",
-      "brandTagline": "图鉴与探索手册",
-      "quickStartNote": "少走弯路，多点发现。",
-      "fieldGuide": "图鉴一览",
-      "activeDemo": "有效演示",
-      "results": "条结果"
+    "de": {
+      "home": "Übersicht",
+      "search": "Wiki durchsuchen",
+      "searchHint": "Anleitungen, Steuerung, Waffen suchen…",
+      "navigation": "Wiki-Navigation",
+      "explore": "WIKI ENTDECKEN",
+      "resources": "INFORMATIONEN",
+      "allGuides": "Alle Anleitungen",
+      "recent": "Zuletzt aktualisiert",
+      "featured": "Empfohlene Anleitungen",
+      "readGuide": "Anleitung lesen",
+      "viewAll": "Alle anzeigen",
+      "articles": "Anleitungen",
+      "about": "Über dieses Wiki",
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen",
+      "software": "Softwarelizenzen",
+      "brandTagline": "WIKI & SPIELANLEITUNGEN",
+      "quickStartNote": "Bereite dich auf die nächste Runde vor.",
+      "startHere": "HIER BEGINNEN",
+      "jumpInto": "DIREKT ZU",
+      "featuredLabel": "EMPFEHLUNGEN",
+      "latest": "AKTUELLE ANLEITUNGEN",
+      "fieldGuide": "DEIN SPIELHANDBUCH",
+      "aboutGameEyebrow": "ÜBER DAS SPIEL",
+      "faq": "Häufige Fragen",
+      "languages": "Sprache",
+      "theme": "Farbschema wechseln",
+      "menu": "Navigation öffnen",
+      "close": "Schließen",
+      "skip": "Zum Inhalt springen",
+      "unavailable": "Für diese Seite gibt es noch keine weiteren Übersetzungen.",
+      "updated": "Aktualisiert",
+      "published": "Veröffentlicht",
+      "readTime": "Min. Lesezeit",
+      "onThisPage": "Auf dieser Seite",
+      "related": "Weiterlesen",
+      "noData": "Noch keine veröffentlichten Anleitungen."
+    },
+    "pt-br": {
+      "home": "Visão geral",
+      "search": "Pesquisar na wiki",
+      "searchHint": "Pesquisar guias, controles, armas…",
+      "navigation": "Navegação da wiki",
+      "explore": "EXPLORE A WIKI",
+      "resources": "INFORMAÇÕES",
+      "allGuides": "Todos os guias",
+      "recent": "Atualizações recentes",
+      "featured": "Guias em destaque",
+      "readGuide": "Ler guia",
+      "viewAll": "Ver todos",
+      "articles": "guias",
+      "about": "Sobre esta wiki",
+      "privacy": "Privacidade",
+      "terms": "Termos",
+      "software": "Licenças de software",
+      "brandTagline": "WIKI E GUIAS",
+      "quickStartNote": "Prepare-se para a próxima partida.",
+      "startHere": "COMECE AQUI",
+      "jumpInto": "ACESSO RÁPIDO",
+      "featuredLabel": "DESTAQUES",
+      "latest": "GUIAS RECENTES",
+      "fieldGuide": "SEU GUIA DO JOGO",
+      "aboutGameEyebrow": "SOBRE O JOGO",
+      "faq": "Perguntas frequentes",
+      "languages": "Idioma",
+      "theme": "Alternar tema",
+      "menu": "Abrir navegação",
+      "close": "Fechar",
+      "skip": "Pular para o conteúdo",
+      "unavailable": "Esta página ainda não tem outras traduções.",
+      "updated": "Atualizado",
+      "published": "Publicado",
+      "readTime": "min de leitura",
+      "onThisPage": "Nesta página",
+      "related": "Continue lendo",
+      "noData": "Nenhum guia publicado ainda."
+    },
+    "ja": {
+      "home": "概要",
+      "search": "Wikiを検索",
+      "searchHint": "攻略・操作方法・武器を検索…",
+      "navigation": "Wikiナビゲーション",
+      "explore": "WIKIを探す",
+      "resources": "情報",
+      "allGuides": "すべての攻略",
+      "recent": "最近の更新",
+      "featured": "注目の攻略",
+      "readGuide": "攻略を読む",
+      "viewAll": "すべて見る",
+      "articles": "件の攻略",
+      "about": "このWikiについて",
+      "privacy": "プライバシー",
+      "terms": "利用規約",
+      "software": "ソフトウェアライセンス",
+      "brandTagline": "WIKI・ゲーム攻略",
+      "quickStartNote": "次のプレイに備えよう。",
+      "startHere": "ここから始める",
+      "jumpInto": "すぐに読む",
+      "featuredLabel": "おすすめ",
+      "latest": "最近の攻略",
+      "fieldGuide": "ゲームガイド",
+      "aboutGameEyebrow": "ゲームについて",
+      "faq": "よくある質問",
+      "languages": "言語",
+      "theme": "テーマを切り替える",
+      "menu": "メニューを開く",
+      "close": "閉じる",
+      "skip": "本文へ移動",
+      "unavailable": "このページには他の翻訳がまだありません。",
+      "updated": "更新日",
+      "published": "公開日",
+      "readTime": "分で読めます",
+      "onThisPage": "目次",
+      "related": "関連記事",
+      "noData": "公開済みの攻略はまだありません。"
     }
   },
   "navigation": [
     {
-      "slug": "guides",
-      "label": "Getting started",
-      "description": "Find your footing. Practical routes, combat basics and your first milestones.",
+      "slug": "guide",
+      "label": "Guides",
+      "description": "Controls, beginner guides and game updates.",
       "icon": "compass",
       "labels": {
-        "zh": "入门攻略"
+        "de": "Anleitungen",
+        "pt-br": "Guias",
+        "ja": "攻略"
       },
       "descriptions": {
-        "zh": "了解基础操作、战斗节奏与前期探索路线。"
+        "de": "Steuerung, Einstieg und Spielupdates.",
+        "pt-br": "Controles, primeiros passos e atualizações.",
+        "ja": "操作方法、初心者向け攻略、アップデート。"
       }
     },
     {
-      "slug": "bosses",
-      "label": "Bosses",
-      "description": "Read the encounter before you enter it. Mechanics, weaknesses and rewards.",
-      "icon": "skull",
-      "labels": {
-        "zh": "首领图鉴"
-      },
-      "descriptions": {
-        "zh": "了解首领机制、弱点与奖励，在进入战场前做好准备。"
-      }
-    },
-    {
-      "slug": "equipment",
-      "label": "Weapons & gear",
-      "description": "Compare equipment, find upgrade materials and choose a loadout with purpose.",
+      "slug": "weapons",
+      "label": "Weapons",
+      "description": "Weapon handling and mechanics.",
       "icon": "swords",
       "labels": {
-        "zh": "武器装备"
+        "de": "Waffen",
+        "pt-br": "Armas",
+        "ja": "武器"
       },
       "descriptions": {
-        "zh": "比较装备属性，了解材料获取与配装思路。"
+        "de": "Waffenhandhabung und Mechaniken.",
+        "pt-br": "Manuseio e mecânicas de armas.",
+        "ja": "武器の扱い方と仕組み。"
       }
     },
     {
-      "slug": "builds",
-      "label": "Builds & skills",
-      "description": "Equipment and skill combinations for a clear playstyle.",
-      "icon": "sparkles",
+      "slug": "quests",
+      "label": "Beginner tips",
+      "description": "Practical guidance for new players.",
+      "icon": "route",
       "labels": {
-        "zh": "配装技能"
+        "de": "Einsteigertipps",
+        "pt-br": "Dicas para iniciantes",
+        "ja": "初心者向けヒント"
       },
       "descriptions": {
-        "zh": "根据战斗场景组合装备与技能。"
+        "de": "Praktische Hinweise für neue Spieler.",
+        "pt-br": "Orientações práticas para novos jogadores.",
+        "ja": "初めて遊ぶ人に役立つ情報。"
       }
     },
     {
-      "slug": "world",
-      "label": "World & exploration",
-      "description": "A field guide to the places, paths and secrets beyond the campfire.",
-      "icon": "map",
+      "slug": "community",
+      "label": "Community",
+      "description": "Find the game and community information.",
+      "icon": "users",
       "labels": {
-        "zh": "世界探索"
+        "de": "Community",
+        "pt-br": "Comunidade",
+        "ja": "コミュニティ"
       },
       "descriptions": {
-        "zh": "探索营地以外的区域、路线与隐藏路径。"
+        "de": "Informationen zum Spiel und zur Community.",
+        "pt-br": "Informações sobre o jogo e a comunidade.",
+        "ja": "ゲームとコミュニティの情報。"
       }
     },
     {
-      "slug": "codes",
-      "label": "Redeem codes",
-      "description": "A structured code reference with rewards, status and verification dates. Demo only.",
-      "icon": "gift",
+      "slug": "reviews",
+      "label": "Reviews",
+      "description": "Explore the tactical shooter and its gameplay.",
+      "icon": "book-open",
       "labels": {
-        "zh": "兑换码"
+        "de": "Rezensionen",
+        "pt-br": "Análises",
+        "ja": "レビュー"
       },
       "descriptions": {
-        "zh": "展示兑换码、奖励、状态与核验日期，均为演示数据。"
+        "de": "Einblicke in den taktischen Shooter.",
+        "pt-br": "Conheça a jogabilidade do jogo de tiro tático.",
+        "ja": "タクティカルシューターの内容を紹介。"
+      }
+    },
+    {
+      "slug": "troubleshooting",
+      "label": "Joining the game",
+      "description": "Game link and joining guides.",
+      "icon": "circle-help",
+      "labels": {
+        "de": "Spiel beitreten",
+        "pt-br": "Como entrar",
+        "ja": "ゲームへの参加"
+      },
+      "descriptions": {
+        "de": "Spiellink und Hinweise zum Beitritt.",
+        "pt-br": "Link do jogo e guias para entrar.",
+        "ja": "ゲームのリンクと参加方法。"
       }
     }
   ],
   "seo": {
-    "title": "Example Game Wiki — Guides, Bosses & Exploration",
+    "title": "REALISTIC HOME DEFENSE Wiki - Weapons, Controls & Tips",
     "image": "/images/hero.webp",
-    "imageAlt": "Original fictional landscape: a ruined citadel above a forest valley"
+    "imageAlt": "REALISTIC HOME DEFENSE official Roblox thumbnail showing a first-person view of an indoor corridor"
   },
   "integrations": {
     "analytics": false,
     "ads": false
   },
   "legal": {
-    "lastModified": "2026-10-21",
-    "about": "This is a demonstration of an independent game wiki template. Example Game is fictional. Every character, location, code and statistic is invented to demonstrate the interface. This site is not affiliated with a game publisher. Replace this content with accurate information before publishing a real wiki.",
-    "privacy": "This default template does not use analytics, advertising cookies or account systems. Search runs locally in your browser with Pagefind. Theme preference is stored on your device. Your hosting provider may process ordinary access logs under its own policy. If you enable analytics, ads or third-party embeds, update this notice to describe the actual services and consent requirements before publishing.",
-    "terms": "The fictional guides are provided for demonstration and should not be relied on as real gameplay advice. The software is supplied under the MIT license without warranty. Original generated artwork is identified in the asset provenance document. Game trademarks and third-party materials require their own permission. This notice is starter text and must be adapted to the actual site operator and services before public use.",
-    "disclaimer": "Example Game is fictional. Independent demo wiki; no affiliation with any game developer.",
+    "lastModified": "2026-10-25",
+    "about": "An independent guide to REALISTIC HOME DEFENSE, the Roblox tactical shooter by IBA Community. This wiki covers controls, weapon mechanics, getting started and game updates. It is not affiliated with or endorsed by Roblox or IBA Community.",
+    "privacy": "This site has no enabled analytics, advertising scripts or account system. Pagefind search runs in your browser. Your theme preference is stored on your device. The hosting provider may process ordinary access logs under its own policy. External links are governed by the destination service’s privacy policy.",
+    "terms": "These independent guides describe gameplay in REALISTIC HOME DEFENSE on Roblox. Game features may change; consult the linked sources and current in-game information. Roblox and game trademarks and artwork belong to their respective owners. Site software is provided under its MIT license.",
+    "disclaimer": "Independent, unofficial REALISTIC HOME DEFENSE wiki. Not affiliated with Roblox or IBA Community.",
     "translations": {
-      "zh": {
-        "about": "这是一个独立游戏图鉴模板的演示站。Example Game 为虚构游戏，所有角色、地点、兑换码与属性均为演示所编写。本站与任何游戏发行商无关。发布真实图鉴前，请将这些内容替换为准确的信息。",
-        "privacy": "默认模板不使用统计分析、广告 Cookie 或账号系统。Pagefind 搜索在浏览器本地运行，主题偏好保存在设备上。托管服务商可能根据其隐私政策处理访问日志。如需启用分析、广告或第三方嵌入，请在发布前说明实际服务及适用的同意要求。",
-        "terms": "虚构攻略仅用于展示模板，不应作为真实游戏建议。软件采用 MIT 许可并按原样提供。原创生成插画的来源记录在素材说明中。游戏商标与第三方素材需遵循各自授权。正式发布前应根据实际站点运营方与所用服务调整此说明。",
-        "disclaimer": "Example Game 为虚构游戏。独立演示图鉴，与任何游戏开发商无关。"
+      "de": {
+        "about": "Unabhängige Anleitungen zu REALISTIC HOME DEFENSE, dem taktischen Roblox-Shooter von IBA Community. Themen sind Steuerung, Waffenmechanik, Einstieg und Updates. Dieses Wiki ist nicht mit Roblox oder IBA Community verbunden und wird von ihnen nicht unterstützt.",
+        "privacy": "Auf dieser Website sind keine Analyse- oder Werbeskripte und kein Kontosystem aktiviert. Die Pagefind-Suche läuft im Browser. Die Themenauswahl wird auf deinem Gerät gespeichert. Der Hosting-Anbieter kann Zugriffsprotokolle gemäß seiner Richtlinie verarbeiten. Für externe Links gelten die Datenschutzregeln des jeweiligen Dienstes.",
+        "terms": "Die unabhängigen Anleitungen beschreiben das Spiel REALISTIC HOME DEFENSE auf Roblox. Funktionen können sich ändern; beachte die verlinkten Quellen und aktuelle Angaben im Spiel. Marken und Spielgrafiken gehören ihren jeweiligen Rechteinhabern. Die Website-Software steht unter der MIT-Lizenz.",
+        "disclaimer": "Unabhängiges, inoffizielles REALISTIC HOME DEFENSE Wiki. Keine Verbindung zu Roblox oder IBA Community."
+      },
+      "pt-br": {
+        "about": "Guias independentes de REALISTIC HOME DEFENSE, o jogo de tiro tático no Roblox da IBA Community. Esta wiki aborda controles, mecânicas de armas, primeiros passos e atualizações. Não é afiliada nem endossada pelo Roblox ou pela IBA Community.",
+        "privacy": "Este site não possui scripts de análise ou publicidade ativados nem sistema de contas. A busca Pagefind funciona no navegador. A preferência de tema é armazenada no dispositivo. O provedor de hospedagem pode processar registros de acesso conforme sua política. Links externos seguem as políticas de privacidade dos respectivos serviços.",
+        "terms": "Os guias independentes descrevem a jogabilidade de REALISTIC HOME DEFENSE no Roblox. Recursos podem mudar; consulte as fontes vinculadas e as informações atuais do jogo. Marcas e imagens do jogo pertencem aos respectivos titulares. O software do site usa a licença MIT.",
+        "disclaimer": "Wiki independente e não oficial de REALISTIC HOME DEFENSE. Sem afiliação ao Roblox ou à IBA Community."
+      },
+      "ja": {
+        "about": "IBA CommunityによるRobloxのタクティカルシューター、REALISTIC HOME DEFENSEの非公式攻略Wikiです。操作方法、武器の仕組み、始め方、更新情報を扱います。RobloxおよびIBA Communityとの提携や公認はありません。",
+        "privacy": "このサイトでは解析・広告スクリプトやアカウント機能を有効にしていません。Pagefind検索はブラウザ内で動作し、テーマ設定は端末に保存されます。ホスティング事業者が独自の方針に基づきアクセスログを処理する場合があります。外部リンク先には各サービスのプライバシーポリシーが適用されます。",
+        "terms": "本攻略はRobloxのREALISTIC HOME DEFENSE内のゲームプレイを扱います。ゲームの機能は変更される場合があるため、参照先とゲーム内の最新情報を確認してください。商標やゲーム画像の権利は各権利者に帰属します。サイトのソフトウェアにはMITライセンスが適用されます。",
+        "disclaimer": "REALISTIC HOME DEFENSEの非公式攻略Wikiです。RobloxおよびIBA Communityとの提携はありません。"
       }
     }
   }

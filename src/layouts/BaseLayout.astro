@@ -36,6 +36,10 @@ const ogLocale = OG_LOCALE_MAP[locale] ?? (locale.includes('-') ? locale.replace
     <title>{pageTitle(title, locale)}</title><meta name="description" content={description}/>
     <meta name="robots" content={page.noindex ? 'noindex, follow' : 'index, follow'}/>
     <link rel="canonical" href={canonical}/><link rel="icon" href={config.favicon}/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+    <link rel="manifest" href="/favicon/site.webmanifest"/>
     {alternates.map(alternate => <link rel="alternate" hreflang={alternate.locale} href={absoluteUrl(alternate.path)}/>)}
     {alternates.find(alternate => alternate.locale === config.defaultLanguage) && <link rel="alternate" hreflang="x-default" href={absoluteUrl(alternates.find(alternate => alternate.locale === config.defaultLanguage)!.path)}/>}
     <meta property="og:title" content={pageTitle(title, locale)}/><meta property="og:description" content={description}/><meta property="og:type" content={page.type === 'article' ? 'article' : 'website'}/><meta property="og:url" content={canonical}/><meta property="og:site_name" content={siteName(locale)}/><meta property="og:image" content={absoluteUrl(image)}/><meta property="og:image:alt" content={imageAlt}/>{ogLocale && <meta property="og:locale" content={ogLocale}/>}

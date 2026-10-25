@@ -4,7 +4,7 @@ const english: Record<string, string> = {
   explore: 'EXPLORE THE WIKI', resources: 'RESOURCES', allGuides: 'All guides', recent: 'Recent updates',
   featured: 'Featured guides', readGuide: 'Read guide', viewAll: 'View all', articles: 'guides',
   updated: 'Updated', published: 'Published', readTime: 'min read', onThisPage: 'On this page', related: 'Keep exploring',
-  demo: 'DEMO WIKI', demoNotice: 'Example Game is fictional. All guides, codes and stats are demonstration data.',
+  demo: 'DEMO WIKI', demoNotice: 'Independent, unofficial game wiki.',
   about: 'About this wiki', privacy: 'Privacy', terms: 'Terms', unofficial: 'An independent, unofficial game wiki.',
   theme: 'Switch color theme', menu: 'Open navigation', close: 'Close', skip: 'Skip to content',
   languages: 'Language', unavailable: 'This page has no other translations yet.',
@@ -19,7 +19,7 @@ const english: Record<string, string> = {
   featuredLabel: 'EDITOR’S PICKS', noData: 'No published guides yet.',
   software: 'Software licenses', map: 'World map', markers: 'Map markers',
   brandTagline: 'WIKI & FIELD GUIDE', wiki: 'WIKI', jumpInto: 'JUMP INTO', startHere: 'START HERE',
-  quickStartNote: 'Less guesswork. More discovery.', conceptArt: 'FICTIONAL WORLD · ORIGINAL DEMO CONCEPT ART',
+  quickStartNote: 'Less guesswork. More discovery.', conceptArt: 'REALISTIC HOME DEFENSE · ROBLOX',
   aboutGameEyebrow: 'ABOUT THE GAME', fieldGuide: 'YOUR FIELD GUIDE', privateSearch: 'Private, on-device search',
   results: 'results', activeDemo: 'Active', expiredDemo: 'Expired'
 };
