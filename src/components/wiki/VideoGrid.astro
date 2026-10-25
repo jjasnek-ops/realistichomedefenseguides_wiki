@@ -1,0 +1,7 @@
+---
+import { Icon } from 'astro-icon/components';
+interface Props { items: { label: string; detail: string; href?: string; image?: string; alt?: string }[]; }
+const { items } = Astro.props;
+if (items.some(item => !item.href?.startsWith('https://') || !item.image || !item.alt)) throw new Error('VideoGrid: provide an HTTPS video URL, a thumbnail and descriptive alt text for every item.');
+---
+{items.length > 0 && <div class="video-grid not-prose">{items.map(item => <a href={item.href} target="_blank" rel="noopener noreferrer"><img src={item.image} alt={item.alt} width="640" height="360" loading="lazy"/><Icon name="lucide:play"/><strong>{item.label}</strong><small>{item.detail}</small></a>)}</div>}

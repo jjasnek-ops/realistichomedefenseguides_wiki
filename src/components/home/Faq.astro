@@ -1,0 +1,7 @@
+---
+import Accordion from '~/components/mdx/Accordion.astro';
+import { t } from '~/i18n/ui';
+interface Props { items: { question: string; answer: string }[]; locale: string; }
+const { items, locale } = Astro.props;
+---
+{items.length > 0 && <section class="faq-section"><div class="section-heading"><h2>{t(locale, 'faq')}</h2></div>{items.map(item => <Accordion title={item.question}>{item.answer}</Accordion>)}</section>}

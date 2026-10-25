@@ -1,0 +1,19 @@
+---
+import CodeBlock from '~/components/article/CodeBlock.astro';
+import { t, formatDate } from '~/i18n/ui';
+import type { ArticleData } from '~/lib/schema';
+interface Props { codes: ArticleData['codes']; locale?: string; compact?: boolean; }
+const { codes, locale = Astro.currentLocale ?? 'en', compact = false } = Astro.props;
+---
+{codes.length > 0 && <div class="codes-widget">
+  {(['active', 'expired'] as const).map(status => {
+    const items = codes.filter(code => code.status === status);
+    return items.length > 0 && <section class:list={['code-group', status]}>
+      {!compact && <p class="widget-label"><span class:list={['status-dot', status]}></span>{t(locale, status)} <span class="count">{items.length}</span></p>}
+      {items.map(code => <div class="code-entry">
+        {status === 'active' ? <CodeBlock code={code.code} label={code.reward} locale={locale}/> : <p><s><code>{code.code}</code></s><span>{code.reward}</span></p>}
+        <small>{t(locale, 'verified')} <time datetime={code.lastVerified}>{formatDate(code.lastVerified, locale)}</time> · {t(locale, status === 'active' ? 'activeDemo' : 'expiredDemo')}</small>
+      </div>)}
+    </section>;
+  })}
+</div>}

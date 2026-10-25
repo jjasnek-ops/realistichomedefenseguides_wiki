@@ -1,0 +1,33 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import HomePage from '~/components/home/HomePage.astro';
+import CategoryPage from '~/components/article/CategoryPage.astro';
+import ArticlePage from '~/components/article/ArticlePage.astro';
+import Breadcrumbs from '~/components/navigation/Breadcrumbs.astro';
+import { articles, pagesFor } from '~/lib/content';
+import type { Page } from '~/lib/content';
+import { config, categoryLabel, categoryDescription, description } from '~/lib/config';
+import { homeUrl, listPath } from '~/lib/url';
+import { t } from '~/i18n/ui';
+import { websiteJsonLd, videoGameJsonLd, articleJsonLd, breadcrumbJsonLd, itemListJsonLd } from '~/lib/seo';
+export async function getStaticPaths() {
+  const pool = await articles(); const pages = pagesFor(pool);
+  return pages.map(page => ({ params: { path: page.path === '/' ? undefined : page.path.slice(1, -1) }, props: { page, pool, pages } }));
+}
+interface Props { page: Page; pool: Awaited<ReturnType<typeof articles>>; pages: Page[]; }
+const { page, pool, pages } = Astro.props;
+const { locale } = page;
+const title = page.entry?.data.title ?? (page.category ? categoryLabel(page.category, locale) : page.type === 'home' ? (locale === config.defaultLanguage ? config.seo.title : `${config.gameName} ${t(locale, 'home')}`) : t(locale, page.legal ?? page.type));
+const pageDescription = page.entry?.data.description ?? (page.category ? categoryDescription(page.category, locale) : description(locale));
+const legal = config.legal.translations[locale] ?? config.legal;
+const categoryExists = page.entry && pool.some(entry => entry.locale === locale && entry.category === page.entry!.category && !entry.data.noindex);
+const breadcrumbs = [{ name: t(locale, 'home'), path: homeUrl(locale) }, ...(page.entry && categoryExists ? [{ name: categoryLabel(page.entry.category, locale), path: listPath(page.entry.category, locale) }] : []), { name: title, path: page.path }];
+const entries = pool.filter(entry => entry.locale === locale && !entry.data.noindex && (!page.category || entry.category === page.category));
+const schemas = page.type === 'home' ? [websiteJsonLd(locale), videoGameJsonLd()] : [breadcrumbJsonLd(breadcrumbs), ...(page.entry ? [articleJsonLd(page.entry)] : page.type === 'category' || page.type === 'recent' ? [itemListJsonLd(title, entries)] : [])];
+---
+<BaseLayout page={page} pages={pages} pool={pool} title={title} description={pageDescription} image={page.entry?.data.cover} imageAlt={page.entry?.data.coverAlt} schemas={schemas}>
+  {page.type === 'home' && <HomePage page={page} pool={pool}/>}
+  {(page.type === 'category' || page.type === 'recent') && <CategoryPage page={page} pool={pool}/>}
+  {page.entry && <ArticlePage entry={page.entry} pool={pool}/>}
+  {page.legal && <div class="legal-page"><Breadcrumbs items={[{ name: t(locale, 'home'), path: homeUrl(locale) }, { name: title }]}/><p class="section-eyebrow">{config.siteName}</p><h1 data-pagefind-meta="title">{title}</h1><p class="legal-date">{t(locale, 'updated')} <time datetime={page.lastModified}>{page.lastModified}</time></p><div class="prose"><p>{legal[page.legal]}</p></div></div>}
+</BaseLayout>

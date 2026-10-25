@@ -1,0 +1,7 @@
+---
+import { formatDate } from '~/i18n/ui';
+import type { ExploreModule } from '~/lib/schema';
+interface Props { items: ExploreModule['items']; locale?: string; }
+const { items, locale = Astro.currentLocale ?? 'en' } = Astro.props;
+---
+{items.length > 0 && <ol class="timeline not-prose">{items.map(item => <li>{item.date && <time datetime={item.date}>{formatDate(item.date, locale)}</time>}<strong>{item.href ? <a href={item.href}>{item.label}</a> : item.label}</strong><p>{item.detail}</p></li>)}</ol>}

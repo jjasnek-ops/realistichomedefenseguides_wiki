@@ -1,0 +1,9 @@
+---
+import { t } from '~/i18n/ui';
+interface Props { image: string; alt: string; width?: number; height?: number; markers?: { label: string; description: string }[]; locale?: string; }
+const { image, alt, width = 1200, height = 800, markers = [], locale = Astro.currentLocale ?? 'en' } = Astro.props;
+---
+<figure class="map-widget not-prose">
+  <a href={image} target="_blank" rel="noopener" aria-label={`${t(locale, 'expandImage')}: ${alt}`}><img src={image} alt={alt} width={width} height={height} loading="lazy"/><span>{t(locale, 'expandImage')} ↗</span></a>
+  {markers.length > 0 && <figcaption><p class="widget-label">{t(locale, 'markers')}</p><dl>{markers.map((marker, index) => <div><dt><b>{index + 1}</b>{marker.label}</dt><dd>{marker.description}</dd></div>)}</dl></figcaption>}
+</figure>

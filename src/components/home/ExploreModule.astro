@@ -1,0 +1,28 @@
+---
+import { Icon } from 'astro-icon/components';
+import Codes from '~/components/wiki/Codes.astro';
+import TierList from '~/components/wiki/TierList.astro';
+import StepByStep from '~/components/home/modules/StepByStep.astro';
+import Accordion from '~/components/mdx/Accordion.astro';
+import Table from '~/components/wiki/Table.astro';
+import Timeline from '~/components/wiki/Timeline.astro';
+import VideoGrid from '~/components/wiki/VideoGrid.astro';
+import { t } from '~/i18n/ui';
+import type { ExploreModule } from '~/lib/schema';
+interface Props { module: ExploreModule; locale: string; }
+const { module, locale } = Astro.props;
+const nonempty = module.type === 'code-cards' ? module.codes.length : module.type === 'table' ? module.rows.length : module.items.length;
+const icons: Record<string, string> = { 'tier-grid': 'swords', 'card-list': 'skull', 'code-cards': 'gift', 'step-by-step': 'route', timeline: 'history', table: 'backpack', accordion: 'circle-help', 'video-grid': 'play' };
+---
+{module.enabled && nonempty > 0 && <section class:list={['explore-module', `module-${module.type}`]}>
+  <div class="module-heading"><span class="module-icon"><Icon name={`lucide:${icons[module.type]}`}/></span><h3>{module.title}</h3>{module.href && <a href={module.href} aria-label={`${t(locale, 'viewAll')}: ${module.title}`}><Icon name="lucide:arrow-up-right"/></a>}</div>
+  {module.description && <p class="module-description">{module.description}</p>}
+  {module.type === 'tier-grid' && <TierList tiers={module.items} basis={module.basis} locale={locale}/>}
+  {module.type === 'code-cards' && <Codes codes={module.codes} locale={locale} compact/>}
+  {module.type === 'step-by-step' && <StepByStep highlights={module.items}/>}
+  {module.type === 'card-list' && <div class="module-card-list">{module.items.map(item => item.href ? <a href={item.href}><span class="boss-emblem"><Icon name="lucide:skull"/></span><span><strong>{item.label}</strong><small>{item.detail}</small></span><span aria-hidden="true">→</span></a> : <div><strong>{item.label}</strong><p>{item.detail}</p></div>)}</div>}
+  {module.type === 'timeline' && <Timeline items={module.items} locale={locale}/>}
+  {module.type === 'table' && <Table columns={module.columns} rows={module.rows}/>}
+  {module.type === 'accordion' && module.items.map(item => <Accordion title={item.label}>{item.detail}</Accordion>)}
+  {module.type === 'video-grid' && <VideoGrid items={module.items}/>}
+</section>}

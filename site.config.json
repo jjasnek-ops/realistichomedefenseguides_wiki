@@ -1,0 +1,229 @@
+{
+  "gameName": "Example Game",
+  "siteName": "Example Game Wiki",
+  "shortName": "EG Wiki",
+  "domain": "example.com",
+  "description": "Your companion to a fictional world. Clear progression routes, boss strategies, equipment and exploration guides. All content is demo data.",
+  "officialUrl": "",
+  "platform": "PC · Console",
+  "genre": "Adventure RPG · fictional demo",
+  "logo": "/images/logo.svg",
+  "favicon": "/favicon.svg",
+  "demo": true,
+  "theme": {
+    "defaultMode": "dark",
+    "primary": "#D1B477",
+    "lightPrimary": "#765522",
+    "dark": {
+      "background": "#111413",
+      "card": "#191D1A",
+      "surface": "#212621",
+      "foreground": "#EEEFE8",
+      "muted": "#A6AEA3",
+      "border": "#30372F"
+    },
+    "light": {
+      "background": "#F5F4EF",
+      "card": "#FFFFFF",
+      "surface": "#EAECE4",
+      "foreground": "#222A23",
+      "muted": "#5B665A",
+      "border": "#D7DCD0"
+    }
+  },
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "defaultLanguage": "en",
+  "localeLabels": {
+    "en": "English",
+    "zh": "简体中文"
+  },
+  "translations": {
+    "zh": {
+      "siteName": "Example Game 图鉴",
+      "description": "虚构冒险世界的游戏攻略演示站。探索入门路线、装备图鉴与首领策略。所有内容均为演示数据。"
+    }
+  },
+  "ui": {
+    "zh": {
+      "home": "总览",
+      "search": "搜索攻略",
+      "searchHint": "搜索攻略、装备、首领…",
+      "navigation": "图鉴导航",
+      "explore": "探索图鉴",
+      "resources": "实用信息",
+      "allGuides": "全部攻略",
+      "recent": "最近更新",
+      "featured": "精选攻略",
+      "readGuide": "阅读攻略",
+      "viewAll": "查看全部",
+      "articles": "篇攻略",
+      "updated": "更新于",
+      "published": "发布于",
+      "readTime": "分钟阅读",
+      "onThisPage": "本页目录",
+      "related": "继续探索",
+      "demo": "演示图鉴",
+      "demoNotice": "Example Game 为虚构游戏。所有攻略、兑换码与属性均为演示数据。",
+      "about": "关于图鉴",
+      "privacy": "隐私说明",
+      "terms": "使用条款",
+      "unofficial": "独立制作的非官方游戏图鉴。",
+      "theme": "切换明暗主题",
+      "menu": "打开导航",
+      "close": "关闭",
+      "skip": "跳至正文",
+      "languages": "语言",
+      "unavailable": "本页暂时没有其他语言的译文。",
+      "faq": "常见问题",
+      "active": "有效兑换码演示",
+      "expired": "失效兑换码演示",
+      "verified": "最后核验",
+      "code": "兑换码",
+      "reward": "奖励",
+      "copy": "复制兑换码",
+      "copied": "已复制！",
+      "copyFailed": "请选择兑换码并手动复制。",
+      "boss": "首领情报",
+      "hp": "生命值",
+      "weakness": "弱点",
+      "resistant": "抗性",
+      "location": "所在区域",
+      "level": "建议等级",
+      "rewards": "奖励",
+      "ranking": "排名依据",
+      "filter": "筛选攻略",
+      "all": "全部",
+      "noResults": "没有匹配的攻略，请尝试其他关键词。",
+      "expandImage": "放大图片",
+      "notFound": "你走出了地图边界。",
+      "notFoundDesc": "此页面不存在。返回图鉴或搜索攻略，继续你的旅程。",
+      "backHome": "返回图鉴",
+      "searchUnavailable": "搜索暂时不可用，请稍后再试。",
+      "noindex": "参考说明 · 不参与搜索引擎索引",
+      "latest": "最新探索笔记",
+      "featuredLabel": "编辑推荐",
+      "noData": "暂时没有已发布攻略。",
+      "software": "软件许可",
+      "map": "世界地图",
+      "markers": "地图标记",
+      "item": "物品详情",
+      "acquisition": "获取方式",
+      "equipment": "装备",
+      "skills": "技能",
+      "scenario": "适用场景",
+      "jumpInto": "快速前往",
+      "conceptArt": "虚构世界 · 原创概念插画",
+      "expiredDemo": "已失效",
+      "startHere": "从这里开始",
+      "wiki": "图鉴",
+      "aboutGameEyebrow": "走进这个世界",
+      "privateSearch": "设备本地搜索",
+      "brandTagline": "图鉴与探索手册",
+      "quickStartNote": "少走弯路，多点发现。",
+      "fieldGuide": "图鉴一览",
+      "activeDemo": "有效演示",
+      "results": "条结果"
+    }
+  },
+  "navigation": [
+    {
+      "slug": "guides",
+      "label": "Getting started",
+      "description": "Find your footing. Practical routes, combat basics and your first milestones.",
+      "icon": "compass",
+      "labels": {
+        "zh": "入门攻略"
+      },
+      "descriptions": {
+        "zh": "了解基础操作、战斗节奏与前期探索路线。"
+      }
+    },
+    {
+      "slug": "bosses",
+      "label": "Bosses",
+      "description": "Read the encounter before you enter it. Mechanics, weaknesses and rewards.",
+      "icon": "skull",
+      "labels": {
+        "zh": "首领图鉴"
+      },
+      "descriptions": {
+        "zh": "了解首领机制、弱点与奖励，在进入战场前做好准备。"
+      }
+    },
+    {
+      "slug": "equipment",
+      "label": "Weapons & gear",
+      "description": "Compare equipment, find upgrade materials and choose a loadout with purpose.",
+      "icon": "swords",
+      "labels": {
+        "zh": "武器装备"
+      },
+      "descriptions": {
+        "zh": "比较装备属性，了解材料获取与配装思路。"
+      }
+    },
+    {
+      "slug": "builds",
+      "label": "Builds & skills",
+      "description": "Equipment and skill combinations for a clear playstyle.",
+      "icon": "sparkles",
+      "labels": {
+        "zh": "配装技能"
+      },
+      "descriptions": {
+        "zh": "根据战斗场景组合装备与技能。"
+      }
+    },
+    {
+      "slug": "world",
+      "label": "World & exploration",
+      "description": "A field guide to the places, paths and secrets beyond the campfire.",
+      "icon": "map",
+      "labels": {
+        "zh": "世界探索"
+      },
+      "descriptions": {
+        "zh": "探索营地以外的区域、路线与隐藏路径。"
+      }
+    },
+    {
+      "slug": "codes",
+      "label": "Redeem codes",
+      "description": "A structured code reference with rewards, status and verification dates. Demo only.",
+      "icon": "gift",
+      "labels": {
+        "zh": "兑换码"
+      },
+      "descriptions": {
+        "zh": "展示兑换码、奖励、状态与核验日期，均为演示数据。"
+      }
+    }
+  ],
+  "seo": {
+    "title": "Example Game Wiki — Guides, Bosses & Exploration",
+    "image": "/images/hero.webp",
+    "imageAlt": "Original fictional landscape: a ruined citadel above a forest valley"
+  },
+  "integrations": {
+    "analytics": false,
+    "ads": false
+  },
+  "legal": {
+    "lastModified": "2026-10-21",
+    "about": "This is a demonstration of an independent game wiki template. Example Game is fictional. Every character, location, code and statistic is invented to demonstrate the interface. This site is not affiliated with a game publisher. Replace this content with accurate information before publishing a real wiki.",
+    "privacy": "This default template does not use analytics, advertising cookies or account systems. Search runs locally in your browser with Pagefind. Theme preference is stored on your device. Your hosting provider may process ordinary access logs under its own policy. If you enable analytics, ads or third-party embeds, update this notice to describe the actual services and consent requirements before publishing.",
+    "terms": "The fictional guides are provided for demonstration and should not be relied on as real gameplay advice. The software is supplied under the MIT license without warranty. Original generated artwork is identified in the asset provenance document. Game trademarks and third-party materials require their own permission. This notice is starter text and must be adapted to the actual site operator and services before public use.",
+    "disclaimer": "Example Game is fictional. Independent demo wiki; no affiliation with any game developer.",
+    "translations": {
+      "zh": {
+        "about": "这是一个独立游戏图鉴模板的演示站。Example Game 为虚构游戏，所有角色、地点、兑换码与属性均为演示所编写。本站与任何游戏发行商无关。发布真实图鉴前，请将这些内容替换为准确的信息。",
+        "privacy": "默认模板不使用统计分析、广告 Cookie 或账号系统。Pagefind 搜索在浏览器本地运行，主题偏好保存在设备上。托管服务商可能根据其隐私政策处理访问日志。如需启用分析、广告或第三方嵌入，请在发布前说明实际服务及适用的同意要求。",
+        "terms": "虚构攻略仅用于展示模板，不应作为真实游戏建议。软件采用 MIT 许可并按原样提供。原创生成插画的来源记录在素材说明中。游戏商标与第三方素材需遵循各自授权。正式发布前应根据实际站点运营方与所用服务调整此说明。",
+        "disclaimer": "Example Game 为虚构游戏。独立演示图鉴，与任何游戏开发商无关。"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+---
+import { Icon } from 'astro-icon/components';
+import Breadcrumbs from '~/components/navigation/Breadcrumbs.astro';
+import GuideCard from './GuideCard.astro';
+import { config, categoryLabel, categoryDescription } from '~/lib/config';
+import { visible, type WikiArticle, type Page } from '~/lib/content';
+import { homeUrl, listPath } from '~/lib/url';
+import { t } from '~/i18n/ui';
+interface Props { page: Page; pool: WikiArticle[]; }
+const { page, pool } = Astro.props;
+const { locale } = page;
+const entries = visible(pool, locale).filter(entry => page.type === 'recent' || entry.category === page.category);
+const title = page.category ? categoryLabel(page.category, locale) : t(locale, 'recent');
+const nav = config.navigation.find(nav => nav.slug === page.category);
+---
+<div class="category-page"><Breadcrumbs items={[{ name: t(locale, 'home'), path: homeUrl(locale) }, { name: title }]}/>
+  <header class="category-header"><span class="category-emblem"><Icon name={`lucide:${nav?.icon ?? 'history'}`}/></span><div><p class="section-eyebrow">{config.gameName} · {t(locale, 'explore')}</p><h1 data-pagefind-meta="title">{title}</h1><p>{page.category ? categoryDescription(page.category, locale) : (locale === 'zh' ? '根据文章的实际修改日期排序，浏览最新的图鉴内容。' : 'The latest field notes, ordered by the actual date each guide was updated.')}</p></div><span class="article-count">{entries.length}<small>{t(locale, 'articles')}</small></span></header>
+  <div class="category-toolbar"><nav aria-label={t(locale, 'navigation')}><a href={homeUrl(locale)}>{t(locale, 'home')}</a>{config.navigation.filter(nav => visible(pool, locale).some(entry => entry.category === nav.slug)).map(nav => <a href={listPath(nav.slug, locale)} aria-current={nav.slug === page.category ? 'page' : undefined}>{categoryLabel(nav.slug, locale)}</a>)}</nav><label class="filter-input"><Icon name="lucide:search"/><input type="search" data-guide-filter placeholder={t(locale, 'filter')} aria-label={t(locale, 'filter')}/></label></div>
+  <div class="category-grid">{entries.map(entry => <GuideCard entry={entry} image/>)}</div><p class="filter-empty" hidden role="status">{t(locale, 'noResults')}</p>
+</div>
+<script>
+  document.querySelector<HTMLInputElement>('[data-guide-filter]')?.addEventListener('input', event => {
+    const query = (event.target as HTMLInputElement).value.trim().toLowerCase();
+    const cards = [...document.querySelectorAll<HTMLElement>('[data-guide-card]')];
+    cards.forEach(card => { card.hidden = !`${card.dataset.title} ${card.dataset.tags}`.includes(query); });
+    document.querySelector<HTMLElement>('.filter-empty')!.hidden = cards.some(card => !card.hidden);
+  });
+</script>

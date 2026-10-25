@@ -1,0 +1,25 @@
+---
+import { config } from '~/lib/config';
+import { activeAdProvider, getAdsterraSlot } from '~/lib/ads';
+interface Props { slot: string; }
+const adsense = activeAdProvider === 'adsense' && config.integrations.ads ? config.integrations.ads : false;
+const id = adsense && adsense.slots[Astro.props.slot];
+const adsterra = getAdsterraSlot(Astro.props.slot);
+const label = adsense ? adsense.label : 'Advertisement';
+const isNative = adsterra?.format === 'native';
+const adsterraDocument = adsterra && !isNative ? `<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0;overflow:hidden"><script type="text/javascript">atOptions = { 'key': '${adsterra.key}', 'format': 'iframe', 'height': ${adsterra.height}, 'width': ${adsterra.width}, 'params': {} };</script><script type="text/javascript" src="https://www.highperformanceformat.com/${adsterra.key}/invoke.js"></script></body></html>` : '';
+---
+{adsense && id && <aside class="ad-slot" aria-label={adsense.label} data-ad-provider="adsense" data-ad-slot={Astro.props.slot}>
+  <small>{adsense.label}</small>
+  <ins class="adsbygoogle" style="display:block;min-height:90px" data-ad-client={adsense.client} data-ad-slot={id} data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script is:inline>(window.adsbygoogle = window.adsbygoogle || []).push({});</script>
+</aside>}
+{adsterra && isNative && <aside class="ad-slot" aria-label={label} data-ad-provider="adsterra" data-ad-slot={Astro.props.slot}>
+  <small>{label}</small>
+  <script is:inline async data-cfasync="false" src={`https://bicea.org/21/${adsterra.key}`}></script>
+  <div id={`container-${adsterra.key}`}></div>
+</aside>}
+{adsterra && !isNative && <aside class="ad-slot" aria-label={label} data-ad-provider="adsterra" data-ad-slot={Astro.props.slot}>
+  <small>{label}</small>
+  <iframe title={`${label} ${Astro.props.slot}`} srcdoc={adsterraDocument} width={adsterra.width} height={adsterra.height} loading="lazy" style="display:block;max-width:100%;margin:8px auto 0;border:0"/>
+</aside>}

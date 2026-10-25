@@ -1,0 +1,67 @@
+---
+title: "Moss Guardian: encounter guide"
+description: "Read the Moss Guardian’s two phases, find safe attack openings and prepare a simple loadout. All encounter data is fictional."
+category: bosses
+date: "2026-10-21"
+lastModified: "2026-10-21"
+draft: false
+noindex: false
+cover: /images/hero.webp
+coverAlt: "Original fictional landscape of ancient stone ruins above a wooded valley"
+tags: [boss, combat, beginner]
+answer: "Dodge through the root sweep, attack during the guardian’s recovery, and move outside the pale ring when it plants both hands. The encounter and all listed stats are fictional demo data."
+related: [builds/trailkeeper, equipment/wayfarer-blade, guides/combat-basics]
+boss:
+  hp: "2,400 · demo"
+  weakness: "Fire · demo"
+  resistant: "Poison · demo"
+  location: "The Old Grove"
+  recommendedLevel: "8 · demo"
+  rewards: ["1 fictional grove token", "6 fictional stone fragments"]
+---
+
+import Callout from '~/components/mdx/Callout.astro';
+import Accordion from '~/components/mdx/Accordion.astro';
+import StatBar from '~/components/article/StatBar.astro';
+
+## Prepare for the encounter
+
+Rest at the grove campfire and equip a weapon with a short recovery. The [Wayfarer’s Blade](/equipment/wayfarer-blade/) is the straightforward demonstration option. The [Trailkeeper build](/builds/trailkeeper/) adds a little defensive flexibility.
+
+<Callout type="info" title="Fictional encounter">
+This boss, its health, rewards and mechanics exist only as template demonstration data. No real game testing is claimed.
+</Callout>
+
+## Attack patterns
+
+| Attack | Tell | Recommended response |
+| --- | --- | --- |
+| Root sweep | Right arm moves behind the body | Dodge toward the sweeping arm |
+| Stonefall | Both hands touch the ground | Leave the pale ring, then wait |
+| Bark burst | Moss briefly brightens | Move out and let the pulse finish |
+
+### Phase one: learn the sweep
+
+Keep a medium distance and wait for the root sweep. After dodging through it, land two light attacks and return to neutral. There is no need to force a third hit.
+
+### Phase two: respect the follow-up
+
+Below half health, Stonefall gains a second pulse. The visual ring remains on the ground until the second pulse ends. Attack only after it disappears.
+
+<Accordion title="A safe response to the second pulse">
+Walk away after the first pulse instead of immediately dodging back in. Keeping your dodge available gives you another answer if the guardian turns toward you.
+</Accordion>
+
+## Recommended strategy
+
+1. Stay near the edge of the clearing, keeping the center free for repositioning.
+2. Bait the root sweep and punish with a short combo.
+3. Stop attacking as soon as both hands move toward the ground.
+4. In phase two, count both pulses before returning.
+
+## Demo stat visualization
+
+These bars are illustrative relative values, not measurements from a real game.
+
+<StatBar label="Illustrative physical defense" value={60} note="60 / 100 demo scale"/>
+<StatBar label="Illustrative fire defense" value={25} note="25 / 100 demo scale"/>

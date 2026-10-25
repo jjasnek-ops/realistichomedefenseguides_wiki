@@ -1,0 +1,36 @@
+---
+// Adapted from upstream: native clipboard interaction with accessible feedback and a manual-copy fallback.
+import { t } from '~/i18n/ui';
+interface Props { code: string; label?: string; locale?: string; }
+const { code, label, locale = Astro.currentLocale ?? 'en' } = Astro.props;
+---
+<div class="code-block" data-codeblock>
+  <div><code>{code}</code>{label && <span>{label}</span>}</div>
+  <button class="copy-button" type="button" data-copy={code} data-success={t(locale, 'copied')} data-error={t(locale, 'copyFailed')} aria-label={`${t(locale, 'copy')}: ${code}`}>
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></svg>
+    <span>{t(locale, 'copy')}</span>
+  </button>
+  <span class="copy-status sr-only" role="status" aria-live="polite"></span>
+</div>
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach(button => {
+    const text = button.querySelector('span')!;
+    const original = text.textContent;
+    const originalLabel = button.getAttribute('aria-label')!;
+    let resetTimer: ReturnType<typeof setTimeout>;
+    button.addEventListener('click', async () => {
+      const status = button.parentElement!.querySelector<HTMLElement>('[role="status"]')!;
+      clearTimeout(resetTimer);
+      try {
+        await navigator.clipboard.writeText(button.dataset.copy!);
+        text.textContent = button.dataset.success!;
+        button.setAttribute('aria-label', `${button.dataset.success}: ${button.dataset.copy}`);
+        status.textContent = button.dataset.success!;
+        resetTimer = setTimeout(() => { text.textContent = original; button.setAttribute('aria-label', originalLabel); }, 1800);
+      } catch {
+        status.classList.remove('sr-only');
+        status.textContent = button.dataset.error!;
+      }
+    });
+  });
+</script>

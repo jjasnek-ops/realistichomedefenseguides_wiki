@@ -1,0 +1,41 @@
+---
+title: "Greenhollow Vale: map & route notes"
+description: "A fictional region map with numbered markers, a beginner route, a simple image preview and a compact gallery of original demo artwork."
+category: world
+date: "2026-10-21"
+lastModified: "2026-10-21"
+draft: false
+noindex: false
+cover: /images/vale-map.webp
+coverAlt: "Original illustrated map of the fictional Greenhollow Vale with three numbered route markers"
+tags: [exploration, beginner, maps]
+answer: "Start at marker 1, follow the river to the workbench at marker 2, and rest before entering the Old Grove at marker 3. This region and route are fictional demo data."
+---
+
+import Map from '~/components/wiki/Map.astro';
+import Gallery from '~/components/wiki/Gallery.astro';
+
+## Region map
+
+<Map image="/images/vale-map.webp" alt="Fictional Greenhollow Vale map: Wayfarer’s Rest southwest, River Workbench in the center, and Old Grove northeast" markers={[
+  { label: 'Wayfarer’s Rest', description: 'A fictional starting camp and training area.' },
+  { label: 'River Workbench', description: 'Upgrade the weapon you plan to use.' },
+  { label: 'The Old Grove', description: 'Rest at the campfire before the guardian encounter.' }
+]}/>
+
+## A route with room to explore
+
+Follow the river instead of cutting across the ridge. In this imaginary setting, the river path connects the training camp, a few upgrade materials and the workbench. The route is described in the [first steps guide](/guides/first-steps/).
+
+### Before the Old Grove
+
+Check your weapon and supplies. The [guardian encounter guide](/bosses/moss-guardian/) explains the two attacks worth recognizing before you enter.
+
+## Demo image gallery
+
+These original assets illustrate image sizing, lazy loading and captions. They are concept artwork and a map diagram, not screenshots from a real game.
+
+<Gallery images={[
+  { src: '/images/hero.webp', alt: 'Original concept illustration of the fictional vale and its ruined citadel', caption: 'The Vale — original fictional concept art.', width: 1536, height: 512 },
+  { src: '/images/vale-map.webp', alt: 'Original diagram of the fictional route from camp to grove', caption: 'Route diagram — three useful milestones.', width: 1200, height: 800 }
+]}/>

@@ -1,0 +1,21 @@
+---
+// Adapted from the upstream MDX-heading TOC. Both views link to Astro's actual heading IDs.
+interface Props { headings: { depth: number; slug: string; text: string }[]; heading: string; mobile?: boolean; }
+const { headings, heading, mobile = false } = Astro.props;
+const items = headings.filter(item => item.depth === 2 || item.depth === 3);
+---
+{items.length > 0 && <nav aria-label={heading} class:list={['toc-nav', mobile ? 'mobile-toc' : 'desktop-toc']}>
+  {mobile ? <details><summary>{heading}<span aria-hidden="true">+</span></summary><ol>{items.map(item => <li class:list={{ nested: item.depth === 3 }}><a href={`#${item.slug}`} data-toc-link={item.slug}>{item.text}</a></li>)}</ol></details> : <><p class="nav-label">{heading}</p><ol>{items.map(item => <li class:list={{ nested: item.depth === 3 }}><a href={`#${item.slug}`} data-toc-link={item.slug}>{item.text}</a></li>)}</ol></>}
+</nav>}
+<script>
+  const tocLinks = [...document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')];
+  const ids = [...new Set(tocLinks.map(link => link.dataset.tocLink!))];
+  const sections = ids.map(id => document.getElementById(id)).filter((element): element is HTMLElement => !!element);
+  if (sections.length) {
+    const update = () => {
+      const current = [...sections].reverse().find(section => section.getBoundingClientRect().top < 150) ?? sections[0];
+      tocLinks.forEach(link => { if (link.dataset.tocLink === current.id) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current'); });
+    };
+    window.addEventListener('scroll', update, { passive: true }); update();
+  }
+</script>

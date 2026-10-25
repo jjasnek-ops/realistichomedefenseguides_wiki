@@ -1,0 +1,3409 @@
+{
+  "repository": "https://github.com/jjasnek-ops/gameforge-template",
+  "commit": "7b68c2f121b82ec02c472956335a1749b0e2e400",
+  "method": "Complete file inventory from the pinned Git tree, grouped by responsibility. Relevant rendering, SEO, routing, content and component implementations inspected before extraction. This inventory does not claim line-by-line review of omitted operational documents.",
+  "counts": {
+    "EXTRACT": 118,
+    "KEEP": 20,
+    "REMOVE": 259,
+    "SIMPLIFY": 169
+  },
+  "files": [
+    {
+      "path": ".agent/skills/anvil-adsense-audit/SKILL.md",
+      "sha": "ed2136f6bf80ac117535a3e1d2faedb2d678fdb8",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".agent/skills/anvil-batch-articles/SKILL.md",
+      "sha": "bbba4b758ba1b5e7c18171294a6692ac71a3e4af",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".agent/skills/anvil-find-keywords/SKILL.md",
+      "sha": "c68cc99102cf108d2c2e8992a1d4e35d2b2ffd10",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".agent/skills/anvil-new-article/SKILL.md",
+      "sha": "c0ddd20ed2d2627e8b711a3aab9da1ce48210e3b",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".agent/skills/anvil-refresh/SKILL.md",
+      "sha": "f3fb562b01b7f2613bad17cd56b60b2033a99fda",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".agent/skills/anvil-update-codes/SKILL.md",
+      "sha": "77e806b5bf3c5578392a7b45d1ae1df31e054f34",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".agent/skills/gameforge-unattended/SKILL.md",
+      "sha": "201892fef025dfb94614fedd072116e5c2730195",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".env.example",
+      "sha": "497c29a4c9daeb7bc797c78f176f82dcb2700281",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".gitattributes",
+      "sha": "c4b44d201c772aea7118260b0c6cf8dd7098cc68",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".githooks/pre-commit",
+      "sha": "4152abb8e42af749b7af8507e51f8d77fb064986",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "sha": "e410566bbc6102b2f9910380f1d4986faa28727a",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+      "sha": "b30c9c71eec133df4145f1759c4dc4ba60f69a8e",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature-request.md",
+      "sha": "bcf3ac3e807d880a0a969f522231478ac91195b8",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha": "0d37e4ebf58b18533c9b59d1c613ce4e4bf4a9f4",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".github/actions/gates/action.yml",
+      "sha": "dc0f0ca33ee2f334a7507f9b9ddde31013ec857e",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".github/workflows/auto-content.yml",
+      "sha": "ed0ed6654727cc5be395499184996a57da71aacf",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha": "44ab3bb159c6b52d749be192d2b1fc9e0b93370c",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".github/workflows/content-pipeline.yml",
+      "sha": "0a4f319e52e0e6c8949636ddd328d2ac4f87e2ea",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".github/workflows/indexnow.yml",
+      "sha": "6112da05d223933b7a34362a9dee82cbf44fa64e",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".github/workflows/release-ops.yml",
+      "sha": "a9aaa290d11d26837333417516a423dec70c1a83",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".github/workflows/setup.yml",
+      "sha": "1ea21221abc1f9bc2a2dba3c194d9e7c9af830a5",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".github/workflows/tutorial-audit.yml",
+      "sha": "8db54d8db147a2365767e5b92992204b9fa74587",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".github/workflows/tutorial-content-briefs.yml",
+      "sha": "4571931ee3c2629cc4be0c01e17aee5fabbaaed6",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".github/workflows/tutorial-pipeline.yml",
+      "sha": "9ab49a6f7e12cac7fa7a48c0f6980eb97195073c",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": ".gitignore",
+      "sha": "0ec9ece8b695cfd9292ba0454aa3f7588fa1cb71",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".nvmrc",
+      "sha": "2bd5a0a98a36cc08ada88b804d3be047e6aa5b8a",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".prettierignore",
+      "sha": "4e08c40a32a31eb774f7c5c7c6f9215c4ac9a523",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": ".prettierrc",
+      "sha": "b44bf9ee4a608460fd09761999fd3ef5a20268fb",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "AGENTS.md",
+      "sha": "32ad0c34a8c464199ad6bdcf002b2fbab4e560dd",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha": "e66bf20c0470aae9299b556cc572c556ea21f0f8",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha": "d31666cc9c88cece13bba2ac3dd6944b00d892ee",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "LICENSE",
+      "sha": "2008a4033b0e2c3eeef71ac8383a5a0bcda19528",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "README.md",
+      "sha": "dae7307ff47e82011a1629310edd1c240640203d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "SOURCE_PROVENANCE.md",
+      "sha": "e666b1257e64182186142412483ec4cc0a796cd4",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "astro.config.ts",
+      "sha": "353639073f18d1f048a16ee54398c83387058984",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "docs/BRANDING_AUDIT.md",
+      "sha": "dc548985986389727467becc943a9742ad3b82d4",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/CONFIGURATION.md",
+      "sha": "b59eb1506874247bfc46fd76175dd0b59cb2711d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/CONTENT_WORKFLOW.md",
+      "sha": "ecc8b752ddfce086b6e81da291a3b5e50b7607be",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "sha": "f3d3d4d38ed64691444df38f50ea5306a98fce1e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/GAMEFORGE_AUDIT.md",
+      "sha": "67f09b48d4a08d97130590f57e57f9559cb4f070",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/MIGRATION_EXECUTION.md",
+      "sha": "2654d5ed14c45f6e424ca8068f32f8b8eee30bb1",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/PRD.md",
+      "sha": "c57d25bc5a66ea91828f87600c26f0e9e6ac53b1",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/PRIVATE_TEMPLATE_MIGRATION.md",
+      "sha": "8ace917e03cfb8a35d822ed3ab0653b590c9ee1e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/QUICK_START.md",
+      "sha": "4cbc6a970340d5180d766b58b63edf1be43be8af",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/README.md",
+      "sha": "0fd8544ae60dc41cbf4f200073311392113db586",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/SEO_CHECKLIST.md",
+      "sha": "68a59e29da0a5437b2df915decad7ee46ad05ea8",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/TUTORIAL_CONTENT_BRIEFS.md",
+      "sha": "057b3f9b7bab87f0be0cfb6031764f114a4ae9fa",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/TUTORIAL_ONE_COMMAND.md",
+      "sha": "79552468297ddbd8f9b88ee51a741e1a227e8898",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/TUTORIAL_PLAYBOOK.md",
+      "sha": "509b9992d9a8331e05c4641a68cd91058f1a8f92",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/ads.md",
+      "sha": "b5a81051862fe917376c183313f60035a2078555",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/apply-template.md",
+      "sha": "7d1b300696331352ebf89805183c66a32ce8dcb3",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/audits/AUDIT-2026-09-20-round21-full-project.md",
+      "sha": "1e837654aeb690a252578492a15b22ed0378a940",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/audits/BRANDING_SOURCE_INVENTORY.json",
+      "sha": "da81e4eec0b7d82667f0967f07cb8a8524110af8",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/comments.md",
+      "sha": "483c129836cc527b56c512031f799992e1befc93",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/content-format.md",
+      "sha": "a3f3ac76805bf4aece7c4a04f66e6fb165ab7a6e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/content-pipeline.md",
+      "sha": "1e0d2d2dcb5254b912ac97d38e28fd924d63362a",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/development.md",
+      "sha": "4d6ef7983200080d673baaa5dfa1e81bce52e272",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/game-selection.md",
+      "sha": "c61072f96240f88ec8520574b38077592cdb48e2",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/add-ga4.md",
+      "sha": "a916e0f05e55ab0b833ef69ca595c69e1757a24e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/ai-ops.md",
+      "sha": "efa877618ced27a831fca33c1758976550a8b4b7",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/appendix-red-lines.md",
+      "sha": "656f6143333397d6c49a3610726742e6c1a15e65",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/architecture.md",
+      "sha": "b6b4f1125a9e8c1822c14229944d1291b4c6b88f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/batch-pages.md",
+      "sha": "b389b26d203e12ecbe3261f4c22af4c51d818362",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/categories-and-locales.md",
+      "sha": "f227cc10920998fb489d72ed81c4f97f583c7643",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/clone-your-site.md",
+      "sha": "4bd932a1b2d07470a53a0b8b596d5592cd5c0290",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/codes-page.md",
+      "sha": "68b1072083dc8fc5adc1c123ef22ebf4f8798a41",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/content-pipeline.md",
+      "sha": "8106831b7a5c94b035237289fa3eb118af51a4c5",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/contribute-back.md",
+      "sha": "f75b76f3689b10a0735e14b5753147f8e18b5929",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/day-one-list.md",
+      "sha": "c1c68a3b6f6d0c748091d5dc635146012149f886",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/enable-ads.md",
+      "sha": "7e0b78ecbe898767be8670b7a4534a81d6a3c744",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/find-candidates.md",
+      "sha": "88bdda42ae0a536302cd7f02b53163ceaa7b7a60",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/first-article.md",
+      "sha": "fcad8e86f272963ac12daf9cacb3a92d30e06c5b",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/first-week-numbers.md",
+      "sha": "f3abdfcba952a2e013ed13cde713f15cb013cdae",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/get-on-google.md",
+      "sha": "cff68337be3674885257c27b7575eb7bb159dd68",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/get-paid.md",
+      "sha": "f09ef1d5b22c9830a9a91f201d711bf2e3a761db",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/glossary-and-commands.md",
+      "sha": "25083cd0d08997e1d9f83a1df45b49d34fd704b3",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/how-this-business-works.md",
+      "sha": "82e594993fc953096c691f818e18cb7bea501941",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/install-counters.md",
+      "sha": "93444c8cefdafc707cbdbf8ca30c95a4b6688b3c",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/install-tools.md",
+      "sha": "4a8fc9b8929c2ad48cb2fecfb438fc4bb30b6d84",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/integrations.md",
+      "sha": "7380fed3b7497757de9e3da29ef44a7007a80fe3",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/launch-batch-plan.md",
+      "sha": "e7ff2944ebdd023ab7dfbb747fe5554c1654229e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/multi-site.md",
+      "sha": "6df33abbd54d206b586f82a1a6c9db886d5bbc1f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/put-site-online.md",
+      "sha": "e10da746d7f748c874ba5a782b93ff2e16c7eb60",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/quality-gate.md",
+      "sha": "6acae3f4b321318a79c948ed00979b030e535d5a",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/rank-one-keyword.md",
+      "sha": "439ce648006b7b043167d90d134cfa81b9cafdfe",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/read-google-trends.md",
+      "sha": "3e394b5062dd39b4f35563f378cbf27d7a3ef6e1",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/read-serp.md",
+      "sha": "83343a1e92debb92e8636d076f0799cc8945cd4b",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/rebrand-your-site.md",
+      "sha": "758c6d4b51f656f6368c5a8c52f742f18de366dd",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/run-your-site.md",
+      "sha": "87ddffc8fe9ab7fbbec6d6a04ef0d6f30111101b",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/score-and-decide.md",
+      "sha": "c863b7cac2c22a23c369d811d354fad04e6bb71a",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/search-intent.md",
+      "sha": "50c278ca1d307e4552544c04f8a444f2a58ba1ad",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/sync-upstream.md",
+      "sha": "a6b75dd76ab77dcf75ad63c4d02b0d5acfff7bf5",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/the-roadmap.md",
+      "sha": "d3c1379b162add8dbfe1532d8a63818486048109",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/theme-and-homepage.md",
+      "sha": "ed8494ada17c09c1b686a803a6d08015b468c05b",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/tier-list-and-media.md",
+      "sha": "523f21e39406d17b27014adba5c03cf14bb489a9",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/troubleshooting-tree.md",
+      "sha": "6095ad5fbb3f7ddb23be70b5733fab31f88d5fc3",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/trust-and-backlinks.md",
+      "sha": "3fb161cd8aecece3f09bc111e7bceab80b1b5374",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/verify-your-changes.md",
+      "sha": "21d85c77674cfa8b8b19c6efa69df04e56d8e6bf",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/en/weekly-ops.md",
+      "sha": "8bdaf6dd5b192f529e2b64c37f545f490ec6e2b0",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/add-ga4.md",
+      "sha": "3a3d7143fc8e7df2e8530f8ade41a8b9e034e199",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/ai-ops.md",
+      "sha": "2dcb3852a1edd4a5a3952bc3b685728b94459691",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/appendix-red-lines.md",
+      "sha": "f1f3e62aff5a5fdb0caa49b7c97c58bfb25f1f04",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/architecture.md",
+      "sha": "4b1fcd291ed388dbfdc7d66e760b8d15e2875231",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/batch-pages.md",
+      "sha": "8312df841b8861a313f7b630017d5cf3a4911670",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/categories-and-locales.md",
+      "sha": "34a5dbf2e389cbc2a5deffc64be52ac39836479e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/clone-your-site.md",
+      "sha": "31573e9e554a340afab997b323538b575b8870ef",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/codes-page.md",
+      "sha": "ec2e7864fe1e89d992cb2e64fe2b9a93f8974559",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/content-pipeline.md",
+      "sha": "6b96ab964e3459faa7a02b5b013516326d0757c3",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/contribute-back.md",
+      "sha": "17747e55ce91a1d620662e5f18258b9a886389b7",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/day-one-list.md",
+      "sha": "e497df8a02f620bdcd2050ee17e33d04dfc849a5",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/enable-ads.md",
+      "sha": "cfac1d3de6eed7bfe046a985460c146e5bc02bac",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/find-candidates.md",
+      "sha": "0ec38f33ab85867d92bb554af90c9874f371e08d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/first-article.md",
+      "sha": "571f07a75aee4964f0f2f87c7b231341fa724e02",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/first-week-numbers.md",
+      "sha": "8d213e5010e5643a4862ffdabfbfb0ea506e9163",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/get-on-google.md",
+      "sha": "fb4567c50c85b54c81c6dac1e773d5bcd6758da4",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/get-paid.md",
+      "sha": "78098f0c6072896839a3420522f3ae4fc855e6d6",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/glossary-and-commands.md",
+      "sha": "1ddc6a4bd23ba89d6aebe9dfc0807bed3b60571d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/how-this-business-works.md",
+      "sha": "72820161e9d9429cbefdde91a2231c161ad019c7",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/install-counters.md",
+      "sha": "4d8becc7165cbf29fbb6265dac5dad011594d878",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/install-tools.md",
+      "sha": "62c012eea19aea012776fac2a98c61c5a2dda822",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/integrations.md",
+      "sha": "a417cc51c421acbf5f833f6654ba1509549c108f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/launch-batch-plan.md",
+      "sha": "01c62bae8e710b3e01ceef04e4d0c3e14c870560",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/multi-site.md",
+      "sha": "5590d13a6391124f4bf03e742debed1422b4f470",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/put-site-online.md",
+      "sha": "c6b819f1ca284cc3bf6be7a45e38e3629337a007",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/quality-gate.md",
+      "sha": "63c2dfa635e6534917444316c98842d93c8b04f0",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/rank-one-keyword.md",
+      "sha": "bd75d1f962c564338731d9f1576de17b1afc375e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/read-google-trends.md",
+      "sha": "2c1c7fcff796a4c01242ff9379ae19d00c5ed152",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/read-serp.md",
+      "sha": "75412fe5388e5cda510e235911195691e6337193",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/rebrand-your-site.md",
+      "sha": "0f0584b276e7925e4a71cc310e5d3e35b7883cfb",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/run-your-site.md",
+      "sha": "4e68da223c877e3450c47678df3c9cd7ed2b6c43",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/score-and-decide.md",
+      "sha": "d4d7060182a70705dbbb8dca912b28b5235adb60",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/search-intent.md",
+      "sha": "c04912effbe295e60b16b3948a9f416dcae08d81",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/sync-upstream.md",
+      "sha": "260a33558b9c8cf2903cce904d96e56603856b10",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/the-roadmap.md",
+      "sha": "a9efee42db486e770f31d83ac3468822d5722de0",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/theme-and-homepage.md",
+      "sha": "108fad45a2b82e2dd366bc7f798f98362fcf1fa3",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/tier-list-and-media.md",
+      "sha": "1a44cd394a2ac2c02a188dc868d23c54a48db995",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/troubleshooting-tree.md",
+      "sha": "5575f9a812678bb91b1b5ca54c7ecc16f605b356",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/trust-and-backlinks.md",
+      "sha": "60c5ea034796ee0c11fc9b6f89c55ab069026c41",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/verify-your-changes.md",
+      "sha": "a17f4ea9c1972b3209022d81eafea8f4d363f2e5",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/handbook/zh/weekly-ops.md",
+      "sha": "56c615d15434dad877a7594dc63b511ef4f8f800",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/home.schema.json",
+      "sha": "ec1bd6cc9384de4f91d843c7bf8956489903ef44",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/migration-from-nextjs.md",
+      "sha": "c7b23883762aafc0d7ff943b6b3997fe858bebe7",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/multi-site.md",
+      "sha": "4d758f9efa53ea68c11eab673698612d45777197",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/roadmap.md",
+      "sha": "35b127927a8d44f1fcba76e31e09ceee67b9fa59",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/seo.md",
+      "sha": "6bae9d10f697154cf8b3340e64f1d2189b8f3a51",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/sourcing.md",
+      "sha": "39c324f2fae1b8dba4d1ed6781e93b0c0c7d6e75",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/staying-up-to-date.md",
+      "sha": "9cdc2e1f888711855cf27a5663a5ea5609790613",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/ROADMAP-v1.5-v1.6.md",
+      "sha": "297426083b4085e13e6b429b3b6d7825f3596b7a",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/plans/2026-08-18-anvil-ops-p1-core-cli.md",
+      "sha": "8acc130ad85ac0904bcf0dd86f5e63a402582b28",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/plans/2026-08-18-anvil-ops-p2-mcp.md",
+      "sha": "7bb1d8fde6784977b2ac8405b39a0b95402f194c",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/plans/2026-08-18-anvil-ops-p3-insights-submit.md",
+      "sha": "c7fc83f2084245b2b5b51fb337a3b57bf874f85d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/specs/2026-08-18-anvil-ops-cli-mcp-design.md",
+      "sha": "4158b0efd440a51f24363235875771b252e88e54",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/specs/2026-08-22-v2.0-content-os-design.md",
+      "sha": "d0de22e1232f5da9852ca47fcbc610aefd5509ae",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/specs/2026-08-29-retro-hardening-batch.md",
+      "sha": "e52d2f13608f1be1d73b4646908967b6292af7c3",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/specs/2026-09-02-handbook-teaching-redesign.md",
+      "sha": "7ced4ae7c4b4dae3a03326a40e8cfb16b309cd12",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/specs/2026-09-03-gsc-discovery-docs-search-design.md",
+      "sha": "80321c17982aec135b7238c483acbb0449a556c9",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/specs/2026-09-08-community-digest-pipeline.md",
+      "sha": "baaa4fac22f3c1922b95c1d136cbaf006540d70a",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/specs/2026-09-08-git-based-cms-evaluation.md",
+      "sha": "4039895337602559b830349bea91bd38ad071240",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/superpowers/specs/2026-09-15-fallback-seo-noindex.md",
+      "sha": "59e0088d2a1d94ce67d52a444c7254756b563a4a",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "docs/upstream-deployment.md",
+      "sha": "81b6181fa6801fba996bf92519eaca45a4267502",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "eslint.config.js",
+      "sha": "ca76e0f06112357e0fa89ec454b058b26b45c011",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "fixtures/games/roblox/facts.json",
+      "sha": "bb71e35a8998888f699bb54fa3cf8629dc8763ab",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "fixtures/games/roblox/game.config.json",
+      "sha": "a9909ed30efd53ae1a8e4131e31b090916910220",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "fixtures/games/roblox/keywords.json",
+      "sha": "5b5239f5e1c5e8c106cb1695b69bc3607259bfdb",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "fixtures/games/steam/facts.json",
+      "sha": "af03b0a56df598b9ee097623860e3b5938ac02a9",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "fixtures/games/steam/game.config.json",
+      "sha": "4c4100989bbf256c63f6372a5b362b48bfd5e17d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "fixtures/games/steam/keywords.json",
+      "sha": "56b343919ab6114a1160c13589dd3d7ba61877bc",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "fixtures/tutorial/opportunity.example.json",
+      "sha": "c8da5c2c726f61380b8dd0c4998e8a4bfd28122b",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "licenses/astro.txt",
+      "sha": "b3cd0c0f0e01d20109fc8660a4d6b7dc9a22bc49",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "licenses/lato.txt",
+      "sha": "98383e3d835a5c5aea988a74b569193a30dcbcec",
+      "disposition": "REMOVE",
+      "reason": "The template uses system fonts; font generation helpers, font files and unused font license are not distributed."
+    },
+    {
+      "path": "licenses/lucide.txt",
+      "sha": "718bb3f0e44153809972abed31839375804bf652",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "licenses/manifest.json",
+      "sha": "eb764d24c7dac190bd08b5a5ef9ada54cf6fbcc5",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "licenses/pagefind.txt",
+      "sha": "1a92e1c27d66e56d91939ed173041337f9e87eb4",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "licenses/site-software.txt",
+      "sha": "2008a4033b0e2c3eeef71ac8383a5a0bcda19528",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "licenses/tailwindcss.txt",
+      "sha": "d6a82290738a9f78946cbcb4594535d6984086dd",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "package.json",
+      "sha": "248371f3ef0fa2b1dff01e96435f3523a9248876",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha": "c1fc345e0ca30d012f1697eebfffec7b1a0bf8a5",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha": "0e52f5fb7b48f72f6f0b7e7fee0cb57737c20af5",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "public/_headers",
+      "sha": "4a0fadaeb097ca25f2ec819e4da09381f5a12de8",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "public/_redirects",
+      "sha": "fcf1e79477b5b3ddd2d3162af9a6f7d188f6b83b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "public/ads.txt",
+      "sha": "3ed35bb83a9e214e4009802fc9ce90e7849a6cfa",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "public/ads/incontent-728x90.html",
+      "sha": "7d909d5274adca2c2e5afa9c80ab87bb02690ecd",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/ads/native-banner.html",
+      "sha": "5bf5787b6270db780e206ab32c1a45d7ea465e82",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/ads/sidebar-160x300.html",
+      "sha": "0905842f5c16abc01886dfa2f38c42500e5f874f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/ads/sidebar-160x600.html",
+      "sha": "dc63f9f5388fb4c468a66a92e5702841978a8470",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/ads/sidebar-300x250.html",
+      "sha": "7f18e5f793686bfbc2dad174e1efff2e17eca8da",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/ads/sticky-320x50.html",
+      "sha": "3b5366ad1834ec7da32aeafffa26982583199221",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/android-chrome-192x192.png",
+      "sha": "7c75fe9f5e5ab4a849363e7020e9d139bfe4e706",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/android-chrome-512x512.png",
+      "sha": "3dc7cad6aaecf5e9aa8b71be727dc38f49f850bc",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "sha": "7fceb809f0764a7b9dbd9e35e838ddb28bc3e1d9",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/favicon-16x16.png",
+      "sha": "68b6b11951b4c8f405683d688e535e02ef494fe9",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/favicon-32x32.png",
+      "sha": "06ca6ec9a19edbb2163f4625bfdd08251dfc54fc",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/favicon.ico",
+      "sha": "5de85264ee5e407edfefc83b18f94e4c273cc545",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha": "713631a07e85a7b2a501249aa3d0836ff9609790",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/google8362d9398114b66b.html",
+      "sha": "d049bf08677371d3de25bc59c295575317c8aa48",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/articles/weapon-frostpike.png",
+      "sha": "2df1e8fe677d7c147258ceda2903ea9225bc491c",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/articles/weapon-voidforge.png",
+      "sha": "200bc2bbecfbe094209f49cb7778e5904f0e3558",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/hero.svg",
+      "sha": "21e10d568c3eaadd6b31ee04833b3391d857bbfd",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/hero.webp",
+      "sha": "5f34faffdc539b21d14becfab4f25b02b43fbaf8",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/demo-article.webp",
+      "sha": "68834b437f016890024566d16adf27fe74bed3a5",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/demo-codes.webp",
+      "sha": "df0e4dbd190812005343e654e9990daf8e04fdda",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/demo-home.webp",
+      "sha": "d72a077196f69bb97b6fe4a29ac1182ab6fbf41b",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/demo-mobile.webp",
+      "sha": "2b9256d42669b066bf5ee57a1ed444def051197b",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/demo-tier-list.webp",
+      "sha": "ba3330b768b9ffda7ed0fa659954bab6cdaacfe7",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/sites/aniimo.jpg",
+      "sha": "bcaf2bbdb3f0cb7b82d8551ad30a5bd670e2d865",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/sites/jjs-player-guide.png",
+      "sha": "2315801068f277ba7ceffefdf69dfc22509cbfef",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/sites/mortal-shell-ii.png",
+      "sha": "7640327976ba4e94240b06594ecd8bfef2419c32",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/sites/nomanssky.jpg",
+      "sha": "e6e736b9c946cbdf74321ec8338c271e8f9997dc",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/sites/resonance.jpg",
+      "sha": "e1481aa3b47238b1e01725bcd644fc3a401e75ed",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/sites/sandustry.jpg",
+      "sha": "8de711e0c74d1e79d1a835f89d98b160e75e90aa",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/sites/sephiria.jpg",
+      "sha": "ef3177a04b3c52ed191c99850f74cd3a9f3d62e6",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/sites/steal-anegg.jpg",
+      "sha": "832a6469dc7c9e266361054f00a70e3722905235",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/showcase/sites/warhounds.jpg",
+      "sha": "9f27d1bf2beb7f46195103292132692d63887b82",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/images/wechat-qr.jpg",
+      "sha": "21c52a9057f6d65ebbec5dba278a07aeefb7e72e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "public/manifest.json",
+      "sha": "83140b0528d05ef8442ec36138dd795bd6d8372f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "requirements/00事实来源.md",
+      "sha": "3ab9947650535dcd3a976c60423766afb3a6c5ec",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "requirements/00对标参考.md",
+      "sha": "98072232be35e3e329cad3278e98a66ec010e913",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/ai-draft.ts",
+      "sha": "63ff5d86482e20c9302c499776c5b56daf4563ab",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/apply-template.ts",
+      "sha": "784873e7be6c41f7b901a235375f31897a699cde",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/audit-branding.ts",
+      "sha": "34665af5c9c438229324f90c7cc6af7b5a8c5a91",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/auto-publish.ts",
+      "sha": "9901e3b35df459008fddc5bc566bc295eb90a9c0",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/bulk-new-posts.ts",
+      "sha": "1d54d7d556abdfaf25ebb6bccc5b91ff0eaac2d9",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/check-config.ts",
+      "sha": "5d9eab4b8fed702f3eeb4f267371eb2accc16aaa",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/check-content.ts",
+      "sha": "25a1daa4c7e748aed0ed505102da646f1dc2abc1",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/check-evidence.ts",
+      "sha": "bf994c0efcef529787b67b082697c4d56f94e588",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/check-i18n.ts",
+      "sha": "95b3b93f8194fa99215b111b52c9414ee148d65b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/check-links.ts",
+      "sha": "d04113a0bb2c01772a76ced770b01beddb6ad74c",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/check-secrets.ts",
+      "sha": "4a073022f947eca1e2b08d6302751e74640d415b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/check-seo.ts",
+      "sha": "242e691902988407c925b000892cf801a6fcd507",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/check-sitemap.ts",
+      "sha": "2054179ac4a6b98e00f8d4052c6a67688fcc3ccb",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/check-sources.ts",
+      "sha": "235ceba9ae69d2e0b39c6ff88f89695194a0ed27",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/clear-demo-content.ts",
+      "sha": "bb966cb773ffe42e92060a2470c736fc5105c7c2",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/clear-demo-public.ts",
+      "sha": "ed98108adb8242f7cf1eb0160177e887bebe01c5",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/configure-game.ts",
+      "sha": "388236cdf07f9647e2313846a607ca0f0e61492f",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/create-game.ts",
+      "sha": "899ea286e1ee30c6bca80203496b1d659c17d520",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/e2e-apply-template.mjs",
+      "sha": "91729a33ed049a3775a699c668d63e95ea8d88ad",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/finalize-site.ts",
+      "sha": "50c3a0d691e205f418e456ed484c7fc1402caa95",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/fonts/Lato-Bold.ttf",
+      "sha": "1d23c7066e095b5bff2c373d4064dc4f33659783",
+      "disposition": "REMOVE",
+      "reason": "The template uses system fonts; font generation helpers, font files and unused font license are not distributed."
+    },
+    {
+      "path": "scripts/fonts/Lato-Regular.ttf",
+      "sha": "0f3d0f837d24834b9b5b0a6b735459c56f5e75c3",
+      "disposition": "REMOVE",
+      "reason": "The template uses system fonts; font generation helpers, font files and unused font license are not distributed."
+    },
+    {
+      "path": "scripts/gameforge-run.ts",
+      "sha": "c0440c82623084ffab2da315905bec78a7050d99",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/gen-assets.ts",
+      "sha": "73c8dc594c98ac95d7cc3c70ac072b4d983e2ed5",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/gen-covers.ts",
+      "sha": "a621dd8f0d005797af695f13edcac1c585aa5cc1",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/gen-demo-media.mjs",
+      "sha": "32b62b6df65967dfc7459a1ebdf6bd863288e4fc",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/init-indexnow-key.ts",
+      "sha": "b1767aba34985b4651b3be721ab42ee1046729e2",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/install-hooks.mjs",
+      "sha": "58e4e65d5b0a1306211faf79f5b57bff1fe2840b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/apply-rewrites.ts",
+      "sha": "f94ad68e42684efe7f30b0f36e1866490d40be9a",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/lib/apply-template-i18n.ts",
+      "sha": "88e9906bf1e8e3d93ebc8aa7c2b710cb836db50a",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/lib/asset-extensions.ts",
+      "sha": "13ddd661432d24dc1e291e15fc5f31688efd02e5",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/atomic.ts",
+      "sha": "81ff904e2214dbadf55bfab16a6a9345adf4b707",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/branding-policy.ts",
+      "sha": "0ceb9933df211d04f36bde8cbb59df5ed309f471",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/branding.ts",
+      "sha": "5e39ad3c8913fe02a40dce12723cb661b46d4f86",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/configure-game.ts",
+      "sha": "5627651ac0db6016f0a0ed07fbe5ce01370349f6",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/lib/delimited.ts",
+      "sha": "8e241bab101b6e6430727f1af31b76bd9c502451",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/fonts.ts",
+      "sha": "6b7106f122bdb4bf36b885de81261e62a6d43fa7",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/gameforge.ts",
+      "sha": "8bbb9ff5cbc1976bad95d0b2f572672ad57b54ac",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/lib/indexnow.ts",
+      "sha": "74db13f27b4eeba4056bd354c27f728d58123f45",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/lib/link-scan.ts",
+      "sha": "541da1681614671c66019011074a9c239d9163d5",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/prompt.ts",
+      "sha": "912ec077fac47ebb019b35b48433c2c251c08274",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/lib/routing-flags.ts",
+      "sha": "394a5b7071b526c8bb24847127222750028c9f3a",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/run.ts",
+      "sha": "27cc3d4688aab99b3066341589121f03a8c8de99",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/security.ts",
+      "sha": "64d1035672b9c6375c796668a45b0ede813221e8",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/seo-audit.ts",
+      "sha": "ada8951883bfd05af644130eab0fdad9a59497b2",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/slugify.ts",
+      "sha": "8ff0eb046feebd55b0a246f1f9b4a319ff2a9b5d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/source-links.ts",
+      "sha": "6052077fcc79c620ab04dbcf2b6570ebe47005b6",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/lib/sync-codes.ts",
+      "sha": "29ead5dd19a3bf3de6f76433162825cd5f3deaac",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/lib/today.ts",
+      "sha": "bcbbcfcb2fbbfcdcfc8d95c4f749700dde006437",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/lib/walk.ts",
+      "sha": "bc0383811911b7a88157357e9db914f50c24b097",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/new-locale.ts",
+      "sha": "ab97bf6c9d452a85ddca3c7142e7511a388a84f7",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/new-post.ts",
+      "sha": "98c28a9928e4dcf941368dae82af2ea7f310cd83",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/plan-content.ts",
+      "sha": "c5cfe01e16b53c7f70edf45c37dfbd323326f96d",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/predeploy.ts",
+      "sha": "7dbf3db76208fd9fccea38afa7adfbfe2edc6294",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/refresh-audit.ts",
+      "sha": "931fea135d951f2503bcd9ab92b3bc64dfe940a4",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/submit-indexnow.ts",
+      "sha": "6aac5f7044ff5695087a4bb4f7799d5303944221",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/subset-font.d.ts",
+      "sha": "bb1983c10acbf0bb8c705219f975266ab31f1fe4",
+      "disposition": "REMOVE",
+      "reason": "The template uses system fonts; font generation helpers, font files and unused font license are not distributed."
+    },
+    {
+      "path": "scripts/sync-codes.ts",
+      "sha": "0456e07a4abd199d33a42a78c35c43428368f902",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/template-audit.ts",
+      "sha": "06f2324a505c48121c455f3959016c7e8feff772",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/test-games.ts",
+      "sha": "bb9fc37c0fd3d9103fa98134707b641312ca944c",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "scripts/transpile-pagefind.mjs",
+      "sha": "72a6acbf32fe526065465d65d2e9fd54170288b6",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "scripts/tutorial-article-drafts.mjs",
+      "sha": "0af12aa6be1e6e903b017a9778f34b679f0f3f3d",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/tutorial-content-briefs.mjs",
+      "sha": "f1adafa51e6d5cbf0d9f5041b26ea050b6dd0655",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/tutorial-ga4-review.mjs",
+      "sha": "209342618932499de9d9183ae845484e21b495f9",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/tutorial-homepage-plan.mjs",
+      "sha": "d545cd2f4feb18a978a36e344eb6ac982024e7d8",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/tutorial-keyword-intake.mjs",
+      "sha": "7006a5645e98e41fb653bb04857172053be44970",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/tutorial-opportunity.mjs",
+      "sha": "20ec5c81bf24f9f6f9fdb586b6f6250f6366945d",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/tutorial-postdeploy.mjs",
+      "sha": "30b88fe1ff9ee137ac270cd18aa860605b3f3f0b",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/tutorial-seo-review.mjs",
+      "sha": "a4ae976afaeb97c39602385ae55fef1b3ee2ac33",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/tutorial-workflow.mjs",
+      "sha": "dc2d1c99ce7496c25a2a811c9989ea55ef790969",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "scripts/write-indexnow-key.ts",
+      "sha": "142167eb44cee027b0698fa049140838d0deb83c",
+      "disposition": "EXTRACT",
+      "reason": "External site setup, factual evidence workflow, content generation or publishing responsibility; omitted from the pure rendering template."
+    },
+    {
+      "path": "src/assets/covers/.gen-covers-manifest.json",
+      "sha": "1a0cd8bbbafa3537d8d4342767cbd8503e9cd70c",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/covers/beginner-guide-cover.png",
+      "sha": "585d0793ad4adcc60105b00ca96b160016e7adc2",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/covers/codes-cover.png",
+      "sha": "1b7fe5ac1b8f5026a992ee3cec059a65e94eca29",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/covers/emberfang-cover.png",
+      "sha": "a0ec083889d81294e69fe8d62b86ebb87a7e6900",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/covers/en-bosses-frostbound-monarch.png",
+      "sha": "33e1a670a9b9b0b54bb7b0917ed9e59c8f914570",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/covers/en-guides-forging-guide.png",
+      "sha": "993f59221792293c2d313d9cbb2488255845b62c",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/covers/en-items-emberforged-armor-set.png",
+      "sha": "851b94278dac4bf8a7712845b3dec3ea23e0aab8",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/covers/en-items-forging-materials-guide.png",
+      "sha": "467d18e11880c3b3f0d7e35fd87bb5478c9f030e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/covers/stormcaller-cover.png",
+      "sha": "284ed013abdfd6a0492e530ed53696e1aad6d46d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/covers/weapon-tier-list-cover.png",
+      "sha": "430b2bbd5e906c10906dbdefbd0e97d51ba790ac",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/gallery/beginner-class-picks.png",
+      "sha": "441eae61dd6f6fa77abc07181592869b96a10644",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/gallery/beginner-route.png",
+      "sha": "320825773baf11f8fd5e27b48db20555edc053a9",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/gallery/emberfang-arena.png",
+      "sha": "daee43e143b7a684b614d5e4a60f51c9275a641a",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/gallery/emberfang-mechanics.png",
+      "sha": "ef89934ee89b6f6b4d243edfa543f35a7f461da3",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/gallery/stormcaller-arena.png",
+      "sha": "7ca74943fbc4b9a0d0c767d5a2c010ede3f63bc1",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/assets/gallery/stormcaller-mechanics.png",
+      "sha": "ce0d21468f36670d61bf86d04f96f1ce97e4fe2d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/RootGateway.astro",
+      "sha": "23dff464fe9acc55e12b8023c31ce47e7c2445b2",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/ads/AdSenseSlot.astro",
+      "sha": "f54988e961ac2d3ae3f78494d7200a06f09caaf2",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/ads/AdsterraSlot.astro",
+      "sha": "d23bee44dbe1854f003a775c0e78337826077739",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/ads/AdsterraSlotPair.astro",
+      "sha": "359d37722a448876b5f2c2bee71bf8869d547ca0",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/ads/AffiliateSuggestion.astro",
+      "sha": "1a31b16870c4c0119d078e691557d415e146357b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/ads/InContentAd.astro",
+      "sha": "c147a7171c6334a9933a4748c3d03e831dc9bdf8",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/ads/MobileAnchorAd.astro",
+      "sha": "9157d43e68fba0e12357bde322e27889f6bb6df4",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/ads/SidebarAd.astro",
+      "sha": "e77cb25c68f5bbe291fc3c35ed1d16037cd6b2d9",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/ads/StickyBanner.astro",
+      "sha": "5fa92e96c7b1ba61046f073b41defe61a4412209",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/ArticleCover.astro",
+      "sha": "e5c4d0f012d1a3c3f11b8464d4e22b6bb29ce239",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/ArticleGallery.astro",
+      "sha": "6188ede4fa29c4b8a9225148ea48efc4b014d365",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/ArticlePage.astro",
+      "sha": "243016acdda6e4cf0459d8772aef40623824ebb4",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/BackToTop.astro",
+      "sha": "6545ac39707e7626a59ac57758d5767ddd2eedcf",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/BossStatCard.astro",
+      "sha": "9a7273e1198d210b5566c6d580c2590d67e23685",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/article/CodeBlock.astro",
+      "sha": "c13440c716c51721be0f82b05b6a4ad4655f5d4f",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/article/CodesTable.astro",
+      "sha": "c78e4b0822bd061ab190476d57ffa796dc50cef4",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/article/Comments.astro",
+      "sha": "6c575276324a62285f8c2d0ef028c7d2d6e3de1f",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/ListPage.astro",
+      "sha": "19f8b34b4762cb3007a9f9fe23035708b0e6244d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/RecentPage.astro",
+      "sha": "55b5874e5089ac8e14f644574293ad5d33b9e22e",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/ShareButton.astro",
+      "sha": "48319e4f53e3bee14f1d7a71a1a295004718859b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/SponsorCard.astro",
+      "sha": "427ea8d663d321d68c96a31cfa11aa86ef51fae7",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/StatBar.astro",
+      "sha": "e3028632dae1055c3c8767fe484cbea05446b019",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/article/TableOfContents.astro",
+      "sha": "409428cac7d0096eafcfa56a2d718667cf16ed66",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/article/TagListPage.astro",
+      "sha": "bc37d484e79911a446256759373eaa8de3efc86d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/article/TagsIndexPage.astro",
+      "sha": "79c3c03bc835c8403f417d9ee497c48ad097e048",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/footer/SiteFooter.astro",
+      "sha": "23796abd71147365e21d822ce67dae5d02414f82",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/header/LanguageSwitcher.astro",
+      "sha": "73482ee7366766b7f548c967d7a4b03ce3abde0b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/header/SearchButton.astro",
+      "sha": "49e6c9bb92c2e8f5712b0026bb4ceebb80f3d57d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/header/SiteHeader.astro",
+      "sha": "6968adf90bef454d0d3badb5027f096aba25eb7d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/header/ThemeToggle.astro",
+      "sha": "7f74e052adea1ac16718d27fe7effee0be6b25f3",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/home/ExploreModules.astro",
+      "sha": "2b118cc45a3711cd10d7bc298eccde30283c254a",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/home/FaqSection.astro",
+      "sha": "69a08e51ec22741b83f6d5abd771a6fe2bd4a687",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/home/HomePage.astro",
+      "sha": "9fabea2f3496b62a088e280c145cf140125690e5",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/home/QuickStart.astro",
+      "sha": "5b1a8090b6676d97010dae1c1bfca7b73fba9276",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/home/VideoSection.astro",
+      "sha": "df978d671d32dd3aebc2c559aaee800fdd4a1479",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/home/modules/CardList.astro",
+      "sha": "9f0b3306d3c128a286110b801c87fc97f8eddea4",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/home/modules/CodeCards.astro",
+      "sha": "c5cde886f525ef3b29d6c4b0b279b642565b7771",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/home/modules/StepByStep.astro",
+      "sha": "ed6fe4c38c294805a2a2a2562789e4c67691670f",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/home/modules/TierGrid.astro",
+      "sha": "b685553c6fb0d40acfb70c63148a02a41820a6b6",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/home/modules/Timeline.astro",
+      "sha": "02b8ac5637c54d4e5b3fb20165c27c184a5e5d00",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/home/modules/VideoGrid.astro",
+      "sha": "ab20daafb6dabafa1e1fe6fefb7fa3135f81fc93",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/landing/Community.astro",
+      "sha": "d7a59031c8619d84f6f6e86acc904212ae333cfc",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/CommunityHighlights.astro",
+      "sha": "959470079058eabdfc915e5f3697af4124f7ac88",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/CommunitySites.astro",
+      "sha": "58ee9647d11c87b865dd32f9b939f5b7a007f856",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/CompareTable.astro",
+      "sha": "d95a8e7ce8e43474fd189c388ae4dadb1f295aa2",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/ComparisonPage.astro",
+      "sha": "d895a0a5059bb7c873284666a72c65442151b950",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/DevGuide.astro",
+      "sha": "e82763379f8f1b81214cd3180e473a57d374df29",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/DocsEntry.astro",
+      "sha": "52663dbe93db093b49ffa896c878c763666fdab9",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/FeatureGrid.astro",
+      "sha": "bf2e3c7c196b507b92438bc95a3c0e7ebb396f5f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/FinalCta.astro",
+      "sha": "10efe09b08e2644af6edb9eba2d59caea3470380",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/HandbookChapter.astro",
+      "sha": "80977226ace0ef069702f34e44f07c4a47775cca",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/HandbookHub.astro",
+      "sha": "d59a38c2ed0c398c049a7ffa9271d9694dade5f6",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/HandbookManualList.astro",
+      "sha": "9a11d009fa2eb61e806b3594e9ed27b48d4b5406",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/HandbookNav.astro",
+      "sha": "68c533a8cab264c11d315c6ae4d6098447b452df",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/LandingHero.astro",
+      "sha": "edd6b3eb785579177c101c0d12da061cebc6e40d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/LandingLayout.astro",
+      "sha": "b446febaa9d1098eb6e19497f011c08146332f9d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/Showcase.astro",
+      "sha": "f255057f8c1a29a73d6ccb845e25bdfcd718f2e4",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/SocialProofBar.astro",
+      "sha": "cd50b55cd0306182167e3ba898941b1b547437ad",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/TemplatesPage.astro",
+      "sha": "94fe5e9ade8b0a27900a31e3b4a8f11ae38f21ee",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/landing/community-digest.json",
+      "sha": "d4277c01403a8c580e1fd5aa008d60fae7d31194",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/components/layout/BaseLayout.astro",
+      "sha": "0bea933220027aebd6757e431f0e2ca7008ae4dc",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/layout/CookieConsent.astro",
+      "sha": "da4d0715b3d93757ded7d414836af2d4e99006a6",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/layout/LegalContent.astro",
+      "sha": "4bcb1a2218f106815626cbe5f43e8be6764810db",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/layout/LegalPage.astro",
+      "sha": "7e46e9f111b7e18a2bb7e764b5a83fd40f25da7b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/layout/LocaleLayout.astro",
+      "sha": "30189995777f69be0fb04b1bf7d4bae1c0d731d3",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/mdx/Accordion.astro",
+      "sha": "cbbfa714f700610497943ac0696f5df0b8cef0c9",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/mdx/AffiliateLink.astro",
+      "sha": "223b496554a0baec86aa6be2194f57581f452886",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/mdx/Callout.astro",
+      "sha": "564baffb51f27b502079d23fe64d9f5566e82c58",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/mdx/Video.astro",
+      "sha": "336327df0af42c9b838c47f283d7d88a52fff1e0",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/seo/JsonLd.astro",
+      "sha": "65190583dde9ae97c2cb3bda04ad39c464119c75",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/components/sidebar/WikiSidebar.astro",
+      "sha": "ebb79294e870eed4dc2e7a04a9c23bdbcb6fa13c",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/components/video/LazyYouTube.astro",
+      "sha": "e2ab79a3a60002f772d94c39f0c02e119be9f664",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/config/affiliates.ts",
+      "sha": "a45526caf4362b63fd9638e37a0654468a87ed41",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/config/authors.ts",
+      "sha": "e85985bae951306b0794aeed3e5900ee908cedaa",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/config/features.ts",
+      "sha": "4bf8c422a34f3141a190134a834cad6d84a25699",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/config/landing-en.ts",
+      "sha": "f0b4a52b950651ff250956ad5867f46b3460e33b",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/config/landing-shared.ts",
+      "sha": "03a894d4016e7d3d19d986a6d9f5288ede1f0999",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/config/landing-templates.ts",
+      "sha": "5182355212d643ab14a612cb0a1f19a195f98f46",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/config/landing-types.ts",
+      "sha": "9532cf0ec37b68a7431a1dce700b43e7f5239a6c",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/config/landing-zh.ts",
+      "sha": "cc5d83d85160c1dba2e90a084e61f3f667de8701",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/config/landing.ts",
+      "sha": "9dd0e8f5504b5ae07cd47efa4177d8bcd247c1b6",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/config/navigation.ts",
+      "sha": "d42a224032a69b97a8c4b00fac556e28f56f0d7a",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/config/project.ts",
+      "sha": "237ce0a7b016e59fa2f3da6762465b213377eab2",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/config/site.ts",
+      "sha": "08058a36ea6274f54a4183975d7a3e9127a911ec",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content.config.ts",
+      "sha": "419874dcdd4dd74ca8c724d695f742e490a68858",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/en/bosses/emberfang.mdx",
+      "sha": "43d0fcfea9fc2aa9ffb4c8b020b129025fdfe170",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/en/bosses/frostbound-monarch.mdx",
+      "sha": "f0e2dd894d4eb0d2a891674358b016a1a123fbb3",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/en/bosses/stormcaller.mdx",
+      "sha": "0813bc25fe33164d83aa1c012651208ed5afd0ca",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/en/codes/all-codes.mdx",
+      "sha": "001048a06949766497be20a1a8c2411549af2f3f",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/en/guides/beginner-guide.mdx",
+      "sha": "f7120a78640cab847ee1c540cacb6bed768d9685",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/en/guides/forging-guide.mdx",
+      "sha": "4ee2d6b15018157a2748a069769b15e43da815f7",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/en/guides/weapon-tier-list.mdx",
+      "sha": "043f5627d2d674ad22e7e3d231a3c3824d25d72d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/en/items/emberforged-armor-set.mdx",
+      "sha": "4934024d3de697a003c41f4906b04542dd0fd3b9",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/en/items/forging-materials-guide.mdx",
+      "sha": "2acff428b52f5e3f91a66b647ecea3671b1073aa",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/ja/bosses/emberfang.mdx",
+      "sha": "0bf3494b3ccd109209979b8aa7cff4de89f530c8",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/ja/codes/all-codes.mdx",
+      "sha": "0909238e86e01c4bcdf317caa32eaf377ef9251d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/content/wiki/ja/guides/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/i18n/content.ts",
+      "sha": "e99570f7844b4b2c372a6c558d0b59c4f028f063",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/i18n/routing.ts",
+      "sha": "ced2b00575e8b96df628a9d37e32f045a7cc001d",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/i18n/ui.ts",
+      "sha": "d5203b27ac1ac98c64d2bdcf96d1eafde20712fd",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/icons/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/affiliates.ts",
+      "sha": "3f95b66c2e472b5df0518e04f1298ced286e3b2b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/content-utils.ts",
+      "sha": "2b0bdc1b5c4b756d3b0f2fb783d239292d42ef55",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/lib/content.ts",
+      "sha": "4d573677528c735786e13412e300ca568b31165c",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/covers.ts",
+      "sha": "369f4f777867c8cfdebfb80b1cc07d7d0cebc51f",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/evidence.ts",
+      "sha": "98fe6b330de5e04deb15c7de1d281d541cbf69bb",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/fallback-paths.ts",
+      "sha": "945bb97717cca19dc117e2c361bed6c0f4dc9051",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/gameforge-indexing.ts",
+      "sha": "3806ae4e6caf3da9d02a4102ed048041816f589c",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/handbook.ts",
+      "sha": "86fe69689d23d46c77081eafaca11b5d5ca0c9e2",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/navigation.ts",
+      "sha": "4251e440e8319b4075f9d6a067a3c29d739cbda8",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/seo.ts",
+      "sha": "f27abd18f8003d0cbb5198c4a98949e0a77493d5",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/lib/shared-ui.ts",
+      "sha": "7f4d572cfc0fe1c9c80641c82a4e8dd083c252ec",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/lib/url.ts",
+      "sha": "a7403665aab07ebff236be8b82c099469770e520",
+      "disposition": "KEEP",
+      "reason": "Retained verbatim or adapted to the new unified JSON contracts; concrete reuse is documented in MIGRATION_REPORT.md."
+    },
+    {
+      "path": "src/locales/en.json",
+      "sha": "038a2094463bc60f0f4ecedb3e863e9be39a084b",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/locales/ja.json",
+      "sha": "3619f7ca12c8a4c88619d39c4d2abbe759aed903",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/404.astro",
+      "sha": "aa852b79787c73bd2c67f4382d8f4c1142cd0a9d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/[...slug].astro",
+      "sha": "a072fde2fe742fef97728f2787bbaaa4d19e71cb",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/[locale]/[...slug].astro",
+      "sha": "7ca447c160ca7bd899627c63bb6473fdd1b7e396",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/[locale]/[legal].astro",
+      "sha": "b460329c8049a429df5ff9a9949c8eb1b0480f76",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/[locale]/faq.astro",
+      "sha": "5e5a961d7a2377bae677209ba0ac4e4470392f73",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/[locale]/index.astro",
+      "sha": "31cab34f43f717b82c70f8af1e9e1556f1a26578",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/[locale]/recent.astro",
+      "sha": "e124b57e690ed2abcf1375f1dcccab977460a87e",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/[locale]/tags/[tag].astro",
+      "sha": "6749f69cae36888e26f59e6403d2b1fa066bab06",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/[locale]/tags/index.astro",
+      "sha": "dca0716babc5bcb6b78c12c9742eef689066ba70",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/about.astro",
+      "sha": "d2fa0af69ce9311c11c5e2624973a0a4e074f9db",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/contact.astro",
+      "sha": "c8f98ebce936e76ae6de40053c750324824e01eb",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/copyright.astro",
+      "sha": "5a4aaedb13771a2a30449c71cc63a7b7e273f9eb",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/demo.astro",
+      "sha": "e5cc0b0767f9c2e30f4854bf56a13505e4d23c08",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/faq.astro",
+      "sha": "18d9501f0936a0278d65352cf67bbb694f400849",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/index.astro",
+      "sha": "35286635f43a27fe5c5e122a89a4e19dec93e9ca",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/landing.astro",
+      "sha": "faa1111ece1cbfe530456a97a28e404733ff1cc5",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/landing/community.astro",
+      "sha": "09be2163eca1361ad99643fd462924ad34e85b19",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/landing/comparison.astro",
+      "sha": "2eb3b39a61382f4bfa2e62adc365393af39c6881",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/landing/docs/[slug].astro",
+      "sha": "01c6cb254f14abe60e29b7d72a785fdb5acc8956",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/landing/docs/dev.astro",
+      "sha": "8a7e5c214ed797869a59874f71bc07a2cd05b655",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/landing/docs/index.astro",
+      "sha": "f43e19ca506606ad515b66c365467572db687952",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/landing/docs/learn.astro",
+      "sha": "7bc8c5f30cec749e046f5e49b82eab0f6149e45a",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/landing/templates.astro",
+      "sha": "6691baf190964a906a50939cc48fd6f50cd16077",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/llms.txt.ts",
+      "sha": "6113111733f55c27dbf30d8d676704b1b69bb11c",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/privacy-policy.astro",
+      "sha": "4d54bb5f3bf1530f7f6915fe4eefb376f6e3f3c0",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/recent.astro",
+      "sha": "af8b0bc63de869b980d07f2b3fcb8f89ca4282f8",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/robots.txt.ts",
+      "sha": "8ffd10438e77573a8d3bbfe6d5c5583c7c73d883",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/rss.xml.ts",
+      "sha": "344ceee04d7f712eb33bc5b85fd0fb51493b3530",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/tags/[tag].astro",
+      "sha": "7a2263139978f7a086be091c8b1825736bf4d233",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/tags/index.astro",
+      "sha": "1d5e6678aa4a48d973eca5cc77d6a7425b9f3dd8",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/terms-of-service.astro",
+      "sha": "7fee0d2405f7c3d38d061673893b7fb0eb95f3f9",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "src/pages/zh/landing.astro",
+      "sha": "5865a8ab217cb8e355c8e74bc21c7294dce848c7",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/zh/landing/community.astro",
+      "sha": "ba9785b904e553507f66de214d4cc01d69e3c400",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/zh/landing/comparison.astro",
+      "sha": "f7424ce0d5a11df2d0d4e9bdbc124d74c5330adf",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/zh/landing/docs/[slug].astro",
+      "sha": "bea934547655c576b4f510b0111493b2dd136d82",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/zh/landing/docs/dev.astro",
+      "sha": "b2d566ed884c9e8f60595a110edaa0698c13d97f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/zh/landing/docs/index.astro",
+      "sha": "f740ba7c245f61ec8ac3739b8894c4570c90f960",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/zh/landing/docs/learn.astro",
+      "sha": "5ce5c03d2e80a74e5c0650eccc27866b6e2ec136",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/zh/landing/privacy.astro",
+      "sha": "65c1a99fc87ed2d2dd230b2eb8e80b802c999570",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/pages/zh/landing/templates.astro",
+      "sha": "517649aff08065c943d3b108c1c6194927145723",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "src/styles/globals.css",
+      "sha": "689480d1ede65ebf0cf8601bd4f115d7b175771d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tailwind.config.mjs",
+      "sha": "00fa3dd8a648fce6f63452344d70797f4a4965f2",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/affiliates.test.ts",
+      "sha": "3e090ec7ffc0dac7d27a52cdf14de64b7a72c202",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/agents-consistency.test.ts",
+      "sha": "dbdf3f69bc93a649b2742d9b89ea19d4e05e2dab",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/ai-draft.test.ts",
+      "sha": "1d77908e2d96fbfc6691471058d28e0732829ad2",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/apply-template.test.ts",
+      "sha": "f0073fe9c7e4160b6b0367eca2be179850f104d9",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/auto-publish.test.ts",
+      "sha": "268fd8c14f8b5e639ebd7703e7785cea86345ba7",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/branding.test.ts",
+      "sha": "0080395d434298ded6fb346595218611f1de1f8d",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/changelog.test.ts",
+      "sha": "b2e4f2dcab70a14dde12731dec8e4cec6e808b54",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/codes-consistency.test.ts",
+      "sha": "7686ec11983f6930ffdb9e2ef786c022ba5b0ac5",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/community-digest.test.ts",
+      "sha": "26e0fa8343e0173d6ee5fc91981c264bb7f42825",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/consent.test.ts",
+      "sha": "44dea97d73d77ca096b0f0a281ca70bf21e69383",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/content-links.test.ts",
+      "sha": "3c94638bab0b50b32843525e79eafdbdff7cd06d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/content-utils.test.ts",
+      "sha": "72e2940cbe883762fe89f05c1138c3f82e499736",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/covers.test.ts",
+      "sha": "9a7345a6d50e13c264bfe36957083a0f94a1779d",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/gameforge-orchestrator.test.ts",
+      "sha": "06e6e190f67dc985391b3b4075b19a92d4a69a3f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/gameforge-site.test.ts",
+      "sha": "c1a07d43671cf52f3470da741ca0291714b03103",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/gameforge.test.ts",
+      "sha": "7abad4e9afdb79beff55546fa27abd240cb94138",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/handbook.test.ts",
+      "sha": "c3e0c9b3eac45ad47d9524077bcf6e70409aca15",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/hardening.test.ts",
+      "sha": "bda645cbf6f406040c43caf305742d0126b3e044",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/helpers/ai-draft-runner.ts",
+      "sha": "45e869037d1ae3c7e0c5ef24a96aabec4da8faa7",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/helpers/auto-publish-runner.ts",
+      "sha": "afdb7ee5d05db33e35edd00a00a7b12cdfef0ec9",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/home-ui.test.ts",
+      "sha": "84749fbb00d217ecfdf2313900e860e2274af3dc",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/i18n-smoke.test.ts",
+      "sha": "2eadc3e8ad6e36788be81f972c8d58e83497f0a7",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/indexnow.test.ts",
+      "sha": "564bacf7846da4b6fa5389ee51e1c96c4ebd0b3f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/landing-paths.test.ts",
+      "sha": "9679c2a5ab73fb98beabcab33684beda19b34aff",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/prompt.test.ts",
+      "sha": "af8d4094b69e01cee9b2e133612ccd39b757390e",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/redirects.test.ts",
+      "sha": "2b2396af6d4926c665609898fdf150e63dd5dbbc",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/routing-flags.test.ts",
+      "sha": "011f07d85348b0fadda1b3f7c01a5a477d69cae0",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/seo.test.ts",
+      "sha": "6e7978f6cbf6feb3c71291613fca81c41c1cc89c",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/sync-codes.test.ts",
+      "sha": "890e02daf99a95ddf25792decc2109cdf16dc8d9",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/tags.test.ts",
+      "sha": "4136b032c3a3ec021993380bc332c204069f5d22",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/today.test.ts",
+      "sha": "2b8454aa0f00ec3adf819e17fa3e83224983c003",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/tutorial-article-drafts.test.mjs",
+      "sha": "5c9515ed706024c9077de8bb9b3b0bf2e2393242",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/tutorial-content-briefs.test.mjs",
+      "sha": "d17f067a27ea12bf6d73575252db50c6067e4834",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/tutorial-ga4-review.test.mjs",
+      "sha": "30ddb4bdeda017dfe2ff7bd7faf8b8ab74aeee30",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/tutorial-homepage-plan.test.mjs",
+      "sha": "deef52868197dd340725ccdeffa1b3b40bed8502",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/tutorial-keyword-intake.test.mjs",
+      "sha": "c8f9cec2493db5b4ca444284d6d889bb4666ba52",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/tutorial-opportunity.test.mjs",
+      "sha": "27563e65e2c16a3172e6fbf18a9e4bbe23227f5b",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/tutorial-seo-review.test.mjs",
+      "sha": "95e525b4a2f1a919b8ec0734ed686ad2ad137cfc",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/tutorial-workflow.test.mjs",
+      "sha": "a5df317ff96c41d9854dda097757cb8ed757d240",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tests/url.test.ts",
+      "sha": "6cd8ebfa587f03e0b893a1283a5a81b4d35f267a",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "tests/workflows.test.ts",
+      "sha": "842c6c6d3c5bb08da2986c13cbe6abcf3f37ba3f",
+      "disposition": "REMOVE",
+      "reason": "Upstream demo identity, marketing, historical docs/assets or tests for omitted features. Selective extraction means these were never copied."
+    },
+    {
+      "path": "tools/anvil-ops/.gitignore",
+      "sha": "b9470778764f72c5257a3361590d2994547f90e1",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/LICENSE",
+      "sha": "2008a4033b0e2c3eeef71ac8383a5a0bcda19528",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/README.md",
+      "sha": "2a259cd3f7864c9fdad83bf02535ceeee16887d5",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/package.json",
+      "sha": "2fbf5a71a2e8143fc8e4fc1f6e7cff0348215598",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/pnpm-lock.yaml",
+      "sha": "f3322e46e76ed6470354c886aa98b3f58c37407d",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/pnpm-workspace.yaml",
+      "sha": "337fe76b0ab033a02b290dc037d8526a2dfb9fca",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/bin/cli.ts",
+      "sha": "58b2793b354928c9f3b94bb6ca34cc9df28958b9",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/bin/mcp.ts",
+      "sha": "cbc2a9f98d5e0bfbc662faec0883224f21c2f3b3",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/cli/commands/audit.ts",
+      "sha": "4a7c2ad7129ed4ff8fc5d8b6d12c014e7f1a76ce",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/cli/commands/doctor.ts",
+      "sha": "e7e15106d292f3b436e69956119f69c1a042d3a8",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/cli/commands/import-aio.ts",
+      "sha": "993c1d1123863a346238a557ae5943cb8d0e9057",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/cli/commands/insights.ts",
+      "sha": "7931cb384d5d36bcb55b38c3d2919fec73452497",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/cli/commands/metrics.ts",
+      "sha": "96ca695837a4021a19e0d7ef0c5c5c080affee4e",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/cli/commands/sites.ts",
+      "sha": "2c2729e0e8dc93da0ca159a03995916baadd5319",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/cli/commands/submit.ts",
+      "sha": "232d756d2d376d998dd9c724ddc48c95f3b13cf8",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/cli/flags.ts",
+      "sha": "134eaeee99342540a31505e9e99da4e98b1c3907",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/cli/run-all.ts",
+      "sha": "96d014db20148ae73f99f6504ce477e7846e24d6",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/aio-csv.ts",
+      "sha": "14385bec97ee329d968e2ab558eddfbf773e962e",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/audit.ts",
+      "sha": "772e240db2d1d9e0e777762346f7d4d208ad534a",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/content.ts",
+      "sha": "61d8b37d964cd2ecae6e539a2771464f759907a2",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/doctor.ts",
+      "sha": "d14debd4f21df87a43ab84b9cd785a3116f9d6fc",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/env.ts",
+      "sha": "294002916858670a8d23512bdb2affb3572680c7",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/errors.ts",
+      "sha": "94e186ff6672af19d16ab0facc205d23841d17ae",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/gitops.ts",
+      "sha": "25bccfd35b0743c59b0b37bea4849549ff6aa0d9",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/insights.ts",
+      "sha": "192664502e5cd316133a32b9af4ff8bbb45a8b74",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/metrics.ts",
+      "sha": "c691a1fb0397d6f379202c774c02a627c6eb8f5b",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/providers/cloudflare.ts",
+      "sha": "2ee4c37771b25889893d7f88d3bde05649dd2b1d",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/providers/gsc.ts",
+      "sha": "6a613025b453376dbbf40630078e4acd66ed4f11",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/site.ts",
+      "sha": "36ce5ba7750c952f676f27aefd5982de4bc972bc",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/core/sites.ts",
+      "sha": "8a81abcc1f709377dc90aa9e37e8d3ddde337d9d",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/mcp/offload.ts",
+      "sha": "fc2acecde96c6c9caab061991a2a53c3abdd5bd6",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/mcp/server.ts",
+      "sha": "f1fbdae80c1350a9a5e089d222d2f29c96558fa1",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/mcp/submit-mutex.ts",
+      "sha": "3a001d3c90b3e821ef7bbe2ab019157d08870468",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/src/mcp/worker.ts",
+      "sha": "45ad7053ba8d01c882db6bcb999662c52cc8f7b2",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/ai-referrals.test.ts",
+      "sha": "ab9859bc14b40c5f046aaf1d7c7bec93fa6288a1",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/aio-csv.test.ts",
+      "sha": "24c644ac97ccc52ce0c2b6c4f9de168ff9fc9db8",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/audit.test.ts",
+      "sha": "10fc04c77b819057afd1eb2c716dff2587e14f74",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/cli-flags.test.ts",
+      "sha": "f6776f8bf2aad0f1a8d21a249f0c7306f4f5e540",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/cloudflare.test.ts",
+      "sha": "3c5813260dd388c6bc0947205fe9d18c5acb7bad",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/content.test.ts",
+      "sha": "69afaa62fb8503b9b97a5495913baf47af01aa05",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/doctor.test.ts",
+      "sha": "a52b2162dee669e847525e72eeea248305fe387a",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/effective-root.test.ts",
+      "sha": "473a4d00385ab44e5ef2a15bb80b9ab88b1fcc7c",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/env.test.ts",
+      "sha": "856bcfb9ac3a8f0813819d58f77a0a2d032d4e56",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/fixtures/cf-response.json",
+      "sha": "52d45a42f492ab4ea2499c5e30443d0650688859",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/fixtures/gsc-response.json",
+      "sha": "ab25191f3e83dca49deda9ebc5e32de9dc73e92a",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/fixtures/wrangler-full.toml",
+      "sha": "fcb43098d153cd4eb762899cc9757b7ef84b29fe",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/fixtures/wrangler-minimal.toml",
+      "sha": "6362a602ecc6839f59996531c075981964d637b7",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/gitops.test.ts",
+      "sha": "7a8438ef9ec7b2332f52b991ce5a7740c23284ab",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/gsc-aio.test.ts",
+      "sha": "30352d3240ee74cf14c8386fd07392cfbe051a67",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/gsc.test.ts",
+      "sha": "e5f635bd952bd7fb4d24c4a7a06fdb7f4c62480c",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/insights.test.ts",
+      "sha": "265658dbcd4161acc219d02ab542fe3e47576d6d",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/mcp.test.ts",
+      "sha": "61a3ee77317bd31630e251b336af2209290a4d54",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/metrics.test.ts",
+      "sha": "db81d356a277661f7b323c08ae261afb82c5997b",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/offload.test.ts",
+      "sha": "9a08fd406f55325e21cbcd226f973a9fed653aa3",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/run-all.test.ts",
+      "sha": "57db53f1862924bf584edea82c5eed2df96c0a86",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/site.test.ts",
+      "sha": "82f61f2b8b3db1ec66fab62b310c47cfbdd3828c",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/sites.test.ts",
+      "sha": "643ef1622861bc4e22f84103216c7f383eb84407",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/test/smoke.test.ts",
+      "sha": "b642d61b731dcd6da378f44713c79eed129c978a",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/tsconfig.build.json",
+      "sha": "f12f1ba97dd7ea58c99d1eb5a476ab9da26b51e2",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/tsconfig.json",
+      "sha": "72cf7c6be83a0c0769dec4a52aea4895a3f65a72",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tools/anvil-ops/vitest.config.ts",
+      "sha": "3a3b21daaf4c25364f7d6ac9c8bd2dd9393eb15e",
+      "disposition": "EXTRACT",
+      "reason": "External research/content/publishing/operations responsibility; not included in a rendering template."
+    },
+    {
+      "path": "tsconfig.json",
+      "sha": "9898dbfe8d8e90dcc7b64fd256b32c30eeb683ca",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "vitest.config.ts",
+      "sha": "fbc57d758c9a37fc89b8370c5a0ddbc5de0d13ae",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    },
+    {
+      "path": "wrangler.toml",
+      "sha": "bb65be5a91e1ff6cb83133cc4835674b8d7a74d4",
+      "disposition": "SIMPLIFY",
+      "reason": "Rendering/build/quality capability reviewed by role; replaced by smaller shared configuration, route registry and production checks where relevant. No runtime dependency on upstream."
+    }
+  ]
+}

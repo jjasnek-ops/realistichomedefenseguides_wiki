@@ -1,0 +1,56 @@
+---
+import { Icon } from 'astro-icon/components';
+import { t } from '~/i18n/ui';
+interface Props { locale: string; }
+const { locale } = Astro.props;
+---
+<button type="button" class="search-trigger" data-search-open aria-label={`${t(locale, 'searchHint')} Ctrl K`} aria-keyshortcuts="Control+k Meta+k"><Icon name="lucide:search"/><span>{t(locale, 'searchHint')}</span><kbd>Ctrl K</kbd></button>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title" data-locale={locale}>
+  <div class="search-heading"><h2 id="search-title">{t(locale, 'search')}</h2><button type="button" class="icon-button" data-search-close aria-label={t(locale, 'close')}><Icon name="lucide:x"/></button></div>
+  <div class="search-input-wrap"><Icon name="lucide:search"/><input id="wiki-search" type="search" autocomplete="off" placeholder={t(locale, 'searchHint')} aria-label={t(locale, 'search')}/></div>
+  <p class="search-message" role="status" aria-live="polite" data-empty={t(locale, 'noResults')} data-error={t(locale, 'searchUnavailable')} data-results={t(locale, 'results')}></p>
+  <ul id="search-results"></ul>
+  <div class="search-footer"><span>Pagefind · {t(locale, 'privateSearch')}</span><span><kbd>Esc</kbd> {t(locale, 'close')}</span></div>
+</dialog>
+<!-- Native module keeps the post-build Pagefind import outside Vite's inline preload rewrite. -->
+<script is:inline type="module">
+  const dialog = document.querySelector('#search-dialog');
+  const input = document.querySelector('#wiki-search');
+  const message = dialog.querySelector('[role="status"]');
+  const results = dialog.querySelector('#search-results');
+  let index;
+  let generation = 0;
+  let timer;
+  const open = () => { if (!dialog.open) dialog.showModal(); input.focus(); };
+  document.querySelector('[data-search-open]')?.addEventListener('click', open);
+  dialog.querySelector('[data-search-close]')?.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => { if (event.target === dialog) { const rect = dialog.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close(); } });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && dialog.open) { event.preventDefault(); dialog.close(); return; }
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') { event.preventDefault(); open(); }
+  });
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    const run = ++generation;
+    const query = input.value.trim();
+    message.textContent = '';
+    if (!query) { results.replaceChildren(); message.textContent = ''; return; }
+    timer = setTimeout(async () => {
+      try {
+        index ??= import('/pagefind/pagefind.js');
+        const found = await (await index).search(query);
+        const data = await Promise.all(found.results.slice(0, 12).map(result => result.data()));
+        if (run !== generation) return;
+        results.replaceChildren();
+        message.textContent = data.length ? `${found.results.length} ${message.dataset.results}` : message.dataset.empty;
+        for (const item of data) {
+          const li = document.createElement('li'); const link = document.createElement('a');
+          link.href = item.url;
+          const title = document.createElement('strong'); title.textContent = item.meta.title ?? item.url;
+          const excerpt = document.createElement('p'); excerpt.textContent = item.excerpt.replace(/<[^>]*>/g, '');
+          link.append(title, excerpt); li.append(link); results.append(li);
+        }
+      } catch { if (run === generation) { index = undefined; message.textContent = message.dataset.error; } }
+    }, 150);
+  });
+</script>

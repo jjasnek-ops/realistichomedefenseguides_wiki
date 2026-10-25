@@ -1,0 +1,6 @@
+---
+interface Props { src: string; title: string; poster?: string; captions?: { src: string; label: string; lang: string }; }
+const { src, title, poster, captions } = Astro.props;
+if (!src.startsWith('https://') && !src.startsWith('/')) throw new Error('Video src must be HTTPS or a local asset.');
+---
+<figure class="video-widget not-prose"><video controls preload="none" poster={poster} aria-label={title}><source src={src}/>{captions && <track kind="captions" src={captions.src} label={captions.label} srclang={captions.lang} default/>}</video><figcaption>{title}</figcaption><a href={src}>{title} ↗</a></figure>

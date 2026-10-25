@@ -1,0 +1,63 @@
+---
+import { Icon } from 'astro-icon/components';
+import Header from '~/components/layout/Header.astro';
+import Footer from '~/components/layout/Footer.astro';
+import WikiNavigation from '~/components/navigation/WikiNavigation.astro';
+import JsonLd from '~/components/seo/JsonLd.astro';
+import { config, siteName } from '~/lib/config';
+import { activeAdProvider } from '~/lib/ads';
+import { absoluteUrl } from '~/lib/url';
+import { pageTitle, organizationJsonLd } from '~/lib/seo';
+import { alternatesFor, type Page, type WikiArticle } from '~/lib/content';
+import { OG_LOCALE_MAP } from '~/i18n/routing';
+import { t } from '~/i18n/ui';
+import '~/styles/globals.css';
+interface Props { page: Page; pages: Page[]; pool: WikiArticle[]; title: string; description: string; image?: string; imageAlt?: string; schemas?: Record<string, unknown>[]; }
+const { page, pages, pool, title, description, image = config.seo.image, imageAlt = config.seo.imageAlt, schemas = [] } = Astro.props;
+const { locale } = page;
+const alternates = alternatesFor(page, pages);
+const canonical = absoluteUrl(page.path);
+const rgb = (hex: string) => [1,3,5].map(offset => parseInt(hex.slice(offset, offset+2), 16)).join(' ');
+const luminance = (hex: string) => rgb(hex).split(' ').map(Number).map(value => { const channel = value / 255; return channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4; }).reduce((sum,value,index) => sum + value * [0.2126,0.7152,0.0722][index], 0);
+const contrast = (a: string, b: string) => (Math.max(luminance(a),luminance(b)) + 0.05) / (Math.min(luminance(a),luminance(b)) + 0.05);
+const paletteCss = (palette: Record<string,string>, primary: string, prefix = '') => {
+  const primaryText = contrast(primary,palette.background) >= contrast(primary,palette.foreground) ? palette.background : palette.foreground;
+  return Object.entries({ ...palette, primary, 'primary-text': primaryText }).map(([key,value]) => `--${prefix}${key}:${value};--${prefix}${key}-rgb:${rgb(value)}`).join(';');
+};
+const themeCss = `:root{${paletteCss(config.theme.light, config.theme.lightPrimary)};${paletteCss(config.theme.dark, config.theme.primary, 'hero-')}}html.dark{${paletteCss(config.theme.dark, config.theme.primary)}}`;
+const adClient = activeAdProvider === 'adsense' && config.integrations.ads ? config.integrations.ads.client : '';
+const ogLocale = OG_LOCALE_MAP[locale] ?? (locale.includes('-') ? locale.replace('-', '_') : undefined);
+---
+<!doctype html>
+<html lang={locale} class={config.theme.defaultMode === 'dark' ? 'dark' : undefined} data-pagefind-ignore={page.noindex || page.type !== 'article' ? 'all' : undefined}>
+  <head>
+    <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="dark light"/>
+    <title>{pageTitle(title, locale)}</title><meta name="description" content={description}/>
+    <meta name="robots" content={page.noindex ? 'noindex, follow' : 'index, follow'}/>
+    <link rel="canonical" href={canonical}/><link rel="icon" href={config.favicon}/>
+    {alternates.map(alternate => <link rel="alternate" hreflang={alternate.locale} href={absoluteUrl(alternate.path)}/>)}
+    {alternates.find(alternate => alternate.locale === config.defaultLanguage) && <link rel="alternate" hreflang="x-default" href={absoluteUrl(alternates.find(alternate => alternate.locale === config.defaultLanguage)!.path)}/>}
+    <meta property="og:title" content={pageTitle(title, locale)}/><meta property="og:description" content={description}/><meta property="og:type" content={page.type === 'article' ? 'article' : 'website'}/><meta property="og:url" content={canonical}/><meta property="og:site_name" content={siteName(locale)}/><meta property="og:image" content={absoluteUrl(image)}/><meta property="og:image:alt" content={imageAlt}/>{ogLocale && <meta property="og:locale" content={ogLocale}/>}
+    <meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={pageTitle(title, locale)}/><meta name="twitter:description" content={description}/><meta name="twitter:image" content={absoluteUrl(image)}/><meta name="twitter:image:alt" content={imageAlt}/>
+    {page.entry && <><meta property="article:published_time" content={`${page.entry.data.date}T00:00:00Z`}/><meta property="article:modified_time" content={`${page.lastModified}T00:00:00Z`}/></>}
+    <style is:inline set:html={themeCss}/>
+    <script is:inline define:vars={{ defaultMode: config.theme.defaultMode }}>
+      try { const saved = localStorage.getItem('wiki-theme'); const dark = saved === 'dark' || (saved !== 'light' && (defaultMode === 'dark' || (defaultMode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches))); document.documentElement.classList.toggle('dark', dark); document.documentElement.dataset.theme = dark ? 'dark' : 'light'; } catch { document.documentElement.classList.toggle('dark', defaultMode === 'dark'); }
+    </script>
+    <JsonLd data={[organizationJsonLd(), ...schemas]}/>
+    {config.integrations.analytics && <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: config.integrations.analytics.token })}></script>}
+    {adClient && <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClient}`} crossorigin="anonymous"></script>}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">{t(locale, 'skip')}</a>
+    <Header locale={locale} alternates={alternates}/>
+    <aside class="sidebar" data-pagefind-ignore><WikiNavigation locale={locale} pool={pool} page={page}/></aside>
+    <dialog id="navigation-drawer" class="navigation-drawer" aria-label={t(locale, 'navigation')}><div class="drawer-heading"><img src={config.logo} alt="" width="30" height="30"/><strong>{siteName(locale)}</strong><button type="button" class="icon-button" data-nav-close aria-label={t(locale, 'close')}><Icon name="lucide:x"/></button></div><WikiNavigation locale={locale} pool={pool} page={page}/></dialog>
+    <div class="page-shell">
+      {config.demo && <div class="demo-notice" data-pagefind-ignore><Icon name="lucide:info"/><span>{t(locale, 'demoNotice')}</span><span class="demo-notice-label">{t(locale, 'demo')}</span></div>}
+      <main id="main-content" tabindex="-1" data-pagefind-body={!page.noindex && page.type === 'article' ? true : undefined}><slot/></main>
+      <Footer locale={locale}/>
+    </div>
+  </body>
+</html>

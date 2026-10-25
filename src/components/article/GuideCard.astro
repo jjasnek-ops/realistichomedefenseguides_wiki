@@ -1,0 +1,13 @@
+---
+import { Icon } from 'astro-icon/components';
+import { categoryLabel, config } from '~/lib/config';
+import type { WikiArticle } from '~/lib/content';
+import { t, formatDate } from '~/i18n/ui';
+interface Props { entry: WikiArticle; image?: boolean; compact?: boolean; }
+const { entry, image = false, compact = false } = Astro.props;
+const nav = config.navigation.find(nav => nav.slug === entry.category);
+---
+<a class:list={['guide-card', { 'with-image': image, compact }]} href={entry.path} data-guide-card data-title={entry.data.title.toLowerCase()} data-tags={entry.data.tags.join(' ').toLowerCase()}>
+  {image && <div class="guide-cover">{entry.data.cover ? <img src={entry.data.cover} alt={entry.data.coverAlt ?? ''} width="640" height="360" loading="lazy" decoding="async"/> : <Icon name={`lucide:${nav?.icon ?? 'book-open'}`}/>}<span class="cover-label">{categoryLabel(entry.category, entry.locale)}</span></div>}
+  <div class="guide-card-content">{!image && <span class="guide-category">{categoryLabel(entry.category, entry.locale)}</span>}<h3>{entry.data.title}<span aria-hidden="true">↗</span></h3>{!compact && <p>{entry.data.description}</p>}<span class="guide-meta"><Icon name="lucide:clock-3"/>{t(entry.locale, 'updated')} <time datetime={entry.data.lastModified}>{formatDate(entry.data.lastModified, entry.locale)}</time></span></div>
+</a>

@@ -1,0 +1,11 @@
+---
+import { Icon } from 'astro-icon/components';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { articles, pagesFor } from '~/lib/content';
+import type { Page } from '~/lib/content';
+import { config } from '~/lib/config';
+import { t } from '~/i18n/ui';
+const pool = await articles(); const pages = pagesFor(pool); const locale = config.defaultLanguage;
+const page: Page = { path: '/404/', locale, key: '404', type: 'legal', noindex: true, lastModified: config.legal.lastModified };
+---
+<BaseLayout page={page} pages={pages} pool={pool} title="404 — Page not found" description={t(locale, 'notFoundDesc')}><section class="not-found"><Icon name="lucide:compass"/><p class="section-eyebrow">404 · UNCHARTED TERRITORY</p><h1>{t(locale, 'notFound')}</h1><p>{t(locale, 'notFoundDesc')}</p><a class="button primary" href="/">{t(locale, 'backHome')}<Icon name="lucide:arrow-right"/></a></section></BaseLayout>

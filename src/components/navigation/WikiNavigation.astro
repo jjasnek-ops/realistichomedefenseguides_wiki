@@ -1,0 +1,25 @@
+---
+import { Icon } from 'astro-icon/components';
+import { config, categoryLabel } from '~/lib/config';
+import { visible, type WikiArticle, type Page } from '~/lib/content';
+import { homeUrl, listPath, localizePath } from '~/lib/url';
+import { t } from '~/i18n/ui';
+interface Props { locale: string; pool: WikiArticle[]; page: Page; }
+const { locale, pool, page } = Astro.props;
+const entries = visible(pool, locale);
+---
+<nav class="wiki-nav" aria-label={t(locale, 'navigation')}>
+  <a href={homeUrl(locale)} class:list={['nav-overview', { active: page.type === 'home' }]} aria-current={page.type === 'home' ? 'page' : undefined}><Icon name="lucide:layout-dashboard"/>{t(locale, 'home')}</a>
+  <p class="nav-label">{t(locale, 'explore')}</p>
+  <ul>{config.navigation.map(nav => {
+    const count = entries.filter(entry => entry.category === nav.slug).length;
+    return count > 0 && <li><a href={listPath(nav.slug, locale)} class:list={{ active: page.category === nav.slug || page.entry?.category === nav.slug }} aria-current={page.type === 'category' && page.category === nav.slug ? 'page' : undefined}><Icon name={`lucide:${nav.icon}`}/><span>{categoryLabel(nav.slug, locale)}</span><small>{count}</small></a></li>;
+  })}</ul>
+  <p class="nav-label resources-label">{t(locale, 'resources')}</p>
+  <ul>
+    {entries.length > 0 && <li><a href={localizePath('/recent', locale)} class:list={{ active: page.type === 'recent' }}><Icon name="lucide:history"/><span>{t(locale, 'recent')}</span></a></li>}
+    {(locale === config.defaultLanguage || config.legal.translations[locale]) && <li><a href={localizePath('/about', locale)}><Icon name="lucide:book-open"/><span>{t(locale, 'about')}</span></a></li>}
+    {config.officialUrl && <li><a href={config.officialUrl} target="_blank" rel="noopener noreferrer"><Icon name="lucide:external-link"/><span>{config.gameName}</span><span aria-hidden="true">↗</span></a></li>}
+  </ul>
+</nav>
+<div class="sidebar-note"><Icon name="lucide:compass"/><p>{t(locale, 'unofficial')}</p>{config.demo && <span>{t(locale, 'demo')}</span>}</div>

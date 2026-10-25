@@ -1,0 +1,45 @@
+---
+import { render } from 'astro:content';
+import { Icon } from 'astro-icon/components';
+import Breadcrumbs from '~/components/navigation/Breadcrumbs.astro';
+import TableOfContents from './TableOfContents.astro';
+import GuideCard from './GuideCard.astro';
+import BossStatCard from './BossStatCard.astro';
+import Codes from '~/components/wiki/Codes.astro';
+import TierList from '~/components/wiki/TierList.astro';
+import Faq from '~/components/home/Faq.astro';
+import AdSlot from '~/components/ads/AdSlot.astro';
+import { categoryLabel, config } from '~/lib/config';
+import { homeUrl, listPath } from '~/lib/url';
+import { related, type WikiArticle } from '~/lib/content';
+import { estimateReadMinutes } from '~/lib/content-utils';
+import { t, formatDate } from '~/i18n/ui';
+interface Props { entry: WikiArticle; pool: WikiArticle[]; }
+const { entry, pool } = Astro.props;
+const { locale } = entry;
+const { Content, headings } = await render(entry);
+const relatedEntries = related(pool, entry);
+const categoryExists = pool.some(item => item.locale === locale && item.category === entry.category && !item.data.noindex);
+const labels = Object.fromEntries(['hp','weakness','resistant','location','level'].map(key => [key, t(locale, key)]));
+labels.title = t(locale, 'boss');
+---
+<div class="article-page">
+  <Breadcrumbs items={[{ name: t(locale, 'home'), path: homeUrl(locale) }, ...(categoryExists ? [{ name: categoryLabel(entry.category, locale), path: listPath(entry.category, locale) }] : []), { name: entry.data.title }]}/>
+  <div class="article-grid"><article>
+    <header class="article-header"><p class="section-eyebrow">{categoryLabel(entry.category, locale)}{entry.data.version && <span class="version-tag">{entry.data.version}</span>}</p><h1 data-pagefind-meta="title">{entry.data.title}</h1><p class="article-description" data-pagefind-meta="description">{entry.data.description}</p><div class="article-meta"><span><Icon name="lucide:calendar-days"/>{t(locale, 'updated')} <time datetime={entry.data.lastModified}>{formatDate(entry.data.lastModified, locale)}</time></span><span><Icon name="lucide:clock-3"/>{estimateReadMinutes(entry.body ?? '', locale)} {t(locale, 'readTime')}</span>{config.demo && <span class="demo-tag">{t(locale, 'demo')}</span>}</div></header>
+    {entry.data.noindex && <p class="noindex-note">{t(locale, 'noindex')}</p>}
+    {entry.data.answer && <aside class="quick-answer"><Icon name="lucide:lightbulb"/><p>{entry.data.answer}</p></aside>}
+    <TableOfContents headings={headings} heading={t(locale, 'onThisPage')} mobile/>
+    {entry.data.boss && <BossStatCard boss={entry.data.boss} labels={labels}/>}
+    {entry.data.codes.length > 0 && <Codes codes={entry.data.codes} locale={locale}/>}
+    {entry.data.tiers.length > 0 && <TierList tiers={entry.data.tiers} basis={entry.data.rankingBasis} locale={locale}/>}
+    {entry.data.item && <section class="item-widget"><p class="widget-label">{t(locale, 'item')} · {entry.data.item.type}</p><h2>{entry.data.item.name}</h2><dl class="stat-grid">{entry.data.item.stats.map(stat => <div><dt>{stat.label}</dt><dd>{stat.value}</dd></div>)}</dl><p><strong>{t(locale, 'acquisition')}:</strong> {entry.data.item.acquisition}</p>{entry.data.item.guides.map((href,index) => <a class="text-link" href={href}>{t(locale, 'readGuide')} {index+1} ↗</a>)}</section>}
+    {entry.data.build && <section class="build-widget"><p class="widget-label">{t(locale, 'scenario')} · {entry.data.build.scenario}</p><h2>{entry.data.build.name}</h2><div><section><h3>{t(locale, 'equipment')}</h3><ul>{entry.data.build.equipment.map(item => <li>{item}</li>)}</ul></section><section><h3>{t(locale, 'skills')}</h3><ul>{entry.data.build.skills.map(skill => <li>{skill}</li>)}</ul></section></div></section>}
+    <AdSlot slot="mobile-banner"/>
+    <div class="prose"><Content/></div>
+    {entry.data.boss?.rewards.length ? <section class="rewards-block"><h2>{t(locale, 'rewards')}</h2><ul>{entry.data.boss.rewards.map(reward => <li><Icon name="lucide:gem"/>{reward}</li>)}</ul></section> : null}
+    <Faq items={entry.data.faq} locale={locale}/>
+    <AdSlot slot="article-bottom"/>
+    {relatedEntries.length > 0 && <section class="related-guides" data-pagefind-ignore><div class="section-heading"><h2>{t(locale, 'related')}</h2></div><div class="related-grid">{relatedEntries.map(item => <GuideCard entry={item} compact/>)}</div></section>}
+  </article><aside class="article-rail" data-pagefind-ignore><TableOfContents headings={headings} heading={t(locale, 'onThisPage')}/><AdSlot slot="article-sidebar"/><AdSlot slot="article-sidebar-compact"/></aside></div>
+</div>

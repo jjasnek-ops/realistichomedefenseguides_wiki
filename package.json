@@ -1,0 +1,51 @@
+{
+  "name": "example-wiki",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "packageManager": "pnpm@12.11.2",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "tsx scripts/check-import.ts && tsx scripts/check-content.ts && astro build && pagefind --site dist && tsx scripts/check-site.ts",
+    "preview": "astro preview --host 127.0.0.1",
+    "lint": "eslint .",
+    "typecheck": "astro check",
+    "test": "vitest run",
+    "check:import": "tsx scripts/check-import.ts",
+    "check:content": "tsx scripts/check-content.ts",
+    "check:site": "tsx scripts/check-site.ts",
+    "validate": "pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "8.0.1",
+    "astro": "7.3.2",
+    "astro-icon": "1.2.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@axe-core/playwright": "^4.14.0",
+    "@iconify-json/lucide": "^1.2.123",
+    "@types/node": "^22.19.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "autoprefixer": "^10.6.1",
+    "cheerio": "^1.1.2",
+    "eslint": "^9.17.0",
+    "eslint-plugin-astro": "^1.3.1",
+    "lighthouse": "^13.5.0",
+    "pagefind": "^1.5.2",
+    "playwright": "^1.64.1",
+    "postcss": "^8.5.31",
+    "sharp": "^0.35.4",
+    "tailwindcss": "3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^4.1.11",
+    "wrangler": "^4.151.3",
+    "yaml": "^2.9.0"
+  }
+}

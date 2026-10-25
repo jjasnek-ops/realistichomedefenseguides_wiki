@@ -1,0 +1,12 @@
+---
+import TierGrid from '~/components/home/modules/TierGrid.astro';
+import { t } from '~/i18n/ui';
+import type { ArticleData } from '~/lib/schema';
+interface Props { tiers: ArticleData['tiers']; basis?: string; locale?: string; }
+const { tiers, basis, locale = Astro.currentLocale ?? 'en' } = Astro.props;
+---
+{tiers.length > 0 && <div class="tier-widget not-prose">
+  <TierGrid highlights={tiers}/>
+  {tiers.filter(item => item.image).map(item => <figure class="tier-image"><img src={item.image} alt={item.alt ?? item.label} width="96" height="96" loading="lazy"/><figcaption>{item.label} · {item.detail}</figcaption></figure>)}
+  {basis && <p class="basis"><strong>{t(locale, 'ranking')}:</strong> {basis}</p>}
+</div>}

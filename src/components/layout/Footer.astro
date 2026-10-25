@@ -1,0 +1,12 @@
+---
+import { config, siteName } from '~/lib/config';
+import { homeUrl, localizePath } from '~/lib/url';
+import { t } from '~/i18n/ui';
+interface Props { locale: string; }
+const { locale } = Astro.props;
+const legal = config.legal.translations[locale] ?? config.legal;
+---
+<footer class="site-footer" data-pagefind-ignore>
+  <div><a class="footer-brand" href={homeUrl(locale)}><img src={config.logo} width="28" height="28" alt=""/>{siteName(locale)}</a><p>{legal.disclaimer}</p></div>
+  <nav aria-label={t(locale, 'resources')}>{(locale === config.defaultLanguage || config.legal.translations[locale]) && <>{(['about', 'privacy', 'terms'] as const).map(key => <a href={localizePath(`/${key}`, locale)}>{t(locale, key)}</a>)}</>}{config.officialUrl && <a href={config.officialUrl} rel="noopener noreferrer" target="_blank">{config.gameName} ↗</a>}<a href="/licenses/site-software.txt">{t(locale, 'software')}</a></nav>
+</footer>

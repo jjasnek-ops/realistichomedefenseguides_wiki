@@ -1,0 +1,29 @@
+---
+import { Icon } from 'astro-icon/components';
+import Search from '~/components/navigation/Search.astro';
+import { config } from '~/lib/config';
+import { homeUrl } from '~/lib/url';
+import { t } from '~/i18n/ui';
+interface Props { locale: string; alternates: { locale: string; path: string }[]; }
+const { locale, alternates } = Astro.props;
+---
+<header class="site-header" data-pagefind-ignore>
+  <button type="button" class="icon-button mobile-menu" aria-label={t(locale, 'menu')} data-nav-open><Icon name="lucide:menu"/></button>
+  <a class="brand" href={homeUrl(locale)}><img src={config.logo} alt="" width="34" height="34"/><span>{config.gameName}<small>{t(locale, 'brandTagline')}</small></span>{config.demo && <b>{t(locale, 'demo')}</b>}</a>
+  <div class="header-tools"><Search locale={locale}/>
+    <details class="language-menu"><summary aria-label={`${t(locale, 'languages')}: ${config.localeLabels[locale]}`}><Icon name="lucide:globe-2"/><span>{config.localeLabels[locale]}</span><Icon name="lucide:chevron-down"/></summary><div class="language-options"><p>{t(locale, 'languages')}</p>{alternates.map(alternate => <a href={alternate.path} lang={alternate.locale} hreflang={alternate.locale} aria-current={locale === alternate.locale ? 'page' : undefined}>{config.localeLabels[alternate.locale]}{locale === alternate.locale && <span aria-hidden="true">✓</span>}</a>)}{alternates.length <= 1 && <small>{t(locale, 'unavailable')}</small>}</div></details>
+    <span class="header-divider"></span><button class="icon-button theme-toggle" type="button" aria-label={t(locale, 'theme')} title={t(locale, 'theme')}><Icon name="lucide:sun" class="sun"/><Icon name="lucide:moon" class="moon"/></button>
+  </div>
+</header>
+<script>
+  document.querySelector('.theme-toggle')?.addEventListener('click', () => {
+    const mode = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+    document.documentElement.classList.toggle('dark', mode === 'dark');
+    document.documentElement.dataset.theme = mode;
+    try { localStorage.setItem('wiki-theme', mode); } catch { /* Theme still works without storage. */ }
+  });
+  const drawer = document.querySelector<HTMLDialogElement>('#navigation-drawer');
+  document.querySelector('[data-nav-open]')?.addEventListener('click', () => drawer?.showModal());
+  drawer?.querySelector('[data-nav-close]')?.addEventListener('click', () => drawer.close());
+  drawer?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => drawer.close()));
+</script>

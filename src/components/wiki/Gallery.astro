@@ -1,0 +1,5 @@
+---
+interface Props { images: { src: string; alt: string; caption?: string; width: number; height: number }[]; }
+const { images } = Astro.props;
+---
+<div class="image-gallery not-prose">{images.map(image => <figure><a href={image.src} target="_blank" rel="noopener"><img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy"/></a>{image.caption && <figcaption>{image.caption}</figcaption>}</figure>)}</div>
