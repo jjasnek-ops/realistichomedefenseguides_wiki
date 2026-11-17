@@ -25,6 +25,7 @@ const paletteCss = (palette: Record<string,string>, primary: string, prefix = ''
   return Object.entries({ ...palette, primary, 'primary-text': primaryText }).map(([key,value]) => `--${prefix}${key}:${value};--${prefix}${key}-rgb:${rgb(value)}`).join(';');
 };
 const themeCss = `:root{${paletteCss(config.theme.light, config.theme.lightPrimary)};${paletteCss(config.theme.dark, config.theme.primary, 'hero-')}}html.dark{${paletteCss(config.theme.dark, config.theme.primary)}}`;
+const googleAnalyticsId = import.meta.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID ?? '';
 const adClient = activeAdProvider === 'adsense' && config.integrations.ads ? config.integrations.ads.client : '';
 const ogLocaleFor = (language: string) => OG_LOCALE_MAP[language] ?? (language.includes('-') ? language.replace(/-([a-z]{2})$/i, (_, region: string) => `_${region.toUpperCase()}`) : undefined);
 const ogLocale = ogLocaleFor(locale);
@@ -55,6 +56,15 @@ const ogAlternates = alternates.filter(alternate => alternate.locale !== locale)
     </script>
     <JsonLd data={[organizationJsonLd(), ...schemas]}/>
     {config.integrations.analytics && <script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: config.integrations.analytics.token })}></script>}
+    {/^(G|GT)-[A-Z0-9]+$/.test(googleAnalyticsId) && <>
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}></script>
+      <script is:inline define:vars={{ googleAnalyticsId }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', googleAnalyticsId);
+      </script>
+    </>}
     {adClient && <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClient}`} crossorigin="anonymous"></script>}
   </head>
   <body>
